@@ -153,16 +153,20 @@ L5-FACE-04.mov
 
 # Session 2 · Read
 
-**Not on camera. One single take for all fifteen.** Point the camera at your
+**Not on camera. One single take, all five passages.** Point the camera at your
 desk, a wall, anything. I strip the picture and keep the sound.
 
-**Say the name out loud before each line.** "Read one", pause, then the line.
-Pause, "read two", then the next. That is how I cut the take.
+**You do not need to say any markers.** You are reading these word for word, so
+I match the transcript against this document and find every piece exactly. Just
+read.
 
-**If you fluff one, do not restart.** Pause, say the name again, redo just that
-line. I take the last good version.
+**Pause for a breath between paragraphs.** Each paragraph becomes a separate
+clip in the finished lesson, so a small gap makes the cut clean. You never have
+to stop recording.
 
-One file:
+**Pause a little longer between lessons.** Two or three seconds.
+
+One file, any name, any length:
 
 ```
 ALL-READ.mov
@@ -171,124 +175,82 @@ ALL-READ.mov
 
 ## Lesson 1 · Set up your AI coding environment
 
+There are two ways to use an AI coding agent. Most people open one and type
+"build me an app." They get a pile of code. It runs. They cannot change it,
+they cannot explain it, and they cannot tell whether it is any good.
+This course teaches the other way.
 
-### L1-READ-01
-
-> There are two ways to use an AI coding agent. Most people open one and type
-> "build me an app." They get a pile of code. It runs. They cannot change it,
-> they cannot explain it, and they cannot tell whether it is any good.
-> This course teaches the other way.
-
-
-### L1-READ-02
-
-> Everything in this course is free. No API key, no credit card, no
-> subscription. If a step ever asks you for money, you are on the wrong step.
+Everything in this course is free. No API key, no credit card, no
+subscription. If a step ever asks you for money, you are on the wrong step.
 
 
 ## Lesson 2 · Plan before you code
 
+The plan is a markdown file. It lives in the project. It gets reviewed,
+argued with, and revised. When code is finally written, it is written against
+that file, and the comments in the code point back at it.
+That one move changes your role from passenger to the person in charge.
 
-### L2-READ-01
+Notice what was not asked for. No code. No files. Just a document.
 
-> The plan is a markdown file. It lives in the project. It gets reviewed,
-> argued with, and revised. When code is finally written, it is written against
-> that file, and the comments in the code point back at it.
-> That one move changes your role from passenger to the person in charge.
+A chat that has spent an hour defending its own choices cannot review them.
+A fresh one has never seen your reasoning, so it argues with the file instead
+of defending it.
 
-
-### L2-READ-02
-
-> Notice what was not asked for. No code. No files. Just a document.
-
-
-### L2-READ-03
-
-> A chat that has spent an hour defending its own choices cannot review them.
-> A fresh one has never seen your reasoning, so it argues with the file instead
-> of defending it.
-
-
-### L2-READ-04
-
-> On the project you are about to build, a fresh chat found five contradictions
-> in a plan that looked finished. The registry read itself. The document
-> claimed two different architectures at the same time. A promise had nothing
-> behind it.
-> On a bigger project of mine the same trick found sixteen problems, including
-> one where the document contradicted its own numbers. The chat that wrote it
-> had read those numbers a dozen times and never noticed.
+On the project you are about to build, a fresh chat found five contradictions
+in a plan that looked finished. The registry read itself. The document
+claimed two different architectures at the same time. A promise had nothing
+behind it.
+On a bigger project of mine the same trick found sixteen problems, including
+one where the document contradicted its own numbers. The chat that wrote it
+had read those numbers a dozen times and never noticed.
 
 
 ## Lesson 3 · Give the AI proper context
 
+Without a context file it spreads out across your project on probability. It
+picks an answer and it sounds completely certain. With one, it goes straight
+to the right place, because you told it.
 
-### L3-READ-01
-
-> Without a context file it spreads out across your project on probability. It
-> picks an answer and it sounds completely certain. With one, it goes straight
-> to the right place, because you told it.
-
-
-### L3-READ-02
-
-> Eight questions. They are not a survey. Every one of them is there because it
-> stopped a real mistake.
-> The one most people leave out is the third: what looks wrong but is
-> deliberate. Every project has decisions that look like bugs. Without that
-> section your agent will helpfully undo them.
-> And the eighth: what has to be re-run after certain changes. Code generation,
-> migrations, lock files. Those are obligations with a trigger, not commands you
-> run when you feel like it.
+Eight questions. They are not a survey. Every one of them is there because it
+stopped a real mistake.
+The one most people leave out is the third: what looks wrong but is
+deliberate. Every project has decisions that look like bugs. Without that
+section your agent will helpfully undo them.
+And the eighth: what has to be re-run after certain changes. Code generation,
+migrations, lock files. Those are obligations with a trigger, not commands you
+run when you feel like it.
 
 
 ## Lesson 4 · Build the product
 
+Not "build the app." Build phase one, and stop. Look at it. Then phase two.
+Six small arguments instead of one big disappointment.
 
-### L4-READ-01
+That is deliberately boring, and it deploys. That is the whole point of phase
+one. Prove the ground holds before you build anything on it.
 
-> Not "build the app." Build phase one, and stop. Look at it. Then phase two.
-> Six small arguments instead of one big disappointment.
+That is not a mistake in this video. That is the rule working. The plan said
+a missing file must fail the build, and it did, and it named the file and
+both ways to fix it.
 
-
-### L4-READ-02
-
-> That is deliberately boring, and it deploys. That is the whole point of phase
-> one. Prove the ground holds before you build anything on it.
-
-
-### L4-READ-03
-
-> That is not a mistake in this video. That is the rule working. The plan said
-> a missing file must fail the build, and it did, and it named the file and
-> both ways to fix it.
-
-
-### L4-READ-04
-
-> An agent that is never overruled is not being used properly. It is very good
-> at the thing directly in front of it. It does not know what your project is
-> for unless you tell it, and even then it will argue with you.
+An agent that is never overruled is not being used properly. It is very good
+at the thing directly in front of it. It does not know what your project is
+for unless you tell it, and even then it will argue with you.
 
 
 ## Lesson 5 · Test, deploy, and your turn
 
+On another project of mine, an agent reported a finished build. The main
+button did nothing. My entire bug report was five words: done, generate
+project does nothing so far.
+There were two causes. One was a setting. The other was its own bug, and that
+one was worse: when the button failed, the app showed nothing at all. No
+error, no message. It just sat there.
 
-### L5-READ-01
-
-> On another project of mine, an agent reported a finished build. The main
-> button did nothing. My entire bug report was five words: done, generate
-> project does nothing so far.
-> There were two causes. One was a setting. The other was its own bug, and that
-> one was worse: when the button failed, the app showed nothing at all. No
-> error, no message. It just sat there.
-
-
-### L5-READ-02
-
-> A broken app that tells you what is broken is a five minute fix. A broken app
-> that stays silent is your whole evening.
-
+A broken app that tells you what is broken is a five minute fix. A broken app
+that stays silent is your whole evening.
+---
 
 ---
 
