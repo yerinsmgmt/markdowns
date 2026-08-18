@@ -38,17 +38,20 @@ L5-FACE-04.mov
 
 ### L1-FACE-01
 
-> Hey. If you have ever wanted to build an app but you are not a developer,
-> this is the course for you. Over the next five lessons we are going to build
-> a real product together, put it on the internet, and you are going to
-> understand every part of it. Not copy and paste it. Understand it.
+> Hey. If you have ever wanted to build an app but you cannot code, this is
+> for you. Over the next five lessons we are going to build a real product
+> using an AI coding agent, and put it on the internet.
+> You will not be typing code. You will be directing something that types it
+> for you. The whole skill is knowing what to tell it, when to stop it, and how
+> to catch it being wrong, and that is what I am going to teach you.
 
 
 ### L1-FACE-02
 
 > I built a health platform that is running in Rwanda right now. I built a VPN.
-> I built a payments app. And I did most of it without an engineering team.
-> Everything I used to do that, I am going to show you.
+> I built a payments app. I did all of it with AI agents and no engineering
+> team. Everything I told them, and everything I stopped them doing, is what
+> this course is.
 
 
 ### L1-FACE-03
@@ -102,8 +105,10 @@ L5-FACE-04.mov
 
 ### L4-FACE-01
 
-> One rule for this whole lesson. Build in phases, and every single phase has
-> to end with something that actually runs.
+> One rule for this whole lesson. You are still not typing code. You are
+> telling the agent what to build, one phase at a time, and every single phase
+> has to end with something that actually runs before you ask for the next
+> one.
 
 
 ### L4-FACE-02
