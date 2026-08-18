@@ -259,69 +259,75 @@ that stays silent is your whole evening.
 
 ---
 
-# Session 3 · Screen recordings
+# Session 3 · Screen
 
-**After the build is finished, not while you are building.** Re-record each one
-clean and short. Nobody wants to watch you wait for an agent to think.
+Nothing here needs the project rebuilt, and nothing needs you to uninstall
+anything. Most of it is just opening things that already exist.
 
-Separate files, named as the headings say.
+Two kinds of block:
 
+- **SCREEN** you capture it. All of these are live right now.
+- **TYPE** I make it as a motion graphic: text typing itself on screen with a
+  keystroke sound. Nothing for you to do.
 
-## Lesson 1 · Set up your AI coding environment
+Anything that is only words on a screen became a TYPE block. A retyped prompt
+is easier to read on a phone than a real editor at real size, it needs no
+waiting for an agent to think, and it cannot show a stray browser tab or a file
+name from another project.
 
+## What you capture
+
+Five short captures. None longer than about a minute.
 
 ### L1-SCREEN-01
-
-Installing VS Code. Installing the agent. The first version command that proves
-it is working.
-
-
-## Lesson 2 · Plan before you code
-
-
-### L2-SCREEN-01
-
-Asking the agent to write PROJECT.md. Not code. A document.
-
-
-### L2-SCREEN-02
-
-The real review. The actual findings, unedited.
-
-
-## Lesson 3 · Give the AI proper context
-
+The websites, not the installs. Visit code.visualstudio.com, scroll the page,
+hover the download button. Then the agent's install page. That is all. Nobody
+needs to watch a progress bar, and you are not deleting your setup for a shot.
 
 ### L3-SCREEN-01
-
-Open agentfile. Answer the eight questions. Download the two files. Drop them
-into the project.
-
-
-## Lesson 4 · Build the product
-
+Open agentfile.vercel.app. Pick a stack. Answer two or three of the questions
+so the preview visibly fills in on the right. Press Copy, then Download. This
+one is the most important capture in the course, so take your time.
 
 ### L4-SCREEN-01
-
-Phase 1. The skeleton, deployed, doing almost nothing.
-
+Open agentfile.vercel.app again and just sit on it for ten seconds. This is the
+"phase one is deployed and boring" shot. Slow scroll, nothing clicked.
 
 ### L4-SCREEN-02
+The failure, and it reproduces on demand. In the agentfile folder:
 
-The build failing. The real error, unedited.
+```
+open templates/index.ts, delete one of the stack imports, save
+npm run build
+```
 
-
-## Lesson 5 · Test, deploy, and your turn
-
+Record the terminal from the moment you press enter. It fails and names the
+missing file. Put the line back afterwards.
 
 ### L5-SCREEN-01
+github.com/yerinsabraham/agentfile. Scroll the README, open CONTRIBUTING.md,
+open templates/stacks so the three files are visible. This is the "go and
+contribute" shot.
 
-Deploying. The live URL. Clicking through it for real.
+## What I make
 
+You do nothing for these.
 
-### L5-SCREEN-02
+### TYPE-01
+The prompt asking the agent to write PROJECT.md, typing itself out. Replaces
+the old L2-SCREEN-01.
 
-Show the wall for real. Something breaking that this method alone does not fix.
+### TYPE-02
+The findings from the fresh chat review, appearing one at a time. The real
+wording is already in NOTES.md, so nothing is invented. Replaces L2-SCREEN-02.
+
+### TYPE-03
+The build error from L4-SCREEN-02, retyped large. Used as a cutaway on top of
+your capture so the error is readable on a phone.
+
+### TYPE-04
+The install steps from lesson 1 as a checklist, so the instruction is on screen
+while you say it.
 
 
 ---
@@ -339,7 +345,7 @@ you can see the shape of each finished lesson.
 - **GFX-01** Title card. "Build real software with AI." Over L1-READ-01.
 - **L1-READ-01** There are two ways to use an AI coding agent. Most people open one and type
 - **GFX-02** The two roads. Top road scribbles into a tangle. Bottom road builds in phases.
-- **L1-SCREEN-01** Installing VS Code. Installing the agent. The first version command that prove
+- **L1-SCREEN-01** The download pages, plus TYPE-04 as the checklist over your voice.
 - **L1-READ-02** Everything in this course is free. No API key, no credit card, no
 - **L1-FACE-03** That is your workshop set up. In the next lesson we do the one thing that
 
@@ -348,12 +354,12 @@ you can see the shape of each finished lesson.
 - **L2-FACE-01** Here is the single move that changes everything. Before you let it write one
 - **GFX-03** Pull quote, held still.
 - **L2-READ-01** The plan is a markdown file. It lives in the project. It gets reviewed,
-- **L2-SCREEN-01** Asking the agent to write PROJECT.md. Not code. A document.
+- **TYPE-01** The prompt asking for PROJECT.md, typing itself out.
 - **L2-READ-02** Notice what was not asked for. No code. No files. Just a document.
 - **L2-FACE-02** Now the part almost nobody teaches, and it feels like extra work until the
 - **GFX-04** The fresh chat diagram. Chat A loops back on itself uselessly. The teal path
 - **L2-READ-03** A chat that has spent an hour defending its own choices cannot review them.
-- **L2-SCREEN-02** The real review. The actual findings, unedited.
+- **TYPE-02** The review findings, appearing one at a time.
 - **L2-READ-04** On the project you are about to build, a fresh chat found five contradictions
 - **L2-FACE-03** But do not accept the review blindly either. Take those findings back to the
 
@@ -363,7 +369,7 @@ you can see the shape of each finished lesson.
 - **GFX-05** Guessing versus being told. Dashed arrows fire at the wrong folders. Then one
 - **L3-READ-01** Without a context file it spreads out across your project on probability. It
 - **GFX-06** Term definition. "Context file. A markdown file your coding agent reads before
-- **L3-SCREEN-01** Open agentfile. Answer the eight questions. Download the two files. Drop them
+- **L3-SCREEN-01** agentfile live. Answer questions, preview fills, Copy and Download.
 - **L3-READ-02** Eight questions. They are not a survey. Every one of them is there because it
 - **L3-FACE-02** I built that tool while making this course, because I needed it and it did
 - **GFX-07** The product loop. Questions, browser, two files, your project, the agent. Then
@@ -373,10 +379,10 @@ you can see the shape of each finished lesson.
 - **L4-FACE-01** One rule for this whole lesson. Build in phases, and every single phase has
 - **GFX-08** Step list, phases lighting one at a time.
 - **L4-READ-01** Not "build the app." Build phase one, and stop. Look at it. Then phase two.
-- **L4-SCREEN-01** Phase 1. The skeleton, deployed, doing almost nothing.
+- **L4-SCREEN-01** agentfile sitting there deployed. The boring shot.
 - **L4-READ-02** That is deliberately boring, and it deploys. That is the whole point of phase
 - **L4-FACE-02** Now the part most tutorials cut out. Watch what happens when it breaks.
-- **L4-SCREEN-02** The build failing. The real error, unedited.
+- **L4-SCREEN-02** The build failing, with TYPE-03 cut over it so the error is readable.
 - **GFX-09** Terminal replay, retyped large enough to read on a phone.
 - **L4-READ-03** That is not a mistake in this video. That is the rule working. The plan said
 - **L4-FACE-03** Twice while building this, the agent told me I was wrong. Both times I
@@ -388,9 +394,9 @@ you can see the shape of each finished lesson.
 - **L5-READ-01** On another project of mine, an agent reported a finished build. The main
 - **GFX-10** Before and after. A silent failure, then the same failure explaining itself.
 - **L5-READ-02** A broken app that tells you what is broken is a five minute fix. A broken app
-- **L5-SCREEN-01** Deploying. The live URL. Clicking through it for real.
+- **L5-SCREEN-01** The repo, README and CONTRIBUTING, for the contribute ask.
 - **L5-FACE-02** So you have shipped something. It is live, anyone can open it. Now I have to
-- **L5-SCREEN-02** Show the wall for real. Something breaking that this method alone does not fix
+- **L5-SCREEN-02** Dropped. The wall is now L5-FACE-03 over GFX-11, the bricked doorway.
 - **GFX-11** Board 6, the bricked-up doorway.
 - **L5-FACE-03** The moment you add real users, a database, payments, or you open a project
 - **L5-FACE-04** One last thing. That tool you used in lesson three is open source and it
