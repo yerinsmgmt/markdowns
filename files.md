@@ -1,411 +1,108 @@
-# Free course script
+# Review: AI Software Development, the new way to build
 
-Three recording sessions, in this order. Do session 1 first and send it to me
-before you do the rest, so we can fix anything about how it feels before you
-have recorded forty minutes of it.
+20:53. Reviewed against the transcript, timestamps are from the source file.
 
-| Session | What | How |
+---
+
+## Verdict
+
+**Upload it.** The argument works, and the spine of it, the timeline from C++
+to Visual Basic to Rails to AI with the same "not a real programmer" sneer at
+every step, is genuinely persuasive. That section alone justifies the video.
+
+It does not need re-recording. It needs cutting in four places and graphics in
+about twenty five.
+
+---
+
+## What is strongest
+
+**04:03 to 06:19, the timeline.** This is the whole video. Four eras, the same
+pushback each time, and the conclusion that the pattern will repeat against
+whatever replaces AI. Nothing else in the video does as much work.
+
+**00:48 to 02:07, the paintbrush.** Clear, memorable, and yours. It reappears
+in your instinct throughout.
+
+**10:26 to 11:41, why vibe coding platforms break.** Specific and concrete:
+going live, adding payments, users increasing. That is the paid course's whole
+sales argument delivered without pitching.
+
+---
+
+## Suggested cuts
+
+Four, totalling about two and a half minutes. Nothing is cut without your say.
+
+| Cut | Time | Why |
 | --- | --- | --- |
-| 1 | 15 face lines | One video file per line. Rehearse as much as you like. |
-| 2 | 14 read lines | One single take. Camera at anything, you are not on screen. |
-| 3 | 8 screen recordings | Separate captures, after the build is finished. |
+| 1 | **00:08 to 00:22** | "Hopefully it's not going to take that long." You apologise for the length before you have said anything. The first fifteen seconds decide whether anyone stays. Cut straight from the title line into "this is not vibe coding". |
+| 2 | **06:19 to 07:07** | The old people and young people tangent. You flag it yourself: "I don't want to go away from AI." It restates a point you already made better with the timeline. |
+| 3 | **07:07 to 08:16** | The resistance point lands a third time here. Trim to about twenty seconds, keeping "it will happen again to AI" and dropping the repetition before it. |
+| 4 | **13:00 to 13:44** | The washing machine story. The instinct is right and the telling wanders. Either cut it, or we keep it and I cut hard to a graphic on "there is a tool out there", which rescues it. |
 
-Motion graphics are mine. They are not in the sessions below, they are listed
-at the end so you can see where everything lands.
-
----
-
-# Session 1 · Face
-
-**On camera. One video file per line, named exactly as the heading says.**
-
-Take as many attempts as you want. Only send me the good one. If a line does
-not sound like you, change the words. The meaning is what matters, not the
-wording.
-
-Do not record these in one take. Fifteen separate files:
-
-```
-L1-FACE-01.mov
-L1-FACE-02.mov
-...
-L5-FACE-04.mov
-```
-
-
-## Lesson 1 · Set up your AI coding environment
-
-
-### L1-FACE-01
-
-> Hey. If you have ever wanted to build an app but you cannot code, this is
-> for you. Over the next five lessons we are going to build a real product
-> using an AI coding agent, and put it on the internet.
-> You will not be typing code. You will be directing something that types it
-> for you. The whole skill is knowing what to tell it, when to stop it, and how
-> to catch it being wrong, and that is what I am going to teach you.
-
-
-### L1-FACE-02
-
-> I built a health platform that is running in Rwanda right now. I built a VPN.
-> I built a payments app. I did all of it with AI agents and no engineering
-> team. Everything I told them, and everything I stopped them doing, is what
-> this course is.
-
-
-### L1-FACE-03
-
-> That is your workshop set up. In the next lesson we do the one thing that
-> separates people who build with AI from people who just generate code with
-> it.
-
-
-## Lesson 2 · Plan before you code
-
-
-### L2-FACE-01
-
-> Here is the single move that changes everything. Before you let it write one
-> line of code, you make it write the plan.
-
-
-### L2-FACE-02
-
-> Now the part almost nobody teaches, and it feels like extra work until the
-> first time it saves you. You take that plan, you open a completely fresh
-> chat, and you ask it what is wrong with it.
-
-
-### L2-FACE-03
-
-> But do not accept the review blindly either. Take those findings back to the
-> first chat and say: tell me which of these are actually valid, and ignore any
-> that do not have enough context about what we are building. Giving it
-> permission to reject is what makes this real instead of theatre.
-
-
-## Lesson 3 · Give the AI proper context
-
-
-### L3-FACE-01
-
-> Every time you open your agent, it starts knowing nothing about your project.
-> Nothing. So it guesses.
-
-
-### L3-FACE-02
-
-> I built that tool while making this course, because I needed it and it did
-> not exist. It is free, it is open source, and the link is in the description.
-
-
-## Lesson 4 · Build the product
-
-
-### L4-FACE-01
-
-> One rule for this whole lesson. You are still not typing code. You are
-> telling the agent what to build, one phase at a time, and every single phase
-> has to end with something that actually runs before you ask for the next
-> one.
-
-
-### L4-FACE-02
-
-> Now the part most tutorials cut out. Watch what happens when it breaks.
-
-
-### L4-FACE-03
-
-> Twice while building this, the agent told me I was wrong. Both times I
-> overruled it, and both times I was right. Not because I am smarter than it.
-> Because it was solving the problem in front of it, and I was thinking about
-> what the whole thing is for.
-
-
-## Lesson 5 · Test, deploy, and your turn
-
-
-### L5-FACE-01
-
-> Never trust the word "done" until you have clicked the thing yourself.
-
-
-### L5-FACE-02
-
-> So you have shipped something. It is live, anyone can open it. Now I have to
-> be honest with you about what happens next.
-
-
-### L5-FACE-03
-
-> The moment you add real users, a database, payments, or you open a project
-> somebody else wrote, all of this gets harder. Everything you just learned
-> still applies, but it is not enough on its own. That is what the full course
-> is for, and it is linked below.
-
-
-### L5-FACE-04
-
-> One last thing. That tool you used in lesson three is open source and it
-> needs more stacks added to it. Adding one is a single markdown file, it takes
-> about thirty minutes, and it is a real contribution to a real project that
-> other people use. Link is below. Go and put your name on something.
-
+Cut 1 I would make regardless. The others are yours to call.
 
 ---
 
-# Session 2 · Read
+## Two things to fix on screen
 
-**Not on camera. One single take, all five passages.** Point the camera at your
-desk, a wall, anything. I strip the picture and keep the sound.
+**You say "Hostinger" and the transcript hears "hosting guy".** Whatever you
+said, the on-screen name has to be right. Same for Vercel, Grok, Kimi,
+DeepSeek, Codex, Claude Code. I will caption the correct spellings.
 
-**You do not need to say any markers.** You are reading these word for word, so
-I match the transcript against this document and find every piece exactly. Just
-read.
-
-**Pause for a breath between paragraphs.** Each paragraph becomes a separate
-clip in the finished lesson, so a small gap makes the cut clean. You never have
-to stop recording.
-
-**Pause a little longer between lessons.** Two or three seconds.
-
-One file, any name, any length:
-
-```
-ALL-READ.mov
-```
-
-
-## Lesson 1 · Set up your AI coding environment
-
-There are two ways to use an AI coding agent. Most people open one and type
-"build me an app." They get a pile of code. It runs. They cannot change it,
-they cannot explain it, and they cannot tell whether it is any good.
-This course teaches the other way.
-
-Everything in this course is free. No API key, no credit card, no
-subscription. If a step ever asks you for money, you are on the wrong step.
-
-
-## Lesson 2 · Plan before you code
-
-The plan is a markdown file. It lives in the project. It gets reviewed,
-argued with, and revised. When code is finally written, it is written against
-that file, and the comments in the code point back at it.
-That one move changes your role from passenger to the person in charge.
-
-Notice what was not asked for. No code. No files. Just a document.
-
-A chat that has spent an hour defending its own choices cannot review them.
-A fresh one has never seen your reasoning, so it argues with the file instead
-of defending it.
-
-On the project you are about to build, a fresh chat found five contradictions
-in a plan that looked finished. The registry read itself. The document
-claimed two different architectures at the same time. A promise had nothing
-behind it.
-On a bigger project of mine the same trick found sixteen problems, including
-one where the document contradicted its own numbers. The chat that wrote it
-had read those numbers a dozen times and never noticed.
-
-
-## Lesson 3 · Give the AI proper context
-
-Without a context file it spreads out across your project on probability. It
-picks an answer and it sounds completely certain. With one, it goes straight
-to the right place, because you told it.
-
-Eight questions. They are not a survey. Every one of them is there because it
-stopped a real mistake.
-The one most people leave out is the third: what looks wrong but is
-deliberate. Every project has decisions that look like bugs. Without that
-section your agent will helpfully undo them.
-And the eighth: what has to be re-run after certain changes. Code generation,
-migrations, lock files. Those are obligations with a trigger, not commands you
-run when you feel like it.
-
-
-## Lesson 4 · Build the product
-
-Not "build the app." Build phase one, and stop. Look at it. Then phase two.
-Six small arguments instead of one big disappointment.
-
-That is deliberately boring, and it deploys. That is the whole point of phase
-one. Prove the ground holds before you build anything on it.
-
-That is not a mistake in this video. That is the rule working. The plan said
-a missing file must fail the build, and it did, and it named the file and
-both ways to fix it.
-
-An agent that is never overruled is not being used properly. It is very good
-at the thing directly in front of it. It does not know what your project is
-for unless you tell it, and even then it will argue with you.
-
-
-## Lesson 5 · Test, deploy, and your turn
-
-On another project of mine, an agent reported a finished build. The main
-button did nothing. My entire bug report was five words: done, generate
-project does nothing so far.
-There were two causes. One was a setting. The other was its own bug, and that
-one was worse: when the button failed, the app showed nothing at all. No
-error, no message. It just sat there.
-
-A broken app that tells you what is broken is a five minute fix. A broken app
-that stays silent is your whole evening.
----
+**09:03, you list model names.** They date the video, which is fine, but the
+graphic should carry the date so it ages honestly rather than looking wrong
+later.
 
 ---
 
-# Session 3 · Screen
+## Beat map
 
-Nothing here needs the project rebuilt, and nothing needs you to uninstall
-anything. Most of it is just opening things that already exist.
+Twenty five beats. Nothing longer than about fifty seconds of unbroken talking
+head. Times are in the uncut original.
 
-Two kinds of block:
+| # | Time | Type | Content |
+| --- | --- | --- | --- |
+| 1 | 00:00 | INTRO | Title card, three seconds |
+| 2 | 00:22 | TITLE | "This is not vibe coding" struck through, then "This is building real products" |
+| 3 | 00:48 | ELEMENT | The paintbrush arrives, held through the analogy |
+| 4 | 01:27 | LOWER THIRD | "AI is a tool. You are the artist." |
+| 5 | 02:07 | ZOOM | Push in for the personal story |
+| 6 | 02:37 | TITLE | "Studied medicine. Not computer science." |
+| 7 | 03:14 | LOWER THIRD | "It does not limit creativity. It removes the ceiling." |
+| 8 | 04:03 | **TIMELINE** | The centrepiece. Four eras building left to right: 1990s C and C++, 2000s Visual Basic, 2010s Ruby on Rails, 2020s AI |
+| 9 | 04:24 | TIMELINE STEP | Visual Basic lights, quote card: "not real developers" |
+| 10 | 05:13 | TIMELINE STEP | Ruby on Rails lights, quote card: "you use Rails, you are not a real programmer" |
+| 11 | 05:55 | TIMELINE STEP | AI lights, the same sneer appears a third time |
+| 12 | 06:01 | PULL QUOTE | "Humans always find a way to make things easier for ourselves." |
+| 13 | 07:42 | TIMELINE | A fifth, empty slot appears after 2020s, labelled with a question mark |
+| 14 | 08:31 | TITLE | "How AI sees code. How you see code." |
+| 15 | 08:59 | LIST | Model names, dated. GPT-5, Claude Code, Fable 5 |
+| 16 | 09:17 | TITLE | "Every one of them makes mistakes" |
+| 17 | 10:10 | **SCALE** | Time against money. "Time is the most expensive form of wealth." |
+| 18 | 11:02 | DIAGRAM | One prompt to a whole app, then the crack: going live, payments, users |
+| 19 | 11:51 | TITLE | "There is a technique." Held. This is the hook for the paid course |
+| 20 | 12:29 | LIST | What people do not know: verify the code, which platform, which tool |
+| 21 | 14:01 | DIAGRAM | Your stack: Drive, Calendar, Docs, Sheets, codebase, all feeding one agent |
+| 22 | 15:02 | LOGO ROW | Vercel, AWS, Firebase, GitHub |
+| 23 | 15:17 | DEFINITION | CLI, API, MCP. Three cards, one at a time |
+| 24 | 15:59 | TITLE | "What I actually use: Codex, Claude Code" |
+| 25 | 16:49 | **DIAGRAM** | Old way: you, dashboard, hunting for DNS. New way: you, agent, API, done |
+| 26 | 19:35 | TITLE | "Next lesson: we build" |
+| 27 | 20:45 | OUTRO | End card |
 
-- **SCREEN** you capture it. All of these are live right now.
-- **TYPE** I make it as a motion graphic: text typing itself on screen with a
-  keystroke sound. Nothing for you to do.
-
-Anything that is only words on a screen became a TYPE block. A retyped prompt
-is easier to read on a phone than a real editor at real size, it needs no
-waiting for an agent to think, and it cannot show a stray browser tab or a file
-name from another project.
-
-## What you capture
-
-Five short captures. None longer than about a minute.
-
-### L1-SCREEN-01
-The websites, not the installs. Visit code.visualstudio.com, scroll the page,
-hover the download button. Then the agent's install page. That is all. Nobody
-needs to watch a progress bar, and you are not deleting your setup for a shot.
-
-### L3-SCREEN-01
-Open agentfile.vercel.app. Pick a stack. Answer two or three of the questions
-so the preview visibly fills in on the right. Press Copy, then Download. This
-one is the most important capture in the course, so take your time.
-
-### L4-SCREEN-01
-Open agentfile.vercel.app again and just sit on it for ten seconds. This is the
-"phase one is deployed and boring" shot. Slow scroll, nothing clicked.
-
-### L4-SCREEN-02
-The failure, and it reproduces on demand. In the agentfile folder:
-
-```
-open templates/index.ts, delete one of the stack imports, save
-npm run build
-```
-
-Record the terminal from the moment you press enter. It fails and names the
-missing file. Put the line back afterwards.
-
-### L5-SCREEN-01
-github.com/yerinsabraham/agentfile. Scroll the README, open CONTRIBUTING.md,
-open templates/stacks so the three files are visible. This is the "go and
-contribute" shot.
-
-## What I make
-
-You do nothing for these.
-
-### TYPE-01
-The prompt asking the agent to write PROJECT.md, typing itself out. Replaces
-the old L2-SCREEN-01.
-
-### TYPE-02
-The findings from the fresh chat review, appearing one at a time. The real
-wording is already in NOTES.md, so nothing is invented. Replaces L2-SCREEN-02.
-
-### TYPE-03
-The build error from L4-SCREEN-02, retyped large. Used as a cutaway on top of
-your capture so the error is readable on a phone.
-
-### TYPE-04
-The install steps from lesson 1 as a checklist, so the instruction is on screen
-while you say it.
-
+Beats 8 to 13 are one continuous timeline graphic that builds across two
+minutes rather than seven separate cards.
 
 ---
 
-# Reference · What goes where
+## Zooms
 
-You do not need this while recording. It is how the pieces get assembled, so
-you can see the shape of each finished lesson.
+Six, on the lines that carry weight. A slow push of about eight percent over
+two seconds, held, then released on the cut.
 
+`02:30` `04:03` `06:01` `10:19` `11:51` `19:35`
 
-## Lesson 1 · Set up your AI coding environment
-
-- **L1-FACE-01** Hey. If you have ever wanted to build an app but you are not a developer,
-- **L1-FACE-02** I built a health platform that is running in Rwanda right now. I built a VPN.
-- **GFX-01** Title card. "Build real software with AI." Over L1-READ-01.
-- **L1-READ-01** There are two ways to use an AI coding agent. Most people open one and type
-- **GFX-02** The two roads. Top road scribbles into a tangle. Bottom road builds in phases.
-- **L1-SCREEN-01** The download pages, plus TYPE-04 as the checklist over your voice.
-- **L1-READ-02** Everything in this course is free. No API key, no credit card, no
-- **L1-FACE-03** That is your workshop set up. In the next lesson we do the one thing that
-
-## Lesson 2 · Plan before you code
-
-- **L2-FACE-01** Here is the single move that changes everything. Before you let it write one
-- **GFX-03** Pull quote, held still.
-- **L2-READ-01** The plan is a markdown file. It lives in the project. It gets reviewed,
-- **TYPE-01** The prompt asking for PROJECT.md, typing itself out.
-- **L2-READ-02** Notice what was not asked for. No code. No files. Just a document.
-- **L2-FACE-02** Now the part almost nobody teaches, and it feels like extra work until the
-- **GFX-04** The fresh chat diagram. Chat A loops back on itself uselessly. The teal path
-- **L2-READ-03** A chat that has spent an hour defending its own choices cannot review them.
-- **TYPE-02** The review findings, appearing one at a time.
-- **L2-READ-04** On the project you are about to build, a fresh chat found five contradictions
-- **L2-FACE-03** But do not accept the review blindly either. Take those findings back to the
-
-## Lesson 3 · Give the AI proper context
-
-- **L3-FACE-01** Every time you open your agent, it starts knowing nothing about your project.
-- **GFX-05** Guessing versus being told. Dashed arrows fire at the wrong folders. Then one
-- **L3-READ-01** Without a context file it spreads out across your project on probability. It
-- **GFX-06** Term definition. "Context file. A markdown file your coding agent reads before
-- **L3-SCREEN-01** agentfile live. Answer questions, preview fills, Copy and Download.
-- **L3-READ-02** Eight questions. They are not a survey. Every one of them is there because it
-- **L3-FACE-02** I built that tool while making this course, because I needed it and it did
-- **GFX-07** The product loop. Questions, browser, two files, your project, the agent. Then
-
-## Lesson 4 · Build the product
-
-- **L4-FACE-01** One rule for this whole lesson. Build in phases, and every single phase has
-- **GFX-08** Step list, phases lighting one at a time.
-- **L4-READ-01** Not "build the app." Build phase one, and stop. Look at it. Then phase two.
-- **L4-SCREEN-01** agentfile sitting there deployed. The boring shot.
-- **L4-READ-02** That is deliberately boring, and it deploys. That is the whole point of phase
-- **L4-FACE-02** Now the part most tutorials cut out. Watch what happens when it breaks.
-- **L4-SCREEN-02** The build failing, with TYPE-03 cut over it so the error is readable.
-- **GFX-09** Terminal replay, retyped large enough to read on a phone.
-- **L4-READ-03** That is not a mistake in this video. That is the rule working. The plan said
-- **L4-FACE-03** Twice while building this, the agent told me I was wrong. Both times I
-- **L4-READ-04** An agent that is never overruled is not being used properly. It is very good
-
-## Lesson 5 · Test, deploy, and your turn
-
-- **L5-FACE-01** Never trust the word "done" until you have clicked the thing yourself.
-- **L5-READ-01** On another project of mine, an agent reported a finished build. The main
-- **GFX-10** Before and after. A silent failure, then the same failure explaining itself.
-- **L5-READ-02** A broken app that tells you what is broken is a five minute fix. A broken app
-- **L5-SCREEN-01** The repo, README and CONTRIBUTING, for the contribute ask.
-- **L5-FACE-02** So you have shipped something. It is live, anyone can open it. Now I have to
-- **L5-SCREEN-02** Dropped. The wall is now L5-FACE-03 over GFX-11, the bricked doorway.
-- **GFX-11** Board 6, the bricked-up doorway.
-- **L5-FACE-03** The moment you add real users, a database, payments, or you open a project
-- **L5-FACE-04** One last thing. That tool you used in lesson three is open source and it
-
-
----
-
-## Still to write
-
-- Exact wording for the lesson 5 wall, once we know what actually breaks.
-- Element list for the graphics, generated from this file once the wording is
-  locked.
+Not more than that. A zoom every thirty seconds stops reading as emphasis and
+starts reading as a nervous camera.
