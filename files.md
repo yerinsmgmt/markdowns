@@ -1,108 +1,153 @@
-# Review: AI Software Development, the new way to build
+# AI Software Engineering, lesson 2
 
-20:53. Reviewed against the transcript, timestamps are from the source file.
+Topics to talk about. Not a script. The order is the argument, so keep the
+order even if you say all of it differently.
+
+## Where lesson 1 left you, and why that is not finished
+
+Lesson 1 ends with something running on your own machine and nowhere else.
+That is a real achievement and it is also the most fragile state software can
+be in. One deleted folder, one laptop that will not boot, and twelve hours of
+work is gone with nothing to show anybody.
+
+Open with that, because it is the reason for everything in this lesson.
+
+## First, fix what the review already found
+
+The review at the end of lesson 1 found five issues. One of them was that the
+PDF page count was hardcoded to eight pages, so every upload claimed to have
+eight pages whatever it actually had.
+
+Start the lesson by fixing them, on camera. Two reasons, and say both:
+
+- Never build on top of something you already know is broken. It is cheaper
+  now than after three more features are sitting on it.
+- It shows what the validate habit is *for*. In lesson 1 it looked like extra
+  work with no payoff. Here is the payoff.
+
+## Saving your work
+
+**Git and GitHub are two different things.** People use the words as if they
+were one. Git is the thing on your computer that remembers every version.
+GitHub is a website that holds a copy. You can have one without the other.
+Say it once, plainly, and move on. Do not teach Git properly, teach the four
+words they will actually see: repository, commit, push, pull.
+
+**A commit is an undo button you set yourself.** This is the framing that
+makes it stick for someone who does not code. Before you let the AI change
+anything big, commit. If the AI wrecks it, you go back to the last commit and
+nothing is lost. Without that you are trusting an agent with no way back.
+
+**Let the AI do the work.** They do not need to memorise commands. Show what
+you actually type: tell the agent to set up the repository and make the first
+commit. Then show the same thing on GitHub in the browser, so they can see the
+two halves are connected.
+
+**Private, and why.** Public means the whole internet can read it. Show the
+toggle. Say plainly that a half-built product with your business logic in it
+is not something you publish by accident.
+
+## The one that ends careers: secrets
+
+This deserves its own segment and its own slow pace.
+
+An API key in your code, pushed to GitHub, is scraped by bots within minutes.
+People have woken up to five-figure cloud bills. Cover:
+
+- What a secret looks like: keys, tokens, passwords, connection strings.
+- `.gitignore` and the `.env` file. Why the file stays on your machine.
+- What to actually tell the AI: never put a key in the code, always read it
+  from the environment.
+- Deleting a key from your code does not remove it from history. If you push
+  one, you rotate it, you do not just delete it.
+
+Say the last one twice. It is the part everyone gets wrong.
+
+## Branches, only as much as they need
+
+One idea: a branch lets you try something without breaking the thing that
+already works. If it works out you keep it, if it does not you throw the
+branch away. Do not teach merge conflicts. They do not need them yet and it
+will scare people off.
+
+## Organizations on GitHub
+
+Be honest here: most people watching do not need one yet. Explain what it is
+in one line, when it starts to matter (a team, a company, work you want to
+keep separate from your name), and move on. Do not spend ten minutes on
+something a solo builder will not touch for six months.
+
+## Putting it online
+
+**Connect the repository to Vercel and deploy.** This is the moment of the
+lesson. Get to a real URL on the open internet and open it on your phone on
+camera. That is the shot people will remember.
+
+**Then the thing that will bite them.** It worked on your machine and it is
+broken on the internet, and the reason is almost always environment
+variables. The keys live on your laptop in a file you deliberately did not
+upload, so the deployed copy has none. Show adding them in Vercel. This is
+the single most common first-deploy failure and it will save them an evening.
+
+**Failed builds are normal.** Show one. Show where the log is. Show yourself
+copying the log into the AI and letting it fix it. What you are teaching is
+that a red failure is information, not a wall.
+
+**Your own domain.** Short segment. Buying one, pointing it, waiting for it.
+Say the wait is normal so nobody thinks it is broken.
+
+## GitHub Actions, kept small
+
+One sentence: it runs something automatically every time you push. Then give
+them the only one a beginner needs, which is running the build on every push
+so a broken deploy is caught before their users find it. Anything more than
+that belongs in a later lesson.
+
+## What "backend" actually means, and whether they need one
+
+You told people in lesson 1 not to build a backend yet. Close that loop here
+or it stays an unexplained rule.
+
+Explain it as: where the data lives and who is allowed to see it. Then be
+honest about when it becomes unavoidable, which is roughly when more than one
+person uses the thing and their data has to stay theirs. Show the smallest
+version that works rather than the architecture diagram.
+
+## Making it look right
+
+Fine-tuning the UI, and responsive on a phone. Best taught by showing the app
+looking broken on a phone first, then fixing it, rather than by describing
+what responsive means.
+
+Worth saying out loud: this is the part where taste matters and the AI is
+only as good as what you tell it. "Make it look better" gets you nothing.
+Point at a specific thing and say what is wrong with it.
+
+## Close
+
+What they can now do that they could not before: their work is saved, it is
+online, other people can use it, and they can change it without fear because
+they can always go back.
+
+Then what lesson 3 covers.
 
 ---
 
-## Verdict
+## An honest note on length
 
-**Upload it.** The argument works, and the spine of it, the timeline from C++
-to Visual Basic to Rails to AI with the same "not a real programmer" sneer at
-every step, is genuinely persuasive. That section alone justifies the video.
+Everything above is more than one lesson. Lesson 1 was 66 minutes and that was
+already long. Cramming Git, secrets, deployment, Actions, backend and UI into
+one video gives you a two hour lesson that nobody finishes.
 
-It does not need re-recording. It needs cutting in four places and graphics in
-about twenty five.
+Suggested split:
 
----
+- **Lesson 2, saved and shipped.** Fix the review findings, Git and GitHub,
+  private, secrets and `.gitignore`, commits as an undo button, connect to
+  Vercel, environment variables, first live URL, custom domain. Ends with the
+  thing on the internet. Around 45 to 55 minutes.
+- **Lesson 3, making it real.** Branches, GitHub Actions, what a backend is
+  and when you need one, the UI and responsive pass, what breaks after launch.
 
-## What is strongest
-
-**04:03 to 06:19, the timeline.** This is the whole video. Four eras, the same
-pushback each time, and the conclusion that the pattern will repeat against
-whatever replaces AI. Nothing else in the video does as much work.
-
-**00:48 to 02:07, the paintbrush.** Clear, memorable, and yours. It reappears
-in your instinct throughout.
-
-**10:26 to 11:41, why vibe coding platforms break.** Specific and concrete:
-going live, adding payments, users increasing. That is the paid course's whole
-sales argument delivered without pitching.
-
----
-
-## Suggested cuts
-
-Four, totalling about two and a half minutes. Nothing is cut without your say.
-
-| Cut | Time | Why |
-| --- | --- | --- |
-| 1 | **00:08 to 00:22** | "Hopefully it's not going to take that long." You apologise for the length before you have said anything. The first fifteen seconds decide whether anyone stays. Cut straight from the title line into "this is not vibe coding". |
-| 2 | **06:19 to 07:07** | The old people and young people tangent. You flag it yourself: "I don't want to go away from AI." It restates a point you already made better with the timeline. |
-| 3 | **07:07 to 08:16** | The resistance point lands a third time here. Trim to about twenty seconds, keeping "it will happen again to AI" and dropping the repetition before it. |
-| 4 | **13:00 to 13:44** | The washing machine story. The instinct is right and the telling wanders. Either cut it, or we keep it and I cut hard to a graphic on "there is a tool out there", which rescues it. |
-
-Cut 1 I would make regardless. The others are yours to call.
-
----
-
-## Two things to fix on screen
-
-**You say "Hostinger" and the transcript hears "hosting guy".** Whatever you
-said, the on-screen name has to be right. Same for Vercel, Grok, Kimi,
-DeepSeek, Codex, Claude Code. I will caption the correct spellings.
-
-**09:03, you list model names.** They date the video, which is fine, but the
-graphic should carry the date so it ages honestly rather than looking wrong
-later.
-
----
-
-## Beat map
-
-Twenty five beats. Nothing longer than about fifty seconds of unbroken talking
-head. Times are in the uncut original.
-
-| # | Time | Type | Content |
-| --- | --- | --- | --- |
-| 1 | 00:00 | INTRO | Title card, three seconds |
-| 2 | 00:22 | TITLE | "This is not vibe coding" struck through, then "This is building real products" |
-| 3 | 00:48 | ELEMENT | The paintbrush arrives, held through the analogy |
-| 4 | 01:27 | LOWER THIRD | "AI is a tool. You are the artist." |
-| 5 | 02:07 | ZOOM | Push in for the personal story |
-| 6 | 02:37 | TITLE | "Studied medicine. Not computer science." |
-| 7 | 03:14 | LOWER THIRD | "It does not limit creativity. It removes the ceiling." |
-| 8 | 04:03 | **TIMELINE** | The centrepiece. Four eras building left to right: 1990s C and C++, 2000s Visual Basic, 2010s Ruby on Rails, 2020s AI |
-| 9 | 04:24 | TIMELINE STEP | Visual Basic lights, quote card: "not real developers" |
-| 10 | 05:13 | TIMELINE STEP | Ruby on Rails lights, quote card: "you use Rails, you are not a real programmer" |
-| 11 | 05:55 | TIMELINE STEP | AI lights, the same sneer appears a third time |
-| 12 | 06:01 | PULL QUOTE | "Humans always find a way to make things easier for ourselves." |
-| 13 | 07:42 | TIMELINE | A fifth, empty slot appears after 2020s, labelled with a question mark |
-| 14 | 08:31 | TITLE | "How AI sees code. How you see code." |
-| 15 | 08:59 | LIST | Model names, dated. GPT-5, Claude Code, Fable 5 |
-| 16 | 09:17 | TITLE | "Every one of them makes mistakes" |
-| 17 | 10:10 | **SCALE** | Time against money. "Time is the most expensive form of wealth." |
-| 18 | 11:02 | DIAGRAM | One prompt to a whole app, then the crack: going live, payments, users |
-| 19 | 11:51 | TITLE | "There is a technique." Held. This is the hook for the paid course |
-| 20 | 12:29 | LIST | What people do not know: verify the code, which platform, which tool |
-| 21 | 14:01 | DIAGRAM | Your stack: Drive, Calendar, Docs, Sheets, codebase, all feeding one agent |
-| 22 | 15:02 | LOGO ROW | Vercel, AWS, Firebase, GitHub |
-| 23 | 15:17 | DEFINITION | CLI, API, MCP. Three cards, one at a time |
-| 24 | 15:59 | TITLE | "What I actually use: Codex, Claude Code" |
-| 25 | 16:49 | **DIAGRAM** | Old way: you, dashboard, hunting for DNS. New way: you, agent, API, done |
-| 26 | 19:35 | TITLE | "Next lesson: we build" |
-| 27 | 20:45 | OUTRO | End card |
-
-Beats 8 to 13 are one continuous timeline graphic that builds across two
-minutes rather than seven separate cards.
-
----
-
-## Zooms
-
-Six, on the lines that carry weight. A slow push of about eight percent over
-two seconds, held, then released on the cut.
-
-`02:30` `04:03` `06:01` `10:19` `11:51` `19:35`
-
-Not more than that. A zoom every thirty seconds stops reading as emphasis and
-starts reading as a nervous camera.
+The split also gives lesson 2 a clean promise you can put on the page: you
+start with something on your laptop and you end with a link you can send to
+anybody.
