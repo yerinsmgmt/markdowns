@@ -14,40 +14,66 @@ Save each result with the name given above it.
 
 ## 7. Save as: `section-retouch`
 
-The one people actually want. Your face, your skin, on a good day. Not a
-filter and not a different person.
+Your own photograph, made professional. Same pose, same angle, same face, but
+finished the way a magazine finishes skin: clean, even, polished. A studio
+instead of a dark room, a better shirt, proper light.
 
 ```
-Using the photograph I uploaded at the start of this chat, retouch it the way
-a professional retoucher would. This is a retouch of that photograph, not a
-new portrait of the same person.
+Using the photograph I uploaded at the start of this chat, keep this person's
+face and this exact pose, and turn the photograph into a polished professional
+studio portrait with a full high end beauty retouch.
 
-Keep the face exactly as it is. Do not reshape the nose, lips, jaw, cheeks or
-eyes. Do not slim the face. Do not change the hairline, the hair or the beard.
-Keep the eye colour and the exact skin tone from the photograph: do not
-lighten, brighten or warm the skin.
+IDENTITY. Keep the exact face from the photograph: the same nose, lips, jaw,
+cheekbones, eye shape and eye colour. Keep the same hairline, hair and beard,
+including the way the beard meets the jaw. Do not slim or reshape the face. Do
+not change the bone structure. Reproduce the exact skin tone: do not lighten,
+brighten or warm the skin. Keep the pose and the angle of the head exactly as
+they are, so this is recognisably the same moment photographed properly.
 
-Retouch, in this order and no further:
-- Even out patchiness and redness across the skin
-- Reduce temporary blemishes and spots
-- Reduce the shadows under the eyes, do not remove them
-- Brighten and gently sharpen the eyes
-- Reduce shine on the forehead and nose without flattening them
-- Tidy stray hairs at the edge of the hairline
+SKIN. Give this a full editorial retouch, the standard of a magazine cover or
+a luxury brand campaign. Go further than a light clean up:
 
-Keep real skin. Pores, fine lines, the texture of the beard and the small
-marks that make it a face must all still be visible. Do not smooth, do not
-blur, do not airbrush, do not plasticise. If it looks like a filter it is
-wrong.
+- Remove every blemish, spot, mark and patch of unevenness completely
+- Remove redness and discolouration entirely, so the skin is one even tone
+  across the forehead, cheeks, nose and chin
+- Remove the dark circles and puffiness under the eyes
+- Smooth the transitions between light and shadow across the skin so there is
+  no blotchiness or mottling anywhere
+- Reduce the visible size of pores so the surface reads as clean and refined
+- Remove all shine and oil from the forehead, nose and cheeks, leaving a soft
+  matte finish
+- Brighten and sharpen the eyes, clear the whites, define the iris
+- Even out and neaten the beard and eyebrows, remove stray hairs
+- Smooth and even the skin of the neck to match the face
 
-Relight it only slightly: a soft key from one side with a gentle shadow on the
-other so the cheekbone and jaw still have shape. Never flat frontal light.
-Expose for deep brown skin so the face is rich and fully detailed. Neutral
-white balance, no orange cast.
+The result should look expensive: flawless, refined, noticeably better skin
+than the original photograph.
 
-Keep the original framing, the original clothing and the original background.
-Output at high resolution.
+THE ONE LIMIT. It must still be skin, not plastic. Keep a faint natural
+texture so the surface has life under the polish. No waxy or rubbery finish,
+no blurred mush, no doll like look, and no change to the shape of the face.
+Think retoucher, not filter.
+
+CLOTHING. Replace with a well fitted charcoal crew neck knit.
+
+BACKGROUND. Replace with a smooth mid grey studio backdrop, evenly lit, softly
+out of focus.
+
+LIGHTING. A large softbox as the key from one side, slightly above eye level,
+with a visible gentle shadow falling across the other side of the face so the
+cheekbone and jaw keep their shape. A reflector lifting the shadow side so
+nothing goes black. A subtle rim light separating the head from the backdrop.
+Never flat or frontal light. Expose for deep brown skin so the face is rich
+and fully detailed. Neutral white balance, no orange cast, no blown out
+highlights.
+
+Photographic and real, as though taken on an 85mm lens in a studio and
+retouched by a professional. High resolution.
 ```
+
+**If it still is not enough:** add `push the retouch further, this is for a
+magazine cover` to the end. If it goes too far and looks plastic, remove the
+line about reducing pore size first.
 
 ---
 
