@@ -1,143 +1,86 @@
-# Welcome video: what to say
+# Welcome video: the script
 
-For you to record. Two to three minutes. Everyone who enrols in **any**
-programme sees this, so nothing in it is about AI Software Engineering
-specifically.
+Read this out loud. Change any word that does not sound like you.
 
----
-
-## Read this bit first
-
-**Say nothing that is only true of one programme.** No pass marks, no number of
-weeks, no prices, no subject matter, no dates. The moment you say "ninety
-percent" or "twelve weeks", this video stops working for the graphic design
-programme and you have to record it again.
-
-Those numbers are not lost. They live on each programme's own orientation page,
-which is written text and can be corrected in two minutes. This video does the
-job text cannot: it puts a person in front of them so it feels like a school
-somebody runs, rather than a website that took their money.
-
-**Do not read it word for word.** Every line below is a thing to say, not a
-sentence to recite. Say it how you would say it to somebody sitting across from
-you. A slightly rough take from a real person beats a polished one from
-somebody reading.
+About two and a half minutes. Landscape, phone close to you so the sound is
+clean, somewhere that looks like where you actually work.
 
 ---
 
-## The shape
+Hello, and welcome.
 
-| | |
-| --- | --- |
-| Length | 2 to 3 minutes. Under 2 feels thin, over 3 and people stop watching |
-| Who | You, on camera, one take if you can |
-| Where | Somewhere that looks like where you work. Not a blank wall |
-| Sound | Matters more than picture. Quiet room, phone close to you |
-| Framing | Landscape. Head and shoulders, eyes about a third down the frame |
-| Tone | A person welcoming someone, not a brand announcing something |
+My name is Yerins Abraham, and I run Creovine Academy. I am really glad you are
+here.
 
----
+Give me two minutes and I will tell you exactly what you have joined, so that
+nothing surprises you later.
 
-## What to say, in order
+First thing. This is not a video course that you watch on your own. This is a
+programme. It has a start date. There are other people in it, starting the same
+day as you. Your work gets read by a real person, and that person writes back
+to you and tells you what to fix.
 
-### 1. Who you are, and that you are real
+And at the end of it, there is a certificate.
 
-About 15 seconds.
+Now, I want you to hear this part clearly. You can fail it. It is possible to
+go through this and not get it. And that is on purpose. A certificate that
+everybody gets is a certificate that means nothing. This one means something
+because it can be failed.
 
-- Your name, and that you run Creovine Academy.
-- That you are pleased they are here.
+So how does it actually work?
 
-Nothing else. No history of the company, no mission statement. They have
-already paid; they are not being sold to any more.
+You are going to get real work to do. Not quizzes about videos you watched.
+Actual briefs, the kind of thing somebody would pay you to do. You build it, you
+hand it in, we mark it, and it comes back to you with feedback. So by the end,
+you are not holding a folder of notes. You are holding work you can show people.
 
-### 2. What they have actually joined
+Watching is not the job. Doing is the job.
 
-About 30 seconds.
+Now let me talk about marks. There are two parts. There is the work you do
+through the term, and there is an exam at the end. Both of them count.
 
-- This is not a video course they watch alone. It is a programme with a start
-  date, other people in it, work that gets marked, and a certificate at the end.
-- Somebody reads their work and writes back to them. Say that plainly, because
-  it is the thing that separates this from everything else they have bought
-  online.
-- The certificate can be failed. That is what makes it worth holding.
+And about that exam. The practice questions are open to you from day one. You
+can go through them as many times as you like. The exam comes from that same
+material. We are not hiding anything from you. If you do the work, you will be
+ready. Your programme page has the exact numbers, and those are the ones that
+apply to you.
 
-### 3. That the work is the point
+Deadlines. They are real, and missing one will cost you marks. But listen. If
+something serious happens in your life, talk to us before the deadline, not
+after. We can move it. What we cannot fix is silence. Almost everybody who
+disappears from a programme goes quiet first. So please, do not go quiet.
 
-About 30 seconds.
+One more thing, and this one matters.
 
-- They will be given real briefs, not quizzes about videos.
-- They are expected to produce things, and those things become the portfolio
-  they show people afterwards.
-- Watching is not the job. Doing is.
+You are going to use AI to do this work. That is the whole point. That is what
+we are teaching you. But here is the line. Do not hand in something you cannot
+explain. If you cannot tell me why it works, it is not yours yet. And we will
+ask.
 
-### 4. How they will be assessed, in general terms
+Last thing. You are not doing this alone. Everybody in your intake is in the
+community. When you are stuck, ask there. Somebody hit that same wall this week,
+I promise you.
 
-About 25 seconds. **No numbers.**
+Alright. Go and read your Start Here page. It has your dates, your marks, and
+how to hand your work in.
 
-- There is coursework through the term and an exam at the end, and both count.
-- The practice questions are published on purpose. The exam is drawn from
-  material they can study, so the way to pass is to work through it. Nothing is
-  being hidden from them.
-- Their programme page states the exact marks and rules, and those are the ones
-  that apply.
-
-### 5. Deadlines, and what to do when life happens
-
-About 20 seconds.
-
-- Deadlines are real and missing one costs marks.
-- If something serious happens, tell somebody before the deadline rather than
-  after. Extensions exist and they are recorded.
-- Do not go quiet. Nearly everyone who drops out goes quiet first.
-
-### 6. Doing your own work
-
-About 20 seconds.
-
-- Say it once, warmly, and move on. Not a warning, a standard.
-- They will use AI agents constantly, and that is the point of the programme.
-- What is not acceptable is handing in work they cannot explain. If they cannot
-  talk through why it works, it is not theirs yet.
-
-### 7. The people around them
-
-About 15 seconds.
-
-- There is a community, and the people in it are in the same intake.
-- Ask when stuck. Somebody has hit the same wall this week.
-
-### 8. Close
-
-About 15 seconds.
-
-- Point them at the orientation page for the specifics of their programme:
-  dates, marks, how to hand work in.
-- One line of encouragement, in your own words.
-- Say you will see them inside.
+I am glad you are here. Let us get to work. I will see you inside.
 
 ---
 
-## Things to avoid
+## If you want to change something
 
-- **Any number.** Marks, weeks, prices, seat counts, attempt limits.
-- **Any date.** "September" makes this a September video.
+Change the wording freely. Just do not add any of these, because this one video
+plays for every programme, not only AI Software Engineering:
+
+- **Numbers.** No pass marks, no number of weeks, no prices.
+- **Dates.** Saying "September" turns it into a September video.
 - **The subject.** No coding, no design, no video editing.
-- **Anything about tools they must buy.** That belongs in writing, where people
-  can read it twice, not in a video where it sounds like a surprise cost.
-- **"Welcome to the family."** They bought a qualification.
-- Promising a job, a salary, or a hiring outcome. The certificate says they
-  mastered the material. It does not say anyone will hire them.
 
----
+Every one of those is already written on each programme's Start Here page,
+where it can be corrected in two minutes instead of re-recording you.
 
-## When you have recorded it
+## When you are done
 
-Send it however is easiest. Notes for whoever uploads it:
-
-- Landscape MP4, 1080p is plenty.
-- Aim under 100MB. Much of this audience is on a metered mobile plan and will
-  watch on a phone.
-- It goes above the orientation document, on the dashboard, from the moment
-  somebody enrols, and stays reachable afterwards.
-- **Captions.** Many people will watch with the sound off, on a bus. If you
-  send the raw file, a transcript can be generated from it.
+Send me the file however is easiest. Landscape, 1080p is plenty, and try to
+keep it under 100MB so it opens quickly on a phone with limited data.
