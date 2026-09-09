@@ -1,231 +1,286 @@
-# First Bank forms, copy and paste values
+# Batch 3, for review
 
-Open each PDF in Preview, Markup toolbar, Text tool, click the field, paste.
+**9 September 2026. Seven send-ready. Nothing sent.**
 
-Circles (Title, Marital Status, Gender, card options) cannot be pasted into.
-Mark those with the Markup pen or a real pen after printing.
+Written under the acknowledgment standard: the research is there to show the
+email was written for them, not to argue they have a problem. The offer is the
+complimentary thirty-minute session already published on
+`academy.creovine.com/organisations`.
 
----
-
-## Values used everywhere
-
-| | |
-| --- | --- |
-| Surname | `SAIBAKUMO` |
-| First name | `YERINMENE` |
-| Middle name | `ABRAHAM` |
-| Full name | `SAIBAKUMO YERINMENE ABRAHAM` |
-| Account number | `3141710052` |
-| BVN | `22533851311` |
-| NIN | `78991026736` |
-| Passport number | `B01152514` |
-| Date of birth | `14041994` |
-| Email | `abrahamyerins@gmail.com` |
-| Email, capitals for box grids | `ABRAHAMYERINS@GMAIL.COM` |
-| Phone | `+250781503749` |
-| Address | `AGATARE, NYARUGENGE` |
-| City | `KIGALI` |
-| State | `KIGALI` |
-| Country | `RWANDA` |
-| Address, one line | `AGATARE, NYARUGENGE, KIGALI, RWANDA` |
-| Nationality | `NIGERIAN` |
-| Occupation | `ENTREPRENEUR` |
-| Branch (short, for small boxes) | `GAMES VILLAGE, ABUJA` |
-| Branch (full) | `ZONE 5 GAMES VILLAGE BUS STOP, AMAC, ABUJA, FEDERAL CAPITAL TERRITORY, NIGERIA` |
-| Today's date | `02092026` |
+Reply per item: **send** / **change X** / **hold**.
 
 ---
 
-# Form 1: Diaspora Migration and Update Form
+## #1 Hazlewoods
 
-Already filled and saved as `filled/1-migration-FILLED.pdf`. Only these three
-are missing from that file.
-
-| Field | Paste |
-| --- | --- |
-| Branch of Domiciliation (beside Account Number 1) | `GAMES VILLAGE, ABUJA` |
-| Nigerian Contact, Full Name | `AHMED SAIBAKUMO` |
-| Nigerian Contact, Mobile Telephone | `+2348035005689` |
-| Nigerian Contact, Relationship | `FATHER` |
-| Nigerian Contact, Residential Address | `FLAT 3, 24TH STREET, BLOCK D21, ZONE 5, GAMES VILLAGE, AMAC, ABUJA` |
-
-Circle by hand: **Account Reactivation**, Title **Mr**, Marital Status
-**Single**, Nigerian Contact Title **Mr**, Gender **Male**.
-
-If you would rather fill the blank original from scratch, the full field list is
-in `filled/01-migration-and-update-form.md`.
-
----
-
-# Form 2: Signature Card
-
-| Field | Paste |
-| --- | --- |
-| Account No. | `3141710052` |
-| Account Name | the name exactly as the bank holds it |
-
-### First Signatory
-
-| Field | Paste |
-| --- | --- |
-| Name of Signatory | `SAIBAKUMO YERINMENE ABRAHAM` |
-| Occupation | `ENTREPRENEUR` |
-| Residential Address, line 1 | `AGATARE, NYARUGENGE` |
-| Residential Address, line 2 | `KIGALI, RWANDA` |
-| Telephone Number | `+250781503749` |
-| Mandate/Instruction | `SOLE SIGNATORY` |
-
-Sign in the signature box. Affix a recent passport photograph in the square.
-
-**Leave the Second Signatory block completely empty.** Do not write NIL and do
-not strike it through.
-
-Leave the cheque confirmation threshold blank.
-
----
-
-# Form 3: Diaspora E-Banking Product Form
-
-### Page 1
-
-Circle by hand: **FirstAlert**, **FirstOnline Diaspora**, **E-Statement**,
-**Token**. Leave Debit Card Services uncircled.
-
-| Field | Paste |
-| --- | --- |
-| Account Number 1 | `3141710052` |
-| Full Name | `SAIBAKUMO YERINMENE ABRAHAM` |
-| Foreign Phone Number | `+250781503749` |
-| Foreign Residential Address | `AGATARE, NYARUGENGE` |
-| Town/City State | `KIGALI` |
-| Country | `RWANDA` |
-| Email Address | `ABRAHAMYERINS@GMAIL.COM` |
-| Date of Birth | `14041994` |
-| Preferred User ID | `YERINSABR` |
-| Preferred User ID 2 | `SAIBAKUMOYA` |
-| Preferred User ID 3 | `YABRAHAM94` |
-| Preferred SMS Mobile Number | `+250781503749` |
-
-Circle **International Passport** for Means of Identification.
-Tick the Token Request box.
-Under FirstAlert Subscribers, circle **Email**, not SMS and not Both.
-Leave the whole Debit Card Request section blank.
-
-Do not use your passport number as the user ID. It is already doing duty at
-immigration, on your company filings and in this bank's KYC, and a user ID gets
-typed and stored in far more places than any of those.
-
-### Page 2
-
-Sign the **Authorised Signatory** box under the terms and conditions and date
-it `02092026`. The form is void without this and it is the easiest thing here
-to miss.
-
----
-
-# Form 4: Indemnity for Email OTP
-
-This is the form that makes your OTPs arrive by email instead of Nigerian SMS.
-Without it the account reopens and you still cannot log in from Kigali.
-
-### Page 1
-
-| Blank | Paste |
-| --- | --- |
-| WHEREAS ______ (Name of Customer) | `SAIBAKUMO YERINMENE ABRAHAM` |
-| whose address is at ______ | `AGATARE, NYARUGENGE, KIGALI, RWANDA` |
-| (the Customer) with Account ______ | `3141710052` |
-| (the Account) with ______ branch | `GAMES VILLAGE, ABUJA` |
-
-### Page 2
-
-| Blank | Paste |
-| --- | --- |
-| Primary e-mail | `abrahamyerins@gmail.com` |
-| Alternate e-mail | your second address |
-| Dated this ___ day of | `2ND` |
-| ___ , 20___ | `SEPTEMBER` then `26` |
-| Name (customer) | `SAIBAKUMO YERINMENE ABRAHAM` |
-
-Sign the first signature box. Leave the second name and signature block empty.
-
-**Witness block.** Name, signature, address and occupation, from anyone who is
-not a party to the account. Hotel front desk, Patience, a neighbour. An
-unwitnessed deed is the kind of thing that gets bounced, and this is the one
-form you cannot afford to have bounced.
-
----
-
-# Covering email
-
-Subject:
+- **Country:** United Kingdom
+- **Contact:** James Morter
+- **Role:** Managing Partner
+- **Route:** `enquiries@hazlewoods.co.uk` (published)
+- **Why now:** Launched a dedicated private client team in July 2026, shortly after opening a new Bristol office.
+- **Subject:** The new private client team
+- **Instagram:** none. Not appropriate for an accountancy practice.
 
 ```
-Re: Account Update and Diaspora Migration, Account 3141710052
-```
+Hi James,
 
-Body:
+I'm Yerins Abraham. I lead Creovine Academy, where we help teams use AI
+practically in the work they already do. I've trained more than 1,000 people in
+practical AI, including teams in banking.
 
-```
-Good day,
+I saw Hazlewoods launched a dedicated private client team over the summer and
+opened the Bristol office. Congratulations on the growth.
 
-Thank you for the guidance. Please find attached the completed forms and
-supporting documents.
+What we do is make teams genuinely capable with AI on their own day-to-day work,
+so they move faster and lose less time to the repetitive parts. We also run a
+free thirty-minute session to work out where that would actually be worth doing,
+with no deck and nothing committed.
 
-1. Diaspora Migration and Update Form
-2. Signature Card, marked Sole Signatory, with recent passport photograph
-3. Diaspora E-Banking Product Form
-4. Indemnity for Email OTP
-5. International passport, data page
-6. NIN
-7. Rwanda Development Board certificate of registration, as proof of foreign address
+Would that be of interest?
 
-On the proof of foreign address, kindly note the following. The attached RDB
-certificate is a Rwandan government registration document issued by the Office
-of the Registrar General. It carries my full name, my international passport
-number B01152514, and my Rwandan address at Agatare, Nyarugenge, Kigali, which
-is where I reside.
-
-Rwanda does not operate household utility billing the way Nigeria does. Where I
-live, rent and utilities are settled by mobile money rather than by an itemised
-bill issued in a tenant's name, so a utility bill in my own name is not a
-document that exists here. My Rwandan bank account is a company account, not a
-personal one, so a personal bank statement is also not available. The
-government certificate is the strongest proof of residence obtainable in this
-jurisdiction.
-
-The certificate carries serial number 260840852017910 and a verification QR
-code, so its authenticity can be confirmed directly with the Rwanda Development
-Board. If you nonetheless require it notarised, I will arrange that immediately
-on your confirmation.
-
-Please also note that all one time passcodes and correspondence should be sent
-to my email address, abrahamyerins@gmail.com, which is the address already on
-your records. I cannot receive Nigerian SMS while resident abroad, and a phone
-number is not a reliable channel across a change of SIM or country. The signed
-email indemnity is attached for this purpose.
-
-My BVN is 22533851311 and my NIN is 78991026736. My business is Creovine Ltd, a
-registered software development company in Rwanda, TIN 156057511, and in
-Nigeria, RC 9380814.
-
-My Rwandan phone number is +250781503749.
-
-Thank you for your assistance.
-
-Yerinmene Abraham Saibakumo
-Account 3141710052
+Yerins Abraham
+Creovine Academy
+yerinsabraham.com
+academy.creovine.com/organisations
 ```
 
 ---
 
-# Before you send
+## #2 Armstrong Watson
 
-- Every form uses the same address, and it matches the RDB certificate. Do not
-  change one and not the others.
-- Expected Annual Income on form 1 is set to `12000000`. Change it if you want,
-  but keep it realistic. Too low and every incoming payment gets queried.
-- Attach the RDB certificate, not the Eko electricity bill. That bill is
-  Nigerian and is in someone else's name.
-- Fund the account as soon as it reopens. Form 1 says accounts go back to
-  dormancy otherwise, and you do not want to do this twice.
+- **Country:** United Kingdom
+- **Contact:** Paul Dickson
+- **Role:** Chief Executive and Managing Partner
+- **Route:** `help@armstrongwatson.co.uk` (published general enquiries)
+- **Why now:** Acquisitive through 2026, most recently Gibbons Chartered Accountants, 3G Financial and Joseph Miller.
+- **Subject:** A busy year
+- **Instagram:** none. Not appropriate.
+
+```
+Hi Paul,
+
+I'm Yerins Abraham. I lead Creovine Academy, where we help teams use AI
+practically in the work they already do. I've trained more than 1,000 people in
+practical AI, including teams in banking.
+
+Armstrong Watson has kept growing through 2026, most recently with Gibbons, 3G
+Financial and Joseph Miller. That is a lot of building in one year.
+
+Our work is practical AI capability inside the tasks people already handle,
+which tends to show up as new tools being picked up faster and more confidence
+using them well. There is a free thirty-minute session first, where we look at
+whether it is worth doing at all.
+
+Is that something Armstrong Watson would be interested in?
+
+Yerins Abraham
+Creovine Academy
+yerinsabraham.com
+academy.creovine.com/organisations
+```
+
+---
+
+## #3 PSG Financial Services
+
+- **Country:** South Africa
+- **Contact:** Francois Gouws
+- **Role:** Chief Executive Officer
+- **Route:** `info@psg.co.za` (published)
+- **Why now:** FY2026 results, published April 2026, report 147 newly qualified graduates hired during the year alongside continued investment in people and technology.
+- **Subject:** 147 graduates
+- **Instagram:** none. Not appropriate for a listed financial services group.
+
+```
+Hi Francois,
+
+I'm Yerins Abraham. I lead Creovine Academy, where we help teams use AI
+practically in the work they already do. I've trained more than 1,000 people in
+practical AI, including teams in banking.
+
+I saw PSG welcomed 147 newly qualified graduates this year, alongside the
+continued investment in people and technology. That is a serious commitment to
+your people.
+
+We help teams reach that kind of capability with AI quickly, in the work they
+are already doing, so the business gets where it is going sooner. The starting
+point is a complimentary thirty-minute session on where it would be most useful,
+and nothing is committed on it.
+
+Would that be worth exploring for PSG?
+
+Yerins Abraham
+Creovine Academy
+yerinsabraham.com
+academy.creovine.com/organisations
+```
+
+---
+
+## #4 Tsogo Sun
+
+- **Country:** South Africa
+- **Contact:** Chris du Toit
+- **Role:** Chief Executive Officer
+- **Route:** `tsogosun.contactus@tsogosun.com` (published)
+- **Why now:** FY2026 results, May 2026: earnings up 7%, adjusted EBITDA R3.46bn, and the online betting business turned around.
+- **Subject:** The full year results
+- **Instagram:** none. A listed gaming and hospitality group's social accounts are consumer marketing.
+
+```
+Hi Chris,
+
+I'm Yerins Abraham. I lead Creovine Academy, where we help teams use AI
+practically in the work they already do. I've trained more than 1,000 people in
+practical AI, including teams in banking.
+
+I saw Tsogo Sun's full year results, with earnings up seven percent and the
+online betting business turned around. That is a good year.
+
+We get teams properly capable with AI inside their own day to day work, which
+usually shows up as quicker turnaround and less time spent on the repetitive
+parts. We start with a free thirty minute session on where it would be worth
+doing, and nothing is committed on it.
+
+Is that something worth a look for Tsogo Sun?
+
+Yerins Abraham
+Creovine Academy
+yerinsabraham.com
+academy.creovine.com/organisations
+```
+
+---
+
+## #5 Hadef & Partners
+
+- **Country:** United Arab Emirates
+- **Contact:** Sadiq Jafar
+- **Role:** Managing Partner
+- **Route:** `info@hadefpartners.com` (published)
+- **Why now:** Appointed Shonagh MacVicar as Senior Counsel in the commercial practice, announced by the firm, strengthening commercial contracting, procurement and governance.
+- **Subject:** The commercial practice
+- **Instagram:** none. Not appropriate for a law firm.
+
+```
+Hi Sadiq,
+
+I'm Yerins Abraham. I lead Creovine Academy, where we help teams use AI
+practically in the work they already do. I've trained more than 1,000 people in
+practical AI, including teams in banking.
+
+I saw Hadef & Partners brought Shonagh MacVicar into the commercial practice as
+Senior Counsel. A strong addition to that side of the firm.
+
+What we provide is practical AI capability for teams in the work they already
+handle, so people get through it faster and with more confidence about where it
+is and is not safe to lean on. We offer a complimentary thirty minute session to
+look at where that would fit, with nothing committed.
+
+Is that something the firm would be open to?
+
+Yerins Abraham
+Creovine Academy
+yerinsabraham.com
+academy.creovine.com/organisations
+```
+
+---
+
+## #6 Custodian Investment
+
+- **Country:** Nigeria
+- **Contact:** Wole Oshin
+- **Role:** Founder and Group Managing Director
+- **Route:** `enquiries@custodianplc.com.ng` (published)
+- **Why now:** Completed the acquisition of FBNQuest Merchant Bank, now Quest Merchant Bank, and met the Central Bank's N50bn minimum capital requirement ahead of the deadline.
+- **Subject:** Quest Merchant Bank
+- **Instagram:** none. Not appropriate for a listed financial services group.
+
+```
+Hi Wole,
+
+I'm Yerins Abraham. I lead Creovine Academy, where we help teams use AI
+practically in the work they already do. I've trained more than 1,000 people in
+practical AI, including teams in banking.
+
+I saw Custodian completed the FBNQuest Merchant Bank acquisition and met the new
+capital requirement ahead of the deadline. Congratulations on both.
+
+Our work is making teams practically capable with AI in what they already do,
+which tends to show up as faster execution and less manual effort across a
+group. There is a complimentary thirty minute session first, to find where it
+would matter most, with nothing committed.
+
+Is that something you would want to look at?
+
+Yerins Abraham
+Creovine Academy
+yerinsabraham.com
+academy.creovine.com/organisations
+```
+
+---
+
+## #7 PM+M
+
+- **Country:** United Kingdom
+- **Contact:** Helen Clayton
+- **Role:** Managing Partner
+- **Route:** `enquiries@pmm.co.uk` (published)
+- **Why now:** Turnover up 10% to £13.9m, reported August 2026, with financial planning, audit and tax all performing strongly.
+- **Subject:** The turnover figures
+- **Instagram:** none. Not appropriate.
+
+```
+Hi Helen,
+
+I'm Yerins Abraham. I lead Creovine Academy, where we help teams use AI
+practically in the work they already do. I've trained more than 1,000 people in
+practical AI, including teams in banking.
+
+I saw PM+M's turnover went up ten percent to £13.9m, with financial planning,
+audit and tax all having a strong year. A good result.
+
+We work with teams on using AI inside their own tasks, so the manual parts take
+less of the week and people are clearer about what it can be trusted with. It
+starts with a free thirty minute session on where that would help, and nothing
+is committed.
+
+Would that be useful to PM+M?
+
+Yerins Abraham
+Creovine Academy
+yerinsabraham.com
+academy.creovine.com/organisations
+```
+
+---
+
+## Parked, no review needed
+
+| Organisation | Country | Why parked |
+| --- | --- | --- |
+| Lubbock Fine | United Kingdom | Route and signal both good. **Managing partner named only on aggregator sites, not the firm's own**, so not used |
+| Streets Chartered Accountants | United Kingdom | Route and signal good, but the story is the same shape as Armstrong Watson's and the copy would converge |
+| Gulf Capital | UAE | Route and CEO verified, no dated recent development found |
+| SEACOM | South Africa | Route found, no stakeholder or signal yet |
+| Definity Financial | Canada | Strong signal, named CTO, no email route |
+| Hiscox | United Kingdom | Strong signal, no email route |
+| Sun Life | Canada | Signal, no email route |
+| Avon HMO | Nigeria | Held behind the Tony Elumelu Foundation thread, same group |
+| Majid Al Futtaim | UAE | Buys external training at a tier we do not compete in |
+| Ooredoo | Qatar | Sells AI education. Partnership candidate, not a prospect |
+| Banwo & Ighodalo, Olaniwun Ajayi, Oraro, Kaplan & Stratton, TripleOKLaw, Afridi & Angell, Al Suwaidi, BSA, Brabners | NG, KE, UAE, UK | Routes verified, no current organisation-specific signal found |
+
+---
+
+## Already sent, for reference
+
+| Account | Sent | Follow-up |
+| --- | --- | --- |
+| Inkomoko, Ampersand, Seamless | 8 Sep | ~15 Sep |
+| Kingsley Napley, Media24, M&C Saatchi Abel, Aluko & Oyebode, Tony Elumelu Foundation, Databank | 9 Sep | ~16 Sep |
+
+**Their follow-ups do not repeat the call request.** Each names the concrete
+area the first email should have carried, and ends on a low-friction question.
