@@ -28,11 +28,12 @@ I'm Yerins Abraham. I lead Creovine Academy, where we help teams use AI
 practically in the work they already do. I've trained organisations and
 individuals in several sectors, including teams in banking.
 
-I saw Hazlewoods launched a dedicated private client team over the summer and
-opened the Bristol office. Congratulations on the growth.
+I saw Hazlewoods launched a dedicated private client team over the summer, not
+long after the Bristol office opened. Firms building out like that are the ones
+this tends to be most useful to, which is why you came to mind.
 
 What we do is make teams genuinely capable with AI on their own day-to-day work,
-so they move faster and lose less time to the repetitive parts. We also run a
+so they move faster and lose less time to the repetitive parts. We start with a
 free thirty-minute session to work out where that would actually be worth doing,
 with no deck and nothing committed.
 
@@ -63,8 +64,10 @@ I'm Yerins Abraham. I lead Creovine Academy, where we help teams use AI
 practically in the work they already do. I've trained organisations and
 individuals in several sectors, including teams in banking.
 
-Armstrong Watson has kept growing through 2026, most recently with Gibbons, 3G
-Financial and Joseph Miller. That is a lot of building in one year.
+Armstrong Watson has brought several firms in this year, most recently Gibbons,
+3G Financial and Joseph Miller. That is the sort of growth that got my
+attention, because bringing people onto one way of working is where we are
+usually most useful.
 
 Our work is practical AI capability inside the tasks people already handle,
 which tends to show up as new tools being picked up faster and more confidence
@@ -98,9 +101,10 @@ I'm Yerins Abraham. I lead Creovine Academy, where we help teams use AI
 practically in the work they already do. I've trained organisations and
 individuals in several sectors, including teams in banking.
 
-I saw PSG welcomed 147 newly qualified graduates this year, alongside the
-continued investment in people and technology. That is a serious commitment to
-your people.
+I saw PSG took on 147 newly qualified graduates this year, alongside the
+continued investment in people and technology. Organisations that put that much
+behind their people are the ones we tend to work best with, so I wanted to
+reach out.
 
 We help teams reach that kind of capability with AI quickly, in the work they
 are already doing, so the business gets where it is going sooner. The starting
@@ -135,7 +139,8 @@ practically in the work they already do. I've trained organisations and
 individuals in several sectors, including teams in banking.
 
 I saw Tsogo Sun's full year results, with earnings up seven percent and the
-online betting business turned around. That is a good year.
+online betting business turned around. Groups coming off a year like that are
+usually the point at which this is worth raising, which is why I'm writing.
 
 We get teams properly capable with AI inside their own day to day work, which
 usually shows up as quicker turnaround and less time spent on the repetitive
@@ -170,7 +175,9 @@ practically in the work they already do. I've trained organisations and
 individuals in several sectors, including teams in banking.
 
 I saw Hadef & Partners brought Shonagh MacVicar into the commercial practice as
-Senior Counsel. A strong addition to that side of the firm.
+Senior Counsel. That kind of investment in a practice is what prompted me to
+write, because it usually sits alongside questions about how the wider team
+works.
 
 What we provide is practical AI capability for teams in the work they already
 handle, so people get through it faster and with more confidence about where it
@@ -205,7 +212,8 @@ practically in the work they already do. I've trained organisations and
 individuals in several sectors, including teams in banking.
 
 I saw Custodian completed the FBNQuest Merchant Bank acquisition and met the new
-capital requirement ahead of the deadline. Congratulations on both.
+capital requirement ahead of the deadline. A group moving at that pace is
+exactly who we built this for, so I thought I would introduce myself.
 
 Our work is making teams practically capable with AI in what they already do,
 which tends to show up as faster execution and less manual effort across a
@@ -240,7 +248,8 @@ practically in the work they already do. I've trained organisations and
 individuals in several sectors, including teams in banking.
 
 I saw PM+M's turnover went up ten percent to £13.9m, with financial planning,
-audit and tax all having a strong year. A good result.
+audit and tax all having a strong year. Firms growing at that rate are where
+this work tends to land best, and that is the reason I'm getting in touch.
 
 We work with teams on using AI inside their own tasks, so the manual parts take
 less of the week and people are clearer about what it can be trusted with. It
