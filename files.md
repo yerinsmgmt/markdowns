@@ -25,8 +25,8 @@ Reply per item: **send** / **change X** / **hold**.
 Hi James,
 
 I'm Yerins Abraham. I lead Creovine Academy, where we help teams use AI
-practically in the work they already do. I've trained more than 1,000 people in
-practical AI, including teams in banking.
+practically in the work they already do. I've trained organisations and
+individuals in several sectors, including teams in banking.
 
 I saw Hazlewoods launched a dedicated private client team over the summer and
 opened the Bristol office. Congratulations on the growth.
@@ -60,8 +60,8 @@ academy.creovine.com/organisations
 Hi Paul,
 
 I'm Yerins Abraham. I lead Creovine Academy, where we help teams use AI
-practically in the work they already do. I've trained more than 1,000 people in
-practical AI, including teams in banking.
+practically in the work they already do. I've trained organisations and
+individuals in several sectors, including teams in banking.
 
 Armstrong Watson has kept growing through 2026, most recently with Gibbons, 3G
 Financial and Joseph Miller. That is a lot of building in one year.
@@ -95,8 +95,8 @@ academy.creovine.com/organisations
 Hi Francois,
 
 I'm Yerins Abraham. I lead Creovine Academy, where we help teams use AI
-practically in the work they already do. I've trained more than 1,000 people in
-practical AI, including teams in banking.
+practically in the work they already do. I've trained organisations and
+individuals in several sectors, including teams in banking.
 
 I saw PSG welcomed 147 newly qualified graduates this year, alongside the
 continued investment in people and technology. That is a serious commitment to
@@ -131,8 +131,8 @@ academy.creovine.com/organisations
 Hi Chris,
 
 I'm Yerins Abraham. I lead Creovine Academy, where we help teams use AI
-practically in the work they already do. I've trained more than 1,000 people in
-practical AI, including teams in banking.
+practically in the work they already do. I've trained organisations and
+individuals in several sectors, including teams in banking.
 
 I saw Tsogo Sun's full year results, with earnings up seven percent and the
 online betting business turned around. That is a good year.
@@ -166,8 +166,8 @@ academy.creovine.com/organisations
 Hi Sadiq,
 
 I'm Yerins Abraham. I lead Creovine Academy, where we help teams use AI
-practically in the work they already do. I've trained more than 1,000 people in
-practical AI, including teams in banking.
+practically in the work they already do. I've trained organisations and
+individuals in several sectors, including teams in banking.
 
 I saw Hadef & Partners brought Shonagh MacVicar into the commercial practice as
 Senior Counsel. A strong addition to that side of the firm.
@@ -201,8 +201,8 @@ academy.creovine.com/organisations
 Hi Wole,
 
 I'm Yerins Abraham. I lead Creovine Academy, where we help teams use AI
-practically in the work they already do. I've trained more than 1,000 people in
-practical AI, including teams in banking.
+practically in the work they already do. I've trained organisations and
+individuals in several sectors, including teams in banking.
 
 I saw Custodian completed the FBNQuest Merchant Bank acquisition and met the new
 capital requirement ahead of the deadline. Congratulations on both.
@@ -236,8 +236,8 @@ academy.creovine.com/organisations
 Hi Helen,
 
 I'm Yerins Abraham. I lead Creovine Academy, where we help teams use AI
-practically in the work they already do. I've trained more than 1,000 people in
-practical AI, including teams in banking.
+practically in the work they already do. I've trained organisations and
+individuals in several sectors, including teams in banking.
 
 I saw PM+M's turnover went up ten percent to £13.9m, with financial planning,
 audit and tax all having a strong year. A good result.
