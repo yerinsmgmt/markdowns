@@ -1,43 +1,38 @@
-# Batch 3, for review
+# Batch 4, for review
 
-**9 September 2026. Seven send-ready. Nothing sent.**
-
-Written under the acknowledgment standard: the research is there to show the
-email was written for them, not to argue they have a problem. The offer is the
-complimentary thirty-minute session already published on
-`academy.creovine.com/organisations`.
+**9 September 2026. Two send-ready. Nothing sent.**
 
 Reply per item: **send** / **change X** / **hold**.
 
 ---
 
-## #1 Hazlewoods
+## #1 Ascend Broking Group
 
 - **Country:** United Kingdom
-- **Contact:** James Morter
-- **Role:** Managing Partner
-- **Route:** `enquiries@hazlewoods.co.uk` (published)
-- **Why now:** Launched a dedicated private client team in July 2026, shortly after opening a new Bristol office.
-- **Subject:** The new private client team
-- **Instagram:** none. Not appropriate for an accountancy practice.
+- **Contact:** Matthew Collins
+- **Role:** Managing Director
+- **Route:** `admin@ascendbroking.co.uk` (published)
+- **Why now:** Became the anchor investment for Inflexion's new UK insurance broking platform in January 2026, with a stated plan to build four to six regional broking hubs. Around 30 people, Chelmsford.
+- **Subject:** The new broking platform
+- **Instagram:** none. Not appropriate for a commercial broker.
 
 ```
-Hi James,
+Hi Matthew,
 
 I'm Yerins Abraham. I lead Creovine Academy, where we help teams use AI
 practically in the work they already do. I've trained organisations and
 individuals in several sectors, including teams in banking.
 
-I saw Hazlewoods launched a dedicated private client team over the summer, not
-long after the Bristol office opened. Firms building out like that are the ones
-this tends to be most useful to, which is why you came to mind.
+Ascend became the anchor for Inflexion's new broking platform in January, with
+the plan to build four to six regional hubs. Groups at the start of something
+like that are usually where this is easiest to build in, which is why I got in
+touch now rather than later.
 
-What we do is make teams genuinely capable with AI on their own day-to-day work,
-so they move faster and lose less time to the repetitive parts. We start with a
-free thirty-minute session to work out where that would actually be worth doing,
-with no deck and nothing committed.
+We make teams properly capable with AI on their own live work, so the manual
+side of a week takes less of it. The first step is a free thirty minute session
+on where that would be worth doing, with nothing committed.
 
-Would that be of interest?
+Would you want to explore that while the platform is still taking shape?
 
 Yerins Abraham
 Creovine Academy
@@ -47,34 +42,34 @@ academy.creovine.com/organisations
 
 ---
 
-## #2 Armstrong Watson
+## #2 Azets
 
 - **Country:** United Kingdom
-- **Contact:** Paul Dickson
-- **Role:** Chief Executive and Managing Partner
-- **Route:** `help@armstrongwatson.co.uk` (published general enquiries)
-- **Why now:** Acquisitive through 2026, most recently Gibbons Chartered Accountants, 3G Financial and Joseph Miller.
-- **Subject:** A busy year
+- **Contact:** Peter Gallanagh
+- **Role:** Chief Executive Officer, UK
+- **Route:** `info@azets.co.uk` (published)
+- **Why now:** Completed the acquisition of Alextra Accountants on 30 April 2026, adding 70 people and three offices. Around 4,000 people across more than 70 UK offices.
+- **Subject:** The Alextra deal
 - **Instagram:** none. Not appropriate.
 
 ```
-Hi Paul,
+Hi Peter,
 
 I'm Yerins Abraham. I lead Creovine Academy, where we help teams use AI
 practically in the work they already do. I've trained organisations and
 individuals in several sectors, including teams in banking.
 
-Armstrong Watson has brought several firms in this year, most recently Gibbons,
-3G Financial and Joseph Miller. That is the sort of growth that got my
-attention, because bringing people onto one way of working is where we are
-usually most useful.
+Azets closed the Alextra deal at the end of April, bringing another seventy
+people and three offices into the UK business. Running a UK business that keeps
+absorbing practices is where this comes up most often, which is why I'm writing
+to you rather than to the group.
 
-Our work is practical AI capability inside the tasks people already handle,
-which tends to show up as new tools being picked up faster and more confidence
-using them well. There is a free thirty-minute session first, where we look at
-whether it is worth doing at all.
+What we do is build practical AI capability inside the work people already
+handle, which usually shows as quicker turnaround and more confidence about
+what to trust it with. There is a complimentary thirty minute session first, to
+see where it would matter.
 
-Is that something Armstrong Watson would be interested in?
+Is that something the UK business would be open to?
 
 Yerins Abraham
 Creovine Academy
@@ -84,212 +79,65 @@ academy.creovine.com/organisations
 
 ---
 
-## #3 PSG Financial Services
+## Two, not ten, and this is the blocker
 
-- **Country:** South Africa
-- **Contact:** Francois Gouws
-- **Role:** Chief Executive Officer
-- **Route:** `info@psg.co.za` (published)
-- **Why now:** FY2026 results, published April 2026, report 147 newly qualified graduates hired during the year alongside continued investment in people and technology.
-- **Subject:** 147 graduates
-- **Instagram:** none. Not appropriate for a listed financial services group.
+**Around 30 more organisations were researched for this batch. Two cleared.**
 
-```
-Hi Francois,
+The bottleneck is not finding organisations and it is not writing to them. It is
+that **an account needs three things at once**, and the third is now failing
+most often:
 
-I'm Yerins Abraham. I lead Creovine Academy, where we help teams use AI
-practically in the work they already do. I've trained organisations and
-individuals in several sectors, including teams in banking.
+1. A real, dated development. Easy since the acknowledgment standard dropped the
+   requirement for an AI signal.
+2. A decision-maker named on the organisation's **own** pages.
+3. **A published business email address.**
 
-I saw PSG took on 147 newly qualified graduates this year, alongside the
-continued investment in people and technology. Organisations that put that much
-behind their people are the ones we tend to work best with, so I wanted to
-reach out.
+**On the third, the pool is close to exhausted.** Roughly sixty organisations
+have now been swept across batches 2, 3 and 4. Most corporate sites publish a
+JavaScript contact form and no address at all, and the sectors that still
+publish, regional accountancy and law, are the ones already worked through.
 
-We help teams reach that kind of capability with AI quickly, in the work they
-are already doing, so the business gets where it is going sooner. The starting
-point is a complimentary thirty-minute session on where it would be most useful,
-and nothing is committed on it.
+**Phone was the approved way round this and is withdrawn**, because
+international calls are not available from Rwanda.
 
-Would that be worth exploring for PSG?
+### Three things that would change the rate, none of which I should decide
 
-Yerins Abraham
-Creovine Academy
-yerinsabraham.com
-academy.creovine.com/organisations
-```
+**Web contact forms.** Many strong accounts publish a form instead of an
+address, and a form is a channel the organisation itself offers for business
+enquiries. Using it means the message cannot be sent from `yerins@creovine.com`,
+so it leaves no thread, no Sent copy and nothing for the reply and bounce
+monitors to watch. **Real reach, at the cost of every guarantee the system
+currently provides.**
 
----
+**LinkedIn.** §35 permits it for identifying people and forbids it as a
+messaging channel, and that instruction predates the route problem being the
+binding constraint. Worth a decision either way rather than being left implied.
 
-## #4 Tsogo Sun
+**Referrals.** Nine of the sixteen contacted organisations have replied to
+nothing yet. If any single reply becomes a conversation, one introduction from
+it is worth more than another thirty sweeps.
 
-- **Country:** South Africa
-- **Contact:** Chris du Toit
-- **Role:** Chief Executive Officer
-- **Route:** `tsogosun.contactus@tsogosun.com` (published)
-- **Why now:** FY2026 results, May 2026: earnings up 7%, adjusted EBITDA R3.46bn, and the online betting business turned around.
-- **Subject:** The full year results
-- **Instagram:** none. A listed gaming and hospitality group's social accounts are consumer marketing.
-
-```
-Hi Chris,
-
-I'm Yerins Abraham. I lead Creovine Academy, where we help teams use AI
-practically in the work they already do. I've trained organisations and
-individuals in several sectors, including teams in banking.
-
-I saw Tsogo Sun's full year results, with earnings up seven percent and the
-online betting business turned around. Groups coming off a year like that are
-usually the point at which this is worth raising, which is why I'm writing.
-
-We get teams properly capable with AI inside their own day to day work, which
-usually shows up as quicker turnaround and less time spent on the repetitive
-parts. We start with a free thirty minute session on where it would be worth
-doing, and nothing is committed on it.
-
-Is that something worth a look for Tsogo Sun?
-
-Yerins Abraham
-Creovine Academy
-yerinsabraham.com
-academy.creovine.com/organisations
-```
-
----
-
-## #5 Hadef & Partners
-
-- **Country:** United Arab Emirates
-- **Contact:** Sadiq Jafar
-- **Role:** Managing Partner
-- **Route:** `info@hadefpartners.com` (published)
-- **Why now:** Appointed Shonagh MacVicar as Senior Counsel in the commercial practice, announced by the firm, strengthening commercial contracting, procurement and governance.
-- **Subject:** The commercial practice
-- **Instagram:** none. Not appropriate for a law firm.
-
-```
-Hi Sadiq,
-
-I'm Yerins Abraham. I lead Creovine Academy, where we help teams use AI
-practically in the work they already do. I've trained organisations and
-individuals in several sectors, including teams in banking.
-
-I saw Hadef & Partners brought Shonagh MacVicar into the commercial practice as
-Senior Counsel. That kind of investment in a practice is what prompted me to
-write, because it usually sits alongside questions about how the wider team
-works.
-
-What we provide is practical AI capability for teams in the work they already
-handle, so people get through it faster and with more confidence about where it
-is and is not safe to lean on. We offer a complimentary thirty minute session to
-look at where that would fit, with nothing committed.
-
-Is that something the firm would be open to?
-
-Yerins Abraham
-Creovine Academy
-yerinsabraham.com
-academy.creovine.com/organisations
-```
-
----
-
-## #6 Custodian Investment
-
-- **Country:** Nigeria
-- **Contact:** Wole Oshin
-- **Role:** Founder and Group Managing Director
-- **Route:** `enquiries@custodianplc.com.ng` (published)
-- **Why now:** Completed the acquisition of FBNQuest Merchant Bank, now Quest Merchant Bank, and met the Central Bank's N50bn minimum capital requirement ahead of the deadline.
-- **Subject:** Quest Merchant Bank
-- **Instagram:** none. Not appropriate for a listed financial services group.
-
-```
-Hi Wole,
-
-I'm Yerins Abraham. I lead Creovine Academy, where we help teams use AI
-practically in the work they already do. I've trained organisations and
-individuals in several sectors, including teams in banking.
-
-I saw Custodian completed the FBNQuest Merchant Bank acquisition and met the new
-capital requirement ahead of the deadline. A group moving at that pace is
-exactly who we built this for, so I thought I would introduce myself.
-
-Our work is making teams practically capable with AI in what they already do,
-which tends to show up as faster execution and less manual effort across a
-group. There is a complimentary thirty minute session first, to find where it
-would matter most, with nothing committed.
-
-Is that something you would want to look at?
-
-Yerins Abraham
-Creovine Academy
-yerinsabraham.com
-academy.creovine.com/organisations
-```
-
----
-
-## #7 PM+M
-
-- **Country:** United Kingdom
-- **Contact:** Helen Clayton
-- **Role:** Managing Partner
-- **Route:** `enquiries@pmm.co.uk` (published)
-- **Why now:** Turnover up 10% to £13.9m, reported August 2026, with financial planning, audit and tax all performing strongly.
-- **Subject:** The turnover figures
-- **Instagram:** none. Not appropriate.
-
-```
-Hi Helen,
-
-I'm Yerins Abraham. I lead Creovine Academy, where we help teams use AI
-practically in the work they already do. I've trained organisations and
-individuals in several sectors, including teams in banking.
-
-I saw PM+M's turnover went up ten percent to £13.9m, with financial planning,
-audit and tax all having a strong year. Firms growing at that rate are where
-this work tends to land best, and that is the reason I'm getting in touch.
-
-We work with teams on using AI inside their own tasks, so the manual parts take
-less of the week and people are clearer about what it can be trusted with. It
-starts with a free thirty minute session on where that would help, and nothing
-is committed.
-
-Would that be useful to PM+M?
-
-Yerins Abraham
-Creovine Academy
-yerinsabraham.com
-academy.creovine.com/organisations
-```
-
----
-
-## Parked, no review needed
+### Parked from this pass
 
 | Organisation | Country | Why parked |
 | --- | --- | --- |
-| Lubbock Fine | United Kingdom | Route and signal both good. **Managing partner named only on aggregator sites, not the firm's own**, so not used |
-| Streets Chartered Accountants | United Kingdom | Route and signal good, but the story is the same shape as Armstrong Watson's and the copy would converge |
-| Gulf Capital | UAE | Route and CEO verified, no dated recent development found |
-| SEACOM | South Africa | Route found, no stakeholder or signal yet |
-| Definity Financial | Canada | Strong signal, named CTO, no email route |
-| Hiscox | United Kingdom | Strong signal, no email route |
-| Sun Life | Canada | Signal, no email route |
-| Avon HMO | Nigeria | Held behind the Tony Elumelu Foundation thread, same group |
-| Majid Al Futtaim | UAE | Buys external training at a tier we do not compete in |
-| Ooredoo | Qatar | Sells AI education. Partnership candidate, not a prospect |
-| Banwo & Ighodalo, Olaniwun Ajayi, Oraro, Kaplan & Stratton, TripleOKLaw, Afridi & Angell, Al Suwaidi, BSA, Brabners | NG, KE, UAE, UK | Routes verified, no current organisation-specific signal found |
+| Streets Chartered Accountants | UK | Paul Tutin verified as chairman and managing partner, Brayshaw Morey merger February 2026 verified. **Their contact page publishes no address**; earlier hits were on an older domain |
+| Olaniwun Ajayi | Nigeria | The "first African firm SRA-licensed in London" story is real but dates to 2022, not a current signal |
+| Banwo & Ighodalo | Nigeria | Route verified, no dated 2026 development found |
+| Lubbock Fine | UK | Route and signal good. Managing partner still not named on the firm's own pages |
+| The Private Office, Clear Group, PIB, Evelyn Partners, Johnston Carmichael, Forvis Mazars | UK | No published address, or only a marketing address |
+| Al-Futtaim, Emirates Post, ARM, Norrenberger, Enterprise Group, Sanlam Ghana, KCB | UAE, NG, GH, KE | No published address |
 
 ---
 
-## Already sent, for reference
+## One guard fix, for the record
 
-| Account | Sent | Follow-up |
-| --- | --- | --- |
-| Inkomoko, Ampersand, Seamless | 8 Sep | ~15 Sep |
-| Kingsley Napley, Media24, M&C Saatchi Abel, Aluko & Oyebode, Tony Elumelu Foundation, Databank | 9 Sep | ~16 Sep |
+Dropping the headcount from the credibility line broke the convergence guard's
+identity stripper, which still expected a number. Every email began reporting a
+100% opening repeat, which would have made the check useless noise. Fixed, and
+the pattern no longer depends on the copy's exact wording.
 
-**Their follow-ups do not repeat the call request.** Each names the concrete
-area the first email should have carried, and ends on a low-friction question.
+**With it working, it immediately caught something real:** *"I saw" opens 86% of
+recent emails.* Six of the seven sent in batch 3 open their acknowledgment that
+way. **Those are already sent and cannot be changed**, but both drafts above were
+rewritten to open differently, and the next batch should watch it.
