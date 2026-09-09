@@ -1,143 +1,230 @@
-# Batch 4, for review
+# Send today
 
-**9 September 2026. Two send-ready. Nothing sent.**
+**Everything needed to send Instagram DMs, in one page.** Nothing to look up,
+nothing to decide. Written 9 September 2026.
 
-Reply per item: **send** / **change X** / **hold**.
+**Why now:** we have sent 18 emails and have 0 human replies, and that is the
+expected result of 18 emails, not a verdict on the message. **The account with
+200,000 followers has sent nothing.** That is the gap.
 
 ---
 
-## #1 Ascend Broking Group
+## 1. Send these four first
 
-- **Country:** United Kingdom
-- **Contact:** Matthew Collins
-- **Role:** Managing Director
-- **Route:** `admin@ascendbroking.co.uk` (published)
-- **Why now:** Became the anchor investment for Inflexion's new UK insurance broking platform in January 2026, with a stated plan to build four to six regional broking hubs. Around 30 people, Chelmsford.
-- **Subject:** The new broking platform
-- **Instagram:** none. Not appropriate for a commercial broker.
+**In this order. Skip the fourth if in doubt.** All four were already emailed,
+which is why each one says so: the DM is a second door, not a surprise.
+
+Copy the block exactly. **Do not add a link.**
+
+---
+
+### 1. Seamless Technologies · `@seamless_hr`
+
+Emailed 8 September, Dr Emmanuel Okeleji, Co-founder & CEO.
 
 ```
-Hi Matthew,
+Hi, I'm Yerins Abraham. I run Creovine Academy. We train teams to use AI on the
+work they already do, not on tool demos, so the week gets shorter rather than
+busier.
 
-I'm Yerins Abraham. I lead Creovine Academy, where we help teams use AI
-practically in the work they already do. I've trained organisations and
-individuals in several sectors, including teams in banking.
+SeamlessHR is built around how people work, so your own teams are the obvious
+place to start. The free thirty minute session leaves you knowing what we would
+change and whether it is worth doing.
 
-Ascend became the anchor for Inflexion's new broking platform in January, with
-the plan to build four to six regional hubs. Groups at the start of something
-like that are usually where this is easiest to build in, which is why I got in
-touch now rather than later.
+I sent Emmanuel a note by email as well.
 
-We make teams properly capable with AI on their own live work, so the manual
-side of a week takes less of it. The first step is a free thirty minute session
-on where that would be worth doing, with nothing committed.
-
-Would you want to explore that while the platform is still taking shape?
-
-Yerins Abraham
-Creovine Academy
-yerinsabraham.com
-academy.creovine.com/organisations
+Want me to set it up?
 ```
 
 ---
 
-## #2 Azets
+### 2. Ampersand · `@ampersandenergy`
 
-- **Country:** United Kingdom
-- **Contact:** Peter Gallanagh
-- **Role:** Chief Executive Officer, UK
-- **Route:** `info@azets.co.uk` (published)
-- **Why now:** Completed the acquisition of Alextra Accountants on 30 April 2026, adding 70 people and three offices. Around 4,000 people across more than 70 UK offices.
-- **Subject:** The Alextra deal
-- **Instagram:** none. Not appropriate.
+Emailed 8 September, Emmanuel Hakizimana, Country Manager.
 
 ```
-Hi Peter,
+Hi, I'm Yerins Abraham. I run Creovine Academy. We train teams to use AI on the
+work they already do, so the same people get more done.
 
-I'm Yerins Abraham. I lead Creovine Academy, where we help teams use AI
-practically in the work they already do. I've trained organisations and
-individuals in several sectors, including teams in banking.
+With the swap network scaling the way it has, the reporting and analysis around
+it grows with it. Thirty minutes, free, and you come away knowing what we would
+change and whether it is worth doing.
 
-Azets closed the Alextra deal at the end of April, bringing another seventy
-people and three offices into the UK business. Running a UK business that keeps
-absorbing practices is where this comes up most often, which is why I'm writing
-to you rather than to the group.
+I wrote to Emmanuel by email a little while back too.
 
-What we do is build practical AI capability inside the work people already
-handle, which usually shows as quicker turnaround and more confidence about
-what to trust it with. There is a complimentary thirty minute session first, to
-see where it would matter.
-
-Is that something the UK business would be open to?
-
-Yerins Abraham
-Creovine Academy
-yerinsabraham.com
-academy.creovine.com/organisations
+Shall I put one in?
 ```
 
 ---
 
-## Two, not ten, and this is the blocker
+### 3. M&C Saatchi Abel · `@mcsaatchiabel`
 
-**Around 30 more organisations were researched for this batch. Two cleared.**
+Emailed 9 September, Masego Motsogi, MD Johannesburg.
 
-The bottleneck is not finding organisations and it is not writing to them. It is
-that **an account needs three things at once**, and the third is now failing
-most often:
+```
+Hi, I'm Yerins Abraham. I run Creovine Academy. We train teams to use AI on the
+work they already do, so more goes out the door without the quality dropping.
 
-1. A real, dated development. Easy since the acknowledgment standard dropped the
-   requirement for an AI signal.
-2. A decision-maker named on the organisation's **own** pages.
-3. **A published business email address.**
+I've seen the MTN and Bokomo work. For a team producing at that pace, the free
+thirty minute session is worth the time on its own: you come away knowing what
+we would change and whether it is worth doing.
 
-**On the third, the pool is close to exhausted.** Roughly sixty organisations
-have now been swept across batches 2, 3 and 4. Most corporate sites publish a
-JavaScript contact form and no address at all, and the sectors that still
-publish, regional accountancy and law, are the ones already worked through.
+I've emailed Masego about it as well, if that is an easier place to reply.
 
-**Phone was the approved way round this and is withdrawn**, because
-international calls are not available from Rwanda.
-
-### Three things that would change the rate, none of which I should decide
-
-**Web contact forms.** Many strong accounts publish a form instead of an
-address, and a form is a channel the organisation itself offers for business
-enquiries. Using it means the message cannot be sent from `yerins@creovine.com`,
-so it leaves no thread, no Sent copy and nothing for the reply and bounce
-monitors to watch. **Real reach, at the cost of every guarantee the system
-currently provides.**
-
-**LinkedIn.** §35 permits it for identifying people and forbids it as a
-messaging channel, and that instruction predates the route problem being the
-binding constraint. Worth a decision either way rather than being left implied.
-
-**Referrals.** Nine of the sixteen contacted organisations have replied to
-nothing yet. If any single reply becomes a conversation, one introduction from
-it is worth more than another thirty sweeps.
-
-### Parked from this pass
-
-| Organisation | Country | Why parked |
-| --- | --- | --- |
-| Streets Chartered Accountants | UK | Paul Tutin verified as chairman and managing partner, Brayshaw Morey merger February 2026 verified. **Their contact page publishes no address**; earlier hits were on an older domain |
-| Olaniwun Ajayi | Nigeria | The "first African firm SRA-licensed in London" story is real but dates to 2022, not a current signal |
-| Banwo & Ighodalo | Nigeria | Route verified, no dated 2026 development found |
-| Lubbock Fine | UK | Route and signal good. Managing partner still not named on the firm's own pages |
-| The Private Office, Clear Group, PIB, Evelyn Partners, Johnston Carmichael, Forvis Mazars | UK | No published address, or only a marketing address |
-| Al-Futtaim, Emirates Post, ARM, Norrenberger, Enterprise Group, Sanlam Ghana, KCB | UAE, NG, GH, KE | No published address |
+Would you like me to set one up?
+```
 
 ---
 
-## One guard fix, for the record
+### 4. Tony Elumelu Foundation · `@tonyelumelufoundation`, lowest priority
 
-Dropping the headcount from the credibility line broke the convergence guard's
-identity stripper, which still expected a number. Every email began reporting a
-100% opening repeat, which would have made the check useless noise. Fixed, and
-the pattern no longer depends on the copy's exact wording.
+Emailed 9 September, Somachi Chris-Asoluka, CEO.
 
-**With it working, it immediately caught something real:** *"I saw" opens 86% of
-recent emails.* Six of the seven sent in batch 3 open their acknowledgment that
-way. **Those are already sent and cannot be changed**, but both drafts above were
-rewritten to open differently, and the next batch should watch it.
+**The caution is real: that account exists to serve entrepreneurs applying for
+funding, so a business approach competes with them for attention. Skip it if in
+doubt.**
+
+```
+Hi, I'm Yerins Abraham. I run Creovine Academy. We train teams to use AI on the
+work they already do, so the same team handles more without growing.
+
+265,000 applications for 3,200 places is an enormous amount of reading, scoring
+and reporting. Thirty minutes, free, and you come away knowing what we would
+change and whether it is worth doing.
+
+I emailed Somachi about it too.
+
+Would that be useful?
+```
+
+---
+
+## 2. The template, for everyone after those four
+
+**One template per sector. No per-company research before sending.** Research
+happens after a reply, not before.
+
+Fill in the bracket with the three things that actually fill that sector's week.
+**Everything else stays exactly as written.**
+
+```
+Hi, I'm Yerins Abraham. I run Creovine Academy.
+
+We train teams to use AI on the work they already do, so the same people get
+more done without the quality dropping. Not tool demos, the actual work:
+[THE THREE THINGS THAT FILL THEIR WEEK].
+
+We start with a free thirty minute session. You tell us what your team's week
+looks like, and you come away knowing what we would change and whether it is
+worth doing. No deck, nothing committed.
+
+Would you like me to set one up?
+```
+
+### The bracket, filled in
+
+| Sector | Use |
+| --- | --- |
+| **Agency, marketing** | pitch decks, campaign reporting, client updates |
+| **Law** | drafting, document review, client memos |
+| **Banking, finance** | credit memos, client reporting, compliance write-ups |
+| **HR, recruitment** | screening notes, job specs, policy documents |
+| **Consulting** | research, slide production, client deliverables |
+| **Logistics** | operational reporting, supplier correspondence, forecasting |
+| **Foundations, NGOs** | applications, grant reporting, donor updates |
+
+---
+
+## 3. Rules while sending
+
+- **Never send two in the same minute.** Space them out across the day.
+- **Ten a day is plenty.** The account is the asset; a restriction on it costs
+  far more than a slow week.
+- **Never send a link in a first DM.** It is the single fastest way to be
+  filtered.
+- **One follow-up only, after about three days.** Then stop.
+- **A reply on either channel stops both.** If they answer the DM, no email
+  follow-up goes out, and the other way round.
+- **Log every send** in `INSTAGRAM-LOG.md`, one row each.
+
+### Do not DM these
+
+| Who | Why |
+| --- | --- |
+| Law firms | Their Instagram is recruitment and employer brand. It is a worse first impression than the email, and it risks the email being recognised as a campaign |
+| Anyone not already emailed | Fine to DM cold, but then do not say "I emailed you as well" |
+
+---
+
+## 4. When they reply
+
+**A reply is the whole point. Slow down and answer like a person.**
+
+### If they say yes
+
+```
+Great. Here is the link, pick whatever suits you:
+cal.com/creovine/30min
+
+If none of those work, tell me your timezone and I will find something.
+```
+
+### If they ask what it costs
+
+**Give the floor. Do not dodge, and do not quote a fixed number.**
+
+```
+Team workshops start at $7,500 for a day, and multi-session programmes from
+$20,000, depending on the team and what we cover. The thirty minutes is free
+and you would have a real number at the end of it.
+```
+
+**If that ends the conversation, it ended for free**, and before either side
+spent an hour finding out. **The price does not move because they hesitate.** A
+smaller scope is a different package. A discount is not a package.
+
+### If they ask who you have worked with
+
+**Be straight. Do not invent a client.**
+
+```
+I have trained organisations and individuals across several sectors, including
+teams in banking. I am not able to name them publicly without asking them
+first, which I am happy to do if it would help.
+```
+
+### If they say "send me some information"
+
+**This usually means no, and occasionally it does not.** Do not send a deck.
+
+```
+Happy to. It is easier to say something useful if I know what your team spends
+the week on, though, so the thirty minutes usually saves us both time. Either
+way, what is the best email for you?
+```
+
+### If they say they already do this
+
+```
+That is good to hear. Out of interest, is that mostly individuals finding
+their own way with it, or something the team has been taken through together?
+```
+
+### If they are clearly too small
+
+**Still offer the free session.** It costs thirty minutes and produces the
+words a real buyer uses. **What does not happen is a cheaper version of the
+work.**
+
+---
+
+## 5. What to expect, so it does not feel like failure
+
+**Most will not reply. That is the channel working normally, not the message
+failing.**
+
+Ten DMs might produce one conversation. **The mistake to avoid is reading a
+quiet week as proof the message is wrong and rewriting it.** We have already
+spent a day doing that on the basis of 18 emails.
+
+**Change the message when 100 sends say so. Not when 10 do.**
