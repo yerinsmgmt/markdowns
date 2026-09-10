@@ -179,18 +179,23 @@ Backend, full-stack and blockchain contract work for startups and growing techno
 
 **Where:** scroll to **About**, click the **pencil icon**.
 
-Delete everything and paste:
+This keeps the shape of what you already had. Same opening idea, same
+versatility thesis, same artist-and-entrepreneur paragraph. What changes is
+that every claim now carries something checkable, and the engineering is
+specific instead of generic.
 
 ```
-I build AI systems that take real actions in production, and the controls that make that safe. Two server errors across 65,942 requests on the banking platform I lead backend for, in the 30 days to September 2026.
+A polymath who works at the intersection of creativity, technology and problem solving. Trained as a medical doctor, six years of general medicine in Ukraine, and six-plus years since then building production software.
 
-Most of my work is agents that do more than answer: production RAG on Qdrant with hybrid retrieval and authority-ranked sources, tool-calling under a seven-tier risk model with maker-checker approval, an MCP gateway that lets a customer plug in their own tool server without handing it the keys, and an LLM eval harness that fails the build when safety metrics move at all.
+Most of my engineering now is AI that does more than answer. I architect and run the platform behind Lira Intelligence: production RAG on Qdrant with hybrid retrieval and authority-ranked sources, agents that take real actions under a seven-tier risk model with maker-checker approval, an MCP gateway that lets a customer plug in their own tool server without handing it the keys, and an eval harness that fails the build when safety metrics move at all. Four live products run on one API I designed and still run, on AWS.
 
-That work runs across four live products on one API I designed and still run: 155 service modules against a 46-model PostgreSQL schema, on AWS.
+I also lead backend on a production core banking platform in .NET: two server errors across 65,942 requests in the 30 days to September 2026, p95 284ms.
 
-I am also a medical doctor, six years of general medicine in Ukraine. That is not a detour. It is why I built Oystar, a referral platform now running in Rwandan hospitals that carries a patient's full case from a frontline clinic to the right specialist and brings the clinical answer back. The medicine tells me what has to be true. The engineering makes it true.
+The medicine was never a detour. It is why I built Oystar, a specialist referral platform now live in Rwandan hospitals, which carries a patient's full case from a frontline clinic to the right specialist and brings the clinical answer back. The medicine tells me what has to be true. The engineering makes it true.
 
-Outside all of it I draw, in pen and ink, at some scale. Work exhibited in Kyiv, Sumy, Lagos, Abuja and Dubai.
+Beyond software I am an artist, a writer and an entrepreneur. Index is a pen and ink drawing, 106 x 365cm, that took most of 2020 and months of studying cryptography to hide readable messages inside it; my work has been exhibited in Kyiv, Sumy, Lagos, Abuja and Dubai. I have published one book and am writing a second. I have released five singles. I founded Metart Africa, and staged the first African fashion show in Eastern Europe. I have built in fintech, blockchain and Web3, and I teach: 120+ people through Creovine Academy so far.
+
+That range is the point rather than a distraction from it. It is why I move into unfamiliar domains quickly, and why I tend to see a problem from an angle nobody else in the room is standing at.
 
 Open source: github.com/yerinsabraham/evalgate
 Engineering write-ups: yerinsabraham.com/engineering
@@ -199,25 +204,24 @@ Open to senior AI and backend engineering roles. Remote worldwide, EOR or contra
 yerinssaibs@gmail.com
 ```
 
-The first two lines are what shows before "see more", so the reliability figure
-lands before anyone clicks.
+The first two lines are what shows before "see more", so the polymath framing
+and the M.D. land before anyone clicks, and the engineering follows.
 
-**In the same window, find "Top skills"** and replace the current five. This is
-the field that fixes your 2 search appearances:
+**In the same window, find "Top skills"** and set these five:
 
 ```
 Artificial Intelligence (AI)
 Large Language Models (LLM)
 Retrieval-Augmented Generation (RAG)
-Backend Development
+Full-Stack Development
 System Design
 ```
 
-Note what leaves: Blockchain and Web3 drop out of the top five. They stay in
-your full Skills list. In 2026 an NFT-forward profile reads as someone who
-chased the last cycle, which is the opposite of the point.
-
----
+This one field is a search-matching mechanism rather than an identity
+statement, which is why it stays narrow while the About stays broad. Blockchain,
+Web3, creative direction and product strategy all remain in your full Skills
+list below and are still searchable. They just stop being the first five things
+a recruiter screening for AI work sees.
 
 ## TASK 7 — Skills (5 minutes)
 
