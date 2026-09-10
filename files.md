@@ -1,12 +1,13 @@
 # Applications
 
-One file. Copy the message, attach `cv/Yerins-Abraham-CV.pdf`, send. Company
-detail and sources are in `companies/<slug>.md` if a claim needs checking.
+**Done: #1 to #4. Resume from #5 (Mastra).**
 
-- [1. AiMi — SENT](#1-aimi)
-- [2. Axmed](#2-axmed)
-- [3. OpenAlex](#3-openalex)
-- [4. ElevenLabs](#4-elevenlabs)
+One file. Copy the message, attach `cv/Yerins-Abraham-CV.pdf`, then send or
+submit. Apply links open in a new tab so you keep your place here. Company
+detail and sources are in `companies/<slug>.md`.
+
+## To do
+
 - [5. Mastra](#5-mastra)
 - [6. Starbridge](#6-starbridge)
 - [7. GitLab](#7-gitlab)
@@ -22,6 +23,13 @@ detail and sources are in `companies/<slug>.md` if a claim needs checking.
 - [17. PlutusAI](#17-plutusai)
 - [18. CyberAtlas — blocked](#18-cyberatlas)
 
+## Done
+
+- [1. AiMi](#1-aimi) — sent 2026-09-10
+- [2. Axmed](#2-axmed) — submitted 2026-09-10
+- [3. OpenAlex](#3-openalex) — submitted 2026-09-10
+- [4. ElevenLabs](#4-elevenlabs) — submitted 2026-09-10
+
 ---
 
 <a id="1-aimi"></a>
@@ -34,6 +42,8 @@ Already sent 2026-09-10. Reads with wrapped Google redirect links in Sent
 
 <a id="2-axmed"></a>
 ## 2. Axmed
+
+**Status: submitted 2026-09-10**
 
 Role: AI Engineer
 Channel: apply form — https://axmed.teamtailor.com/jobs/8175859-ai-engineer
@@ -71,6 +81,8 @@ oystar.app
 <a id="3-openalex"></a>
 ## 3. OpenAlex
 
+**Status: submitted 2026-09-10**
+
 Role: Software Engineer
 Channel: apply — https://openalex.org/jobs/software-engineer
 
@@ -104,6 +116,8 @@ github.com/yerinsabraham
 <a id="4-elevenlabs"></a>
 ## 4. ElevenLabs
 
+**Status: submitted 2026-09-10**
+
 Role: Full-Stack Engineer (Back-End Leaning)
 Channel: apply form — https://jobs.ashbyhq.com/elevenlabs/c7d59014-b918-4c15-ae33-79f5c9f2cf9f
 
@@ -132,6 +146,8 @@ github.com/yerinsabraham
 
 <a id="5-mastra"></a>
 ## 5. Mastra
+
+**Status: not sent**
 
 Role: Customer Engineer
 Channel: apply form — https://jobs.ashbyhq.com/Mastra (addressed to Shane Thomas, co-founder/CPO)
@@ -168,6 +184,8 @@ github.com/yerinsabraham/evalgate
 <a id="6-starbridge"></a>
 ## 6. Starbridge
 
+**Status: not sent**
+
 Role: AI Engineer
 Channel: email `recruiting@starbridge.ai` (mention Hacker News), or https://starbridge.ai/careers
 
@@ -197,6 +215,8 @@ github.com/yerinsabraham
 
 <a id="7-gitlab"></a>
 ## 7. GitLab
+
+**Status: not sent**
 
 Role: AI Engineer, Enterprise Technology & AI
 Channel: apply form — https://job-boards.greenhouse.io/gitlab/jobs/8556658002
@@ -232,6 +252,8 @@ github.com/yerinsabraham
 <a id="8-seeq"></a>
 ## 8. Seeq
 
+**Status: not sent**
+
 Role: Staff Full-Stack Engineer (React, Python, AI Technologies)
 Channel: apply — https://apply.workable.com/seeq/j/1378093793
 Note: posting explicitly says to mention Hacker News, and states pay adjusts for non-US locations
@@ -260,6 +282,8 @@ github.com/yerinsabraham
 
 <a id="9-sourcegraph"></a>
 ## 9. Sourcegraph
+
+**Status: not sent**
 
 Role: Software Engineer, Platform [IC3]
 Channel: apply form — https://job-boards.greenhouse.io/sourcegraph91/jobs/6103628004
@@ -292,6 +316,8 @@ github.com/yerinsabraham
 
 <a id="10-oyster"></a>
 ## 10. Oyster
+
+**Status: not sent**
 
 Role: Senior Engineer, Platform
 Channel: apply form — https://www.oysterhr.com/careers (search "Senior Engineer, Platform")
@@ -326,6 +352,8 @@ github.com/yerinsabraham
 <a id="11-quill"></a>
 ## 11. Quill
 
+**Status: not sent**
+
 Role: Fullstack SWE
 Channel: email `rishi@quill.co`
 
@@ -354,6 +382,8 @@ github.com/yerinsabraham
 <a id="12-shovels"></a>
 ## 12. Shovels
 
+**Status: not sent**
+
 Role: Forward-Deployed Engineer
 Channel: apply — https://www.shovels.ai/careers/forward-deployed-engineer
 
@@ -381,6 +411,8 @@ github.com/yerinsabraham
 
 <a id="13-cloro"></a>
 ## 13. cloro
+
+**Status: not sent**
 
 Role: Founding Engineer
 Channel: apply — https://cloro.dev/careers/founding-engineer/
@@ -413,6 +445,8 @@ github.com/yerinsabraham
 
 <a id="14-mintlify"></a>
 ## 14. Mintlify
+
+**Status: not sent**
 
 Role: Senior Applied AI Engineer
 Channel: apply form — https://jobs.ashbyhq.com/mintlify (search "Senior Applied AI Engineer")
@@ -450,6 +484,8 @@ github.com/yerinsabraham/evalgate
 <a id="15-boss-iq"></a>
 ## 15. BOSS-IQ
 
+**Status: not sent**
+
 Role: CTO Partner (not a standard salaried hire — read the note before sending)
 Channel: email `ahmet@boss-iq.com`, or https://boss-iq.com/apply-cto.html
 Note: equity-heavy partner role, no salary stated — confirm terms before going deep
@@ -481,6 +517,8 @@ github.com/yerinsabraham
 <a id="16-matcha-fm"></a>
 ## 16. Matcha.fm
 
+**Status: not sent**
+
 Role: Backend Engineer
 Channel: apply — https://matcha.fm/apply/be
 Note: remote list doesn't name Africa but doesn't exclude it either
@@ -510,6 +548,8 @@ github.com/yerinsabraham
 <a id="17-plutusai"></a>
 ## 17. PlutusAI
 
+**Status: not sent**
+
 Role: AI Engineer
 Channel: apply via Wellfound — https://wellfound.com/jobs/4417497-ai-engineer (Wellfound account needed)
 
@@ -538,6 +578,8 @@ github.com/yerinsabraham
 
 <a id="18-cyberatlas"></a>
 ## 18. CyberAtlas — blocked
+
+**Status: blocked, needs the Finder query**
 
 Role: Software Engineer
 Channel: email `atlas@cyberatlas.ai`
