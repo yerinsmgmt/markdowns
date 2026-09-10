@@ -15,10 +15,18 @@ field down is **Headline**.
 **Delete what is there.** Paste this:
 
 ```
-AI/Application Engineer | Agents, RAG, Evals | Production AI in fintech and health | M.D.
+Polymath: AI/Application Engineer & Medical Doctor | Agents, RAG, Evals | Production AI in fintech and health
 ```
 
-89 characters, limit is 220.
+109 characters, limit is 220.
+
+**Why "Polymath" leads rather than being dropped or appended:** LinkedIn cuts
+headlines off around 60 characters in search results and on mobile. What a
+recruiter actually sees is `Polymath: AI/Application Engineer & Medical
+Doctor | Agents,…` so the claim and both things that prove it all land inside
+the visible window. Putting it at the end would have pushed it past the cut,
+invisible in the one place it matters. And it stays the strong form: the word
+appears, then pays for itself in the same breath.
 
 **Why this one first:** the headline is the only text that appears in recruiter
 search results, under your name in every connection request, and beside every
