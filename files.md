@@ -1,75 +1,41 @@
-# Batch 01, for review
+# Applications
 
-**2026-09-10. 7 drafts. Nothing sent. Revised after review — see note below.**
+One file. Copy the message, attach `cv/Yerins-Abraham-CV.pdf`, send. Company
+detail and sources are in `companies/<slug>.md` if a claim needs checking.
 
-Reply per item: **send** / **change X** / **hold**.
-
-**Revision note, 10 September 2026.** The first version of every draft opened
-on "I run the platform behind Lira Intelligence" — the product, not the
-capability. Yerins caught it: this is a job application, not a pitch for
-Creovine's products, and a reader hears "here is what I built for myself"
-instead of "here is what I can build for you." Rewritten to lead with the
-outcome and the capability; the product name now appears at most once,
-quietly, or only in the signature link. Also removed em dashes throughout.
-The rule is recorded in `CANDIDATE.md` and `METHOD.md` so it holds for every
-batch after this one.
-
-- **#1 AiMi** and **#6 CyberAtlas** are real emails. Gmail connector is
-  connected and verified as `yerinssaibs@gmail.com` (`SENDER.md`).
-- **#6 CyberAtlas** is still blocked until a query is run on
-  cyberatlas.ai/finder — its posting requires the query and results in the
-  email body.
-- **#2 Axmed, #3 Mastra, #4 GitLab, #5 Oyster, #7 Mintlify** apply through a
-  form (Teamtailor / Ashby / Greenhouse). The text below goes in the form's
-  cover-letter / message field. Yerins submits these, or approves and I walk
-  him through each form. CV: `cv/Yerins-Abraham-CV.pdf`.
-
-Sender identity verified: **yes — `yerinssaibs@gmail.com`, confirmed 10 September 2026.**
+- [1. AiMi — SENT](#1-aimi)
+- [2. Axmed](#2-axmed)
+- [3. OpenAlex](#3-openalex)
+- [4. ElevenLabs](#4-elevenlabs)
+- [5. Mastra](#5-mastra)
+- [6. Starbridge](#6-starbridge)
+- [7. GitLab](#7-gitlab)
+- [8. Seeq](#8-seeq)
+- [9. Sourcegraph](#9-sourcegraph)
+- [10. Oyster](#10-oyster)
+- [11. Quill](#11-quill)
+- [12. Shovels](#12-shovels)
+- [13. cloro](#13-cloro)
+- [14. Mintlify](#14-mintlify)
+- [15. BOSS-IQ](#15-boss-iq)
+- [16. Matcha.fm](#16-matcha-fm)
+- [17. CyberAtlas — blocked](#17-cyberatlas)
 
 ---
 
-## #1 AiMi — Full Stack AI Engineer
+<a id="1-aimi"></a>
+## 1. AiMi — SENT, nothing to do
 
-- **Channel:** email — `vishnu.swaroop@aimi.technology`
-- **Remote:** Remote (Everywhere)
-- **Why now:** live agentic platform for capital-markets ops; posting asks specifically for MCP connectors, agent evals, agent observability, and resilience on long-running LLM/SSE calls
-- **Fit:** the closest match in the batch — those four items are most of Yerins's last year
-- **File:** `companies/aimi.md`
-
-```
-Subject: Full Stack AI Engineer, Yerins Abraham
-
-Hi Vishnu,
-
-Applying for the Full Stack AI Engineer role posted on Hacker News.
-
-I build AI systems that run in production without falling over when the model
-or the network does. Concretely: agent tool calls that survive timeouts and
-partial failures with retries, circuit breakers and fail-fast recovery, an MCP
-layer for letting agents reach external tools safely, and an eval harness that
-catches a regression before it ships rather than after a customer notices it.
-
-That is close to line for line what the posting asks for, on the same stack:
-TypeScript, Node.js, AWS. I have also taken agent work into a regulated
-environment, shipping a governed agent into a live core-banking API.
-
-CV attached. Is the role still open, and is there a task or a short call you
-would want to start with?
-
-Yerins Abraham
-yerinsabraham.com
-github.com/yerinsabraham
-```
+Already sent 2026-09-10. Reads with wrapped Google redirect links in Sent
+(a tool problem, now fixed) — not worth re-sending. See `companies/aimi.md`.
 
 ---
 
-## #2 Axmed — AI Engineer
+<a id="2-axmed"></a>
+## 2. Axmed
 
-- **Channel:** Teamtailor form — https://axmed.teamtailor.com/jobs/8175859-ai-engineer (text goes in the message field)
-- **Remote:** fully remote, global team of ~55; no visa sponsorship/relocation (fine)
-- **Why now:** past product-market fit, scaling; Gates Foundation grant Feb 2026; agents now run real marketplace steps on real money with a human in the loop
-- **Fit:** strongest in the batch — M.D. plus a shipped LMIC health platform plus a maker-checker design is their core requirement, almost word for word
-- **File:** `companies/axmed.md`
+Role: AI Engineer
+Channel: apply form — https://axmed.teamtailor.com/jobs/8175859-ai-engineer
 
 ```
 Subject: AI Engineer, Yerins Abraham
@@ -101,13 +67,73 @@ oystar.app
 
 ---
 
-## #3 Mastra — Customer Engineer
+<a id="3-openalex"></a>
+## 3. OpenAlex
 
-- **Channel:** Ashby form — https://jobs.ashbyhq.com/Mastra (Customer Engineer). Note addressed to Shane Thomas (co-founder/CPO, leads customer engineering)
-- **Remote:** AMER or EMEA hours — WAT works
-- **Why now:** open-source TS agent framework, YC W25, $13M seed; hiring the role that is half framework work, half embedded with customers
-- **Fit:** TypeScript agent work, an evaluation harness that mirrors why Mastra ships evals, enterprise-embedded delivery already done under the banking contract
-- **File:** `companies/mastra.md`
+Role: Software Engineer
+Channel: apply — https://openalex.org/jobs/software-engineer
+
+```
+Subject: Software Engineer, Yerins Abraham
+
+Hi,
+
+Applying for the Software Engineer role.
+
+Free, open infrastructure that a billion API calls a month actually depends
+on is the kind of project I want my backend work going toward. I build and
+run production services that hold up at real scale: a banking API at p95
+284ms across 66,000 requests, and a retrieval pipeline on hybrid search that
+degrades gracefully instead of failing outright when the vector store is
+down.
+
+Python is a daily language for me, and agents writing code alongside a human
+who reviews it is close to how I already work: an eval harness gates every
+merge before it ships.
+
+CV attached.
+
+Yerins Abraham
+yerinsabraham.com
+github.com/yerinsabraham
+```
+
+---
+
+<a id="4-elevenlabs"></a>
+## 4. ElevenLabs
+
+Role: Full-Stack Engineer (Back-End Leaning)
+Channel: apply form — https://jobs.ashbyhq.com/elevenlabs/c7d59014-b918-4c15-ae33-79f5c9f2cf9f
+
+```
+Subject: Full-Stack Engineer (Back-End Leaning), Yerins Abraham
+
+Hi,
+
+Applying for the Full-Stack Engineer (Back-End Leaning) role.
+
+Voice is where I started with real-time AI: I built a voice agent in Python
+on Pipecat with AWS Nova Sonic, and shipped the support platform around it,
+ticketing, routing, CSAT, analytics, so the agent's output feeds a real
+operational system rather than a demo. Backend for a live product at scale
+is most of my work: a Fastify and TypeScript API serving four products from
+one codebase, and a banking API holding p95 284ms across 66,000 requests.
+
+CV attached.
+
+Yerins Abraham
+yerinsabraham.com
+github.com/yerinsabraham
+```
+
+---
+
+<a id="5-mastra"></a>
+## 5. Mastra
+
+Role: Customer Engineer
+Channel: apply form — https://jobs.ashbyhq.com/Mastra (addressed to Shane Thomas, co-founder/CPO)
 
 ```
 Subject: Customer Engineer, Yerins Abraham
@@ -138,13 +164,42 @@ github.com/yerinsabraham/evalgate
 
 ---
 
-## #4 GitLab — AI Engineer, Enterprise Technology & AI
+<a id="6-starbridge"></a>
+## 6. Starbridge
 
-- **Channel:** Greenhouse form — https://job-boards.greenhouse.io/gitlab/jobs/8556658002 (text in cover-letter field)
-- **Remote:** all-remote, but GitLab hires from a fixed country list — **Nigeria/Kenya/UAE eligibility unverified; this is the main risk.** Answer the form's visa/eligibility question honestly.
-- **Why now:** live posting; the role is "Customer Zero" for GitLab's own AI adoption, owned end to end on flow metrics
-- **Fit:** owns an agent end to end already, with a risk model and maker-checker approval, and the enterprise-integration half is already done
-- **File:** `companies/gitlab.md`
+Role: AI Engineer
+Channel: email `recruiting@starbridge.ai` (mention Hacker News), or https://starbridge.ai/careers
+
+```
+Subject: AI Engineer, Yerins Abraham
+
+Hi,
+
+Applying for the AI Engineer role. Found it through Hacker News.
+
+Turning large-scale data into something a non-technical seller can trust is a
+retrieval and evaluation problem before it is a model problem. I have built
+that pipeline before: hybrid search with source-authority precedence, so the
+most trustworthy document wins over the most similar-sounding one, and an
+eval harness with retrieval and groundedness scoring that gates every change.
+RAG depth and hands-on Python with OpenAI, Anthropic and Gemini APIs is daily
+work for me.
+
+CV attached.
+
+Yerins Abraham
+yerinsabraham.com
+github.com/yerinsabraham
+```
+
+---
+
+<a id="7-gitlab"></a>
+## 7. GitLab
+
+Role: AI Engineer, Enterprise Technology & AI
+Channel: apply form — https://job-boards.greenhouse.io/gitlab/jobs/8556658002
+Note: country eligibility for Nigeria unverified — answer the form's visa/location question honestly
 
 ```
 Subject: AI Engineer, Enterprise Technology & AI, Yerins Abraham
@@ -173,13 +228,72 @@ github.com/yerinsabraham
 
 ---
 
-## #5 Oyster — Senior Engineer (Platform)
+<a id="8-seeq"></a>
+## 8. Seeq
 
-- **Channel:** Ashby form — https://www.oysterhr.com/careers (Senior Engineer, Platform)
-- **Remote:** Remote EMEA including **Africa**, UTC+0 to UTC+4 — best geographic fit in the batch
-- **Why now:** Platform Flow Engineering team hiring; posting explicitly wants AI used to cut engineering toil
-- **Fit:** medium on stack, high on everything else — he runs the exact ops surface, and has already moved internal workflows to agentic
-- **File:** `companies/oysterhr.md`
+Role: Staff Full-Stack Engineer (React, Python, AI Technologies)
+Channel: apply — https://apply.workable.com/seeq/j/1378093793
+Note: posting explicitly says to mention Hacker News, and states pay adjusts for non-US locations
+
+```
+Subject: Staff Full-Stack Engineer, Yerins Abraham
+
+Hi,
+
+Applying for the Staff Full-Stack Engineer role. Came from Hacker News.
+
+Applying generative AI to make a complex analytics product more usable is
+close to what I have spent the last year on: an AI support agent that
+answers from a company's own data and then acts on it, backed by a retrieval
+pipeline on hybrid search and an evaluation harness that gates every change
+before it ships. React and Python are both daily languages for me.
+
+CV attached.
+
+Yerins Abraham
+yerinsabraham.com
+github.com/yerinsabraham
+```
+
+---
+
+<a id="9-sourcegraph"></a>
+## 9. Sourcegraph
+
+Role: Software Engineer, Platform [IC3]
+Channel: apply form — https://job-boards.greenhouse.io/sourcegraph91/jobs/6103628004
+
+```
+Subject: Software Engineer, Platform, Yerins Abraham
+
+Hi,
+
+Applying for the Software Engineer, Platform role.
+
+Control-plane work for a fleet of customer-isolated instances is close to the
+multi-tenant systems I already build: a Fastify API on AWS serving four
+products with tenants isolated by table prefix and scoped JWT claims, and
+eight Go microservices behind service discovery with Kafka and Redis. I run
+production infrastructure day to day, including CloudTrail-audited AWS
+environments and on-call.
+
+Go is a daily language for me. Based in Nigeria, on WAT, which overlaps most
+of the EST and European working day.
+
+CV attached.
+
+Yerins Abraham
+yerinsabraham.com
+github.com/yerinsabraham
+```
+
+---
+
+<a id="10-oyster"></a>
+## 10. Oyster
+
+Role: Senior Engineer, Platform
+Channel: apply form — https://www.oysterhr.com/careers (search "Senior Engineer, Platform")
 
 ```
 Subject: Senior Engineer, Platform, Yerins Abraham
@@ -208,32 +322,84 @@ github.com/yerinsabraham
 
 ---
 
-## #6 CyberAtlas — Software Engineer  · BLOCKED
+<a id="11-quill"></a>
+## 11. Quill
 
-- **Channel:** email — `atlas@cyberatlas.ai`
-- **Remote:** REMOTE Worldwide
-- **BLOCKED ON:** the posting requires (1) a query run on https://cyberatlas.ai/finder and (2) its first-page results, both in the email body. Subject must contain "HN Software Engineer". Yerins runs a real Finder query, or we do it together, before this sends.
-- **Fit:** backend-and-scale role, lighter on AI, carried by his banking throughput numbers, Go microservices, and search pipeline work
-- **File:** `companies/cyberatlas.md`
+Role: Fullstack SWE
+Channel: email `rishi@quill.co`
 
 ```
-Subject: HN Software Engineer
+Subject: Fullstack SWE, Yerins Abraham
+
+Hi Rishi,
+
+Applying for the Fullstack SWE role.
+
+Small team, real customers immediately, high ownership is the environment I
+do my best work in. I have built the backend and the AI layer for a product
+end to end: a Fastify and TypeScript API serving four live products from one
+codebase, and an AI agent that answers from a company's own data and takes
+real action on it.
+
+CV attached. Happy to walk through anything specific.
+
+Yerins Abraham
+yerinsabraham.com
+github.com/yerinsabraham
+```
+
+---
+
+<a id="12-shovels"></a>
+## 12. Shovels
+
+Role: Forward-Deployed Engineer
+Channel: apply — https://www.shovels.ai/careers/forward-deployed-engineer
+
+```
+Subject: Forward Deployed Engineer, Yerins Abraham
 
 Hi,
 
-Applying for the Software Engineer role from your Hacker News post.
+Applying for the Forward Deployed Engineer role.
 
-Anti-bot check:
-1. Finder query: [ TO RUN on cyberatlas.ai/finder ]
-2. First-page results: [ TO RUN ]
+Owning a customer relationship end to end, from the first question to
+something running in their hands, is work I have already done under an
+enterprise contract: I shipped a governed AI agent into a live core-banking
+API, working directly alongside the bank's own engineers rather than handing
+off a spec.
 
-I build backend services that hold up at real throughput: a core-banking API
-running roughly 66,000 requests over 30 days at a p95 of 284ms, eight Go
-microservices behind service discovery with Kafka and Redis, and a search
-pipeline over a large document corpus with hybrid retrieval.
+CV attached. Happy to talk through a specific account or problem.
 
-Billions of domains, fingerprinting and detection pipelines is the scale I
-want to work at. Python with FastAPI, and Go, are both stacks I use daily.
+Yerins Abraham
+yerinsabraham.com
+github.com/yerinsabraham
+```
+
+---
+
+<a id="13-cloro"></a>
+## 13. cloro
+
+Role: Founding Engineer
+Channel: apply — https://cloro.dev/careers/founding-engineer/
+
+```
+Subject: Founding Engineer, Yerins Abraham
+
+Hi,
+
+Applying for the Founding Engineer role.
+
+Large-scale collection that has to survive an upstream provider changing its
+markup overnight is a reliability problem before it is a scraping one. That
+is the kind of thing I have spent my career on: a core-banking API holding
+p95 284ms across 66,000 requests in 30 days, and a retrieval pipeline that
+degrades to keyword search rather than failing outright when its vector
+store goes down.
+
+Backend and infra is most of what I do. Comfortable being the whole
+engineering side of a small, bootstrapped team.
 
 CV attached.
 
@@ -244,13 +410,12 @@ github.com/yerinsabraham
 
 ---
 
-## #7 Mintlify — Senior Applied AI Engineer
+<a id="14-mintlify"></a>
+## 14. Mintlify
 
-- **Channel:** Ashby form — https://jobs.ashbyhq.com/mintlify (Senior Applied AI Engineer)
-- **Remote:** listed San Francisco, `isRemote` not set — **the email asks the remote question directly**
-- **Why now:** $45M Series B (a16z, Salesforce Ventures); docs platform turning into an AI-docs product; role owns how they evaluate agent performance
-- **Fit:** "define how we evaluate and improve agent performance" is a description of a system he has already built; retrieval infra is work he already owns
-- **File:** `companies/mintlify.md`
+Role: Senior Applied AI Engineer
+Channel: apply form — https://jobs.ashbyhq.com/mintlify (search "Senior Applied AI Engineer")
+Note: remote-outside-US not confirmed, the email asks directly
 
 ```
 Subject: Senior Applied AI Engineer, Yerins Abraham
@@ -281,24 +446,112 @@ github.com/yerinsabraham/evalgate
 
 ---
 
-## Considered, not in this batch
+<a id="15-boss-iq"></a>
+## 15. BOSS-IQ
 
-| Company | Role | Why held |
-|---|---|---|
-| ElevenLabs | Full-Stack Engineer (Back-End Leaning) / FDE Spain | Strong fit (voice — his Pipecat + Nova Sonic work). Need the live JD and remote scope. Batch 02. |
-| Modal | MTS – Product (Backend) / FDE – Systems | Infra backend, remote. Need full JD. Batch 02. |
-| Baseten | AI Engineer / Forward Deployed Engineer | $1.5B Series F, strong. Roles list SF / Hybrid — remote-outside-US doubtful. Try as a stretch in Batch 02. |
-| Sourcegraph | Agent Engineer / SWE | All-remote global, good fit. Need JD + apply route from the HN post. Batch 02. |
-| Lovable | Forward Deployed Engineer / Fullstack | AI app builder, Sweden. Remote scope unclear. Batch 02. |
-| Interview Resources | Full Stack AI Engineer | Fit is fine; comp is "$30k to $90k, adjusted per capita" — at Nigeria rates likely below the range worth pursuing. Hold. |
-| Pagelove | Founding Software Engineer | Rust codebase; not in his stack. Would be a learning role. Hold unless he wants it. |
-| Deeter Analytics | ML Engineer (junior) | Explicitly junior; seniority mismatch. Skip. |
-| Anthropic, OpenAI, Ramp, Hex, Linear | various | "Remote" but effectively US / UK / EU-hub. Low probability from Nigeria. Park unless a specific posting opens the door. |
+Role: CTO Partner (not a standard salaried hire — read the note before sending)
+Channel: email `ahmet@boss-iq.com`, or https://boss-iq.com/apply-cto.html
+Note: equity-heavy partner role, no salary stated — confirm terms before going deep
 
-Full discovery output: `scripts/out/candidates-2026-09-09.md` (55 roles after filtering).
+```
+Subject: CTO Partner, Yerins Abraham
+
+Hi Ahmet,
+
+Saw the CTO Partner post on Hacker News.
+
+I run production AI systems day to day, on call included, and I have spent
+the last year building the discipline around prompting rather than winging
+it: an eval harness with golden datasets and deterministic scoring,
+prompt-injection rows that fail the build, and a tool-calling layer with its
+own risk tiers so an agent cannot act past what it has been trusted with. I
+also co-founded and run engineering for my own product studio, so partner,
+not hire, is familiar territory.
+
+Worth a conversation about BOSS-IQ.
+
+Yerins Abraham
+yerinsabraham.com
+github.com/yerinsabraham
+```
 
 ---
 
-## Sent — for reference
+<a id="16-matcha-fm"></a>
+## 16. Matcha.fm
 
-_(none yet)_
+Role: Backend Engineer
+Channel: apply — https://matcha.fm/apply/be
+Note: remote list doesn't name Africa but doesn't exclude it either
+
+```
+Subject: Backend Engineer, Yerins Abraham
+
+Hi,
+
+Applying for the Backend Engineer role.
+
+Repeat founder building something new is exactly the stage I like working at.
+I build backend systems that hold up under real load and keep working when a
+dependency does not: a banking API at p95 284ms across 66,000 requests, and
+services that degrade gracefully instead of falling over when a downstream
+piece fails.
+
+CV attached. Happy to talk through specifics.
+
+Yerins Abraham
+yerinsabraham.com
+github.com/yerinsabraham
+```
+
+---
+
+<a id="17-cyberatlas"></a>
+## 17. CyberAtlas — blocked
+
+Role: Software Engineer
+Channel: email `atlas@cyberatlas.ai`
+**Blocked:** their posting requires a query run on https://cyberatlas.ai/finder,
+plus its first-page results, pasted into the two blanks below. Subject must
+contain "HN Software Engineer" exactly.
+
+```
+Subject: HN Software Engineer
+
+Hi,
+
+Applying for the Software Engineer role from your Hacker News post.
+
+Anti-bot check:
+1. Finder query: [ TO RUN on cyberatlas.ai/finder ]
+2. First-page results: [ TO RUN ]
+
+I build backend services that hold up at real throughput: a core-banking API
+running roughly 66,000 requests over 30 days at a p95 of 284ms, eight Go
+microservices behind service discovery with Kafka and Redis, and a search
+pipeline over a large document corpus with hybrid retrieval.
+
+Billions of domains, fingerprinting and detection pipelines is the scale I
+want to work at. Python with FastAPI, and Go, are both stacks I use daily.
+
+CV attached.
+
+Yerins Abraham
+yerinsabraham.com
+github.com/yerinsabraham
+```
+
+---
+
+## Not pursued
+
+| Company | Role | Why |
+|---|---|---|
+| Modal | MTS / FDE | Checked live: all roles OnSite in NY/SF/Stockholm, no remote option |
+| Lovable | FDE / Platform | Checked live: all roles OnSite in Stockholm/London/NYC/SF, no remote option |
+| Baseten | AI Engineer / FDE | Hybrid, single SF location — remote-outside-US unlikely |
+| Interview Resources | Full Stack AI Engineer | Pay adjusts "per capita" — likely below the floor at Nigeria rates |
+| Pagelove | Founding Engineer | Rust codebase, not in his stack |
+| Deeter Analytics | ML Engineer | Explicitly a junior role |
+| Anthropic, OpenAI, Ramp, Hex, Linear | various | "Remote" in practice means a US/UK/EU hub |
+| GovStar, Product Genius, Close, Statecraft, Valkyrie Aero, VersaFeed, Snout, vCluster Labs, Great Question, Brilliant.org, Chariot Claims, Oklo | various | Explicitly US/Canada-only or citizens-only in the posting |
