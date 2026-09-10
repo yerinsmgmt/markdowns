@@ -19,7 +19,8 @@ detail and sources are in `companies/<slug>.md` if a claim needs checking.
 - [14. Mintlify](#14-mintlify)
 - [15. BOSS-IQ](#15-boss-iq)
 - [16. Matcha.fm](#16-matcha-fm)
-- [17. CyberAtlas — blocked](#17-cyberatlas)
+- [17. PlutusAI](#17-plutusai)
+- [18. CyberAtlas — blocked](#18-cyberatlas)
 
 ---
 
@@ -44,7 +45,7 @@ Hi,
 
 Applying for the AI Engineer role.
 
-I build autonomous agents trusted to touch real transactions, with a human
+I'm Yerins Abraham. I build autonomous agents trusted to touch real transactions, with a human
 pulled in only where the risk calls for it. That is the same problem your
 posting describes for sourcing, quoting and order matching, and it is what I
 have spent the most time on: a risk-tiered policy that decides what an agent
@@ -80,7 +81,7 @@ Hi,
 
 Applying for the Software Engineer role.
 
-Free, open infrastructure that a billion API calls a month actually depends
+I'm Yerins Abraham. Free, open infrastructure that a billion API calls a month actually depends
 on is the kind of project I want my backend work going toward. I build and
 run production services that hold up at real scale: a banking API at p95
 284ms across 66,000 requests, and a retrieval pipeline on hybrid search that
@@ -113,7 +114,7 @@ Hi,
 
 Applying for the Full-Stack Engineer (Back-End Leaning) role.
 
-Voice is where I started with real-time AI: I built a voice agent in Python
+I'm Yerins Abraham. Voice is where I started with real-time AI: I built a voice agent in Python
 on Pipecat with AWS Nova Sonic, and shipped the support platform around it,
 ticketing, routing, CSAT, analytics, so the agent's output feeds a real
 operational system rather than a demo. Backend for a live product at scale
@@ -142,7 +143,7 @@ Hi Shane,
 
 Applying for the Customer Engineer role posted on Hacker News.
 
-I build AI agents in TypeScript and have taken that work into other people's
+I'm Yerins Abraham. I build AI agents in TypeScript and have taken that work into other people's
 codebases under contract, most recently shipping a governed agent into a live
 core-banking API alongside the bank's own engineers, PRs and architecture
 calls included.
@@ -177,7 +178,7 @@ Hi,
 
 Applying for the AI Engineer role. Found it through Hacker News.
 
-Turning large-scale data into something a non-technical seller can trust is a
+I'm Yerins Abraham. Turning large-scale data into something a non-technical seller can trust is a
 retrieval and evaluation problem before it is a model problem. I have built
 that pipeline before: hybrid search with source-authority precedence, so the
 most trustworthy document wins over the most similar-sounding one, and an
@@ -208,7 +209,7 @@ Hi,
 
 Applying for the AI Engineer role on the Enterprise Technology & AI team.
 
-I take an AI initiative from a workflow problem through to something running
+I'm Yerins Abraham. I take an AI initiative from a workflow problem through to something running
 in production and measured on real metrics, not a demo. That has meant owning
 a support agent end to end: retrieval, a tool-calling layer with a
 risk-tiered approval policy, and an evaluation harness that gates every
@@ -242,7 +243,7 @@ Hi,
 
 Applying for the Staff Full-Stack Engineer role. Came from Hacker News.
 
-Applying generative AI to make a complex analytics product more usable is
+I'm Yerins Abraham. Applying generative AI to make a complex analytics product more usable is
 close to what I have spent the last year on: an AI support agent that
 answers from a company's own data and then acts on it, backed by a retrieval
 pipeline on hybrid search and an evaluation harness that gates every change
@@ -270,7 +271,7 @@ Hi,
 
 Applying for the Software Engineer, Platform role.
 
-Control-plane work for a fleet of customer-isolated instances is close to the
+I'm Yerins Abraham. Control-plane work for a fleet of customer-isolated instances is close to the
 multi-tenant systems I already build: a Fastify API on AWS serving four
 products with tenants isolated by table prefix and scoped JWT claims, and
 eight Go microservices behind service discovery with Kafka and Redis. I run
@@ -303,7 +304,7 @@ Hi,
 Applying for the Senior Platform Engineer role on the Platform Flow
 Engineering team.
 
-I own production operations end to end for an AI service on AWS: ECS and
+I'm Yerins Abraham. I own production operations end to end for an AI service on AWS: ECS and
 RDS, CI/CD, observability, and backups I actually restore on a weekly
 rehearsal rather than trust blindly. I have also moved internal workflows,
 triage, classification, routing, from manual to agentic, gated by an
@@ -335,7 +336,7 @@ Hi Rishi,
 
 Applying for the Fullstack SWE role.
 
-Small team, real customers immediately, high ownership is the environment I
+I'm Yerins Abraham. Small team, real customers immediately, high ownership is the environment I
 do my best work in. I have built the backend and the AI layer for a product
 end to end: a Fastify and TypeScript API serving four live products from one
 codebase, and an AI agent that answers from a company's own data and takes
@@ -363,7 +364,7 @@ Hi,
 
 Applying for the Forward Deployed Engineer role.
 
-Owning a customer relationship end to end, from the first question to
+I'm Yerins Abraham. Owning a customer relationship end to end, from the first question to
 something running in their hands, is work I have already done under an
 enterprise contract: I shipped a governed AI agent into a live core-banking
 API, working directly alongside the bank's own engineers rather than handing
@@ -391,7 +392,7 @@ Hi,
 
 Applying for the Founding Engineer role.
 
-Large-scale collection that has to survive an upstream provider changing its
+I'm Yerins Abraham. Large-scale collection that has to survive an upstream provider changing its
 markup overnight is a reliability problem before it is a scraping one. That
 is the kind of thing I have spent my career on: a core-banking API holding
 p95 284ms across 66,000 requests in 30 days, and a retrieval pipeline that
@@ -424,7 +425,7 @@ Hi,
 
 Applying for the Senior Applied AI Engineer role.
 
-I build the retrieval and evaluation layers that decide whether an AI product
+I'm Yerins Abraham. I build the retrieval and evaluation layers that decide whether an AI product
 is actually right, not just fluent. On retrieval: hybrid search with
 source-authority precedence, so a marketing page cannot outrank a policy
 document, and a keyword fallback so the product degrades instead of failing
@@ -460,7 +461,7 @@ Hi Ahmet,
 
 Saw the CTO Partner post on Hacker News.
 
-I run production AI systems day to day, on call included, and I have spent
+I'm Yerins Abraham. I run production AI systems day to day, on call included, and I have spent
 the last year building the discipline around prompting rather than winging
 it: an eval harness with golden datasets and deterministic scoring,
 prompt-injection rows that fail the build, and a tool-calling layer with its
@@ -491,7 +492,7 @@ Hi,
 
 Applying for the Backend Engineer role.
 
-Repeat founder building something new is exactly the stage I like working at.
+I'm Yerins Abraham. Repeat founder building something new is exactly the stage I like working at.
 I build backend systems that hold up under real load and keep working when a
 dependency does not: a banking API at p95 284ms across 66,000 requests, and
 services that degrade gracefully instead of falling over when a downstream
@@ -506,8 +507,37 @@ github.com/yerinsabraham
 
 ---
 
-<a id="17-cyberatlas"></a>
-## 17. CyberAtlas — blocked
+<a id="17-plutusai"></a>
+## 17. PlutusAI
+
+Role: AI Engineer
+Channel: apply via Wellfound — https://wellfound.com/jobs/4417497-ai-engineer (Wellfound account needed)
+
+```
+Subject: AI Engineer, Yerins Abraham
+
+Hi,
+
+Applying for the AI Engineer role.
+
+I'm Yerins Abraham. RAG pipelines and multi-provider LLM integration are what
+I have spent the last year on: ingestion, chunking, embeddings and hybrid
+search, an agent layer that calls out to Claude and OpenAI models depending
+on the task, and an evaluation harness that gates every change before it
+reaches a customer. Backend stack is the same as yours: Python, TypeScript,
+Node.js, PostgreSQL, Redis, Docker.
+
+CV attached.
+
+Yerins Abraham
+yerinsabraham.com
+github.com/yerinsabraham
+```
+
+---
+
+<a id="18-cyberatlas"></a>
+## 18. CyberAtlas — blocked
 
 Role: Software Engineer
 Channel: email `atlas@cyberatlas.ai`
@@ -526,7 +556,7 @@ Anti-bot check:
 1. Finder query: [ TO RUN on cyberatlas.ai/finder ]
 2. First-page results: [ TO RUN ]
 
-I build backend services that hold up at real throughput: a core-banking API
+I'm Yerins Abraham. I build backend services that hold up at real throughput: a core-banking API
 running roughly 66,000 requests over 30 days at a p95 of 284ms, eight Go
 microservices behind service discovery with Kafka and Redis, and a search
 pipeline over a large document corpus with hybrid retrieval.
@@ -555,3 +585,11 @@ github.com/yerinsabraham
 | Deeter Analytics | ML Engineer | Explicitly a junior role |
 | Anthropic, OpenAI, Ramp, Hex, Linear | various | "Remote" in practice means a US/UK/EU hub |
 | GovStar, Product Genius, Close, Statecraft, Valkyrie Aero, VersaFeed, Snout, vCluster Labs, Great Question, Brilliant.org, Chariot Claims, Oklo | various | Explicitly US/Canada-only or citizens-only in the posting |
+| Rollstack, Scispot (via Y Combinator jobs board) | AI Software Engineer / Backend & Infra Engineer | Real roles, real pay, but each lists a fixed set of employable countries (US/GB/PT/MX/BR/CA and US/ES/DE/GB/PL/IN/CA) — likely an EOR/payroll constraint, and Nigeria isn't on either list. Applying would likely be wasted effort, not just a long shot. |
+
+**Also checked, not just guessed at:** Y Combinator's jobs board and Wellfound,
+beyond the Hacker News thread and the ATS APIs. Most of what they surfaced
+was US-tied by explicit country list; PlutusAI (#17) was the one that was not.
+**Not yet done:** RemoteOK, We Work Remotely, older "Who's hiring" threads,
+LinkedIn, and the cold-outreach-to-companies-not-currently-hiring angle from
+the original brief — none of this list has that yet.
