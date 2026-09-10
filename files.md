@@ -46,7 +46,7 @@ Already sent 2026-09-10. Reads with wrapped Google redirect links in Sent
 **Status: submitted 2026-09-10**
 
 Role: AI Engineer
-Channel: apply form — https://axmed.teamtailor.com/jobs/8175859-ai-engineer
+Channel: apply form — [https://axmed.teamtailor.com/jobs/8175859-ai-engineer](https://axmed.teamtailor.com/jobs/8175859-ai-engineer)
 
 ```
 Subject: AI Engineer, Yerins Abraham
@@ -84,7 +84,7 @@ oystar.app
 **Status: submitted 2026-09-10**
 
 Role: Software Engineer
-Channel: apply — https://openalex.org/jobs/software-engineer
+Channel: apply — [https://openalex.org/jobs/software-engineer](https://openalex.org/jobs/software-engineer)
 
 ```
 Subject: Software Engineer, Yerins Abraham
@@ -119,7 +119,7 @@ github.com/yerinsabraham
 **Status: submitted 2026-09-10**
 
 Role: Full-Stack Engineer (Back-End Leaning)
-Channel: apply form — https://jobs.ashbyhq.com/elevenlabs/c7d59014-b918-4c15-ae33-79f5c9f2cf9f
+Channel: apply form — [https://jobs.ashbyhq.com/elevenlabs/c7d59014-b918-4c15-ae33-79f5c9f2cf9f](https://jobs.ashbyhq.com/elevenlabs/c7d59014-b918-4c15-ae33-79f5c9f2cf9f)
 
 ```
 Subject: Full-Stack Engineer (Back-End Leaning), Yerins Abraham
@@ -150,7 +150,7 @@ github.com/yerinsabraham
 **Status: not sent**
 
 Role: Customer Engineer
-Channel: apply form — https://jobs.ashbyhq.com/Mastra (addressed to Shane Thomas, co-founder/CPO)
+Channel: apply form — [https://jobs.ashbyhq.com/Mastra](https://jobs.ashbyhq.com/Mastra) (addressed to Shane Thomas, co-founder/CPO)
 
 ```
 Subject: Customer Engineer, Yerins Abraham
@@ -187,7 +187,7 @@ github.com/yerinsabraham/evalgate
 **Status: not sent**
 
 Role: AI Engineer
-Channel: email `recruiting@starbridge.ai` (mention Hacker News), or https://starbridge.ai/careers
+Channel: email `recruiting@starbridge.ai` (mention Hacker News), or [https://starbridge.ai/careers](https://starbridge.ai/careers)
 
 ```
 Subject: AI Engineer, Yerins Abraham
@@ -219,7 +219,7 @@ github.com/yerinsabraham
 **Status: not sent**
 
 Role: AI Engineer, Enterprise Technology & AI
-Channel: apply form — https://job-boards.greenhouse.io/gitlab/jobs/8556658002
+Channel: apply form — [https://job-boards.greenhouse.io/gitlab/jobs/8556658002](https://job-boards.greenhouse.io/gitlab/jobs/8556658002)
 Note: country eligibility for Nigeria unverified — answer the form's visa/location question honestly
 
 ```
@@ -255,7 +255,7 @@ github.com/yerinsabraham
 **Status: not sent**
 
 Role: Staff Full-Stack Engineer (React, Python, AI Technologies)
-Channel: apply — https://apply.workable.com/seeq/j/1378093793
+Channel: apply — [https://apply.workable.com/seeq/j/1378093793](https://apply.workable.com/seeq/j/1378093793)
 Note: posting explicitly says to mention Hacker News, and states pay adjusts for non-US locations
 
 ```
@@ -286,7 +286,7 @@ github.com/yerinsabraham
 **Status: not sent**
 
 Role: Software Engineer, Platform [IC3]
-Channel: apply form — https://job-boards.greenhouse.io/sourcegraph91/jobs/6103628004
+Channel: apply form — [https://job-boards.greenhouse.io/sourcegraph91/jobs/6103628004](https://job-boards.greenhouse.io/sourcegraph91/jobs/6103628004)
 
 ```
 Subject: Software Engineer, Platform, Yerins Abraham
@@ -320,7 +320,7 @@ github.com/yerinsabraham
 **Status: not sent**
 
 Role: Senior Engineer, Platform
-Channel: apply form — https://www.oysterhr.com/careers (search "Senior Engineer, Platform")
+Channel: apply form — [https://www.oysterhr.com/careers](https://www.oysterhr.com/careers) (search "Senior Engineer, Platform")
 
 ```
 Subject: Senior Engineer, Platform, Yerins Abraham
@@ -385,7 +385,7 @@ github.com/yerinsabraham
 **Status: not sent**
 
 Role: Forward-Deployed Engineer
-Channel: apply — https://www.shovels.ai/careers/forward-deployed-engineer
+Channel: apply — [https://www.shovels.ai/careers/forward-deployed-engineer](https://www.shovels.ai/careers/forward-deployed-engineer)
 
 ```
 Subject: Forward Deployed Engineer, Yerins Abraham
@@ -415,7 +415,7 @@ github.com/yerinsabraham
 **Status: not sent**
 
 Role: Founding Engineer
-Channel: apply — https://cloro.dev/careers/founding-engineer/
+Channel: apply — [https://cloro.dev/careers/founding-engineer/](https://cloro.dev/careers/founding-engineer/)
 
 ```
 Subject: Founding Engineer, Yerins Abraham
@@ -449,7 +449,7 @@ github.com/yerinsabraham
 **Status: not sent**
 
 Role: Senior Applied AI Engineer
-Channel: apply form — https://jobs.ashbyhq.com/mintlify (search "Senior Applied AI Engineer")
+Channel: apply form — [https://jobs.ashbyhq.com/mintlify](https://jobs.ashbyhq.com/mintlify) (search "Senior Applied AI Engineer")
 Note: remote-outside-US not confirmed, the email asks directly
 
 ```
@@ -487,7 +487,7 @@ github.com/yerinsabraham/evalgate
 **Status: not sent**
 
 Role: CTO Partner (not a standard salaried hire — read the note before sending)
-Channel: email `ahmet@boss-iq.com`, or https://boss-iq.com/apply-cto.html
+Channel: email `ahmet@boss-iq.com`, or [https://boss-iq.com/apply-cto.html](https://boss-iq.com/apply-cto.html)
 Note: equity-heavy partner role, no salary stated — confirm terms before going deep
 
 ```
@@ -520,7 +520,7 @@ github.com/yerinsabraham
 **Status: not sent**
 
 Role: Backend Engineer
-Channel: apply — https://matcha.fm/apply/be
+Channel: apply — [https://matcha.fm/apply/be](https://matcha.fm/apply/be)
 Note: remote list doesn't name Africa but doesn't exclude it either
 
 ```
@@ -551,7 +551,7 @@ github.com/yerinsabraham
 **Status: not sent**
 
 Role: AI Engineer
-Channel: apply via Wellfound — https://wellfound.com/jobs/4417497-ai-engineer (Wellfound account needed)
+Channel: apply via Wellfound — [https://wellfound.com/jobs/4417497-ai-engineer](https://wellfound.com/jobs/4417497-ai-engineer) (Wellfound account needed)
 
 ```
 Subject: AI Engineer, Yerins Abraham
@@ -583,7 +583,7 @@ github.com/yerinsabraham
 
 Role: Software Engineer
 Channel: email `atlas@cyberatlas.ai`
-**Blocked:** their posting requires a query run on https://cyberatlas.ai/finder,
+**Blocked:** their posting requires a query run on [https://cyberatlas.ai/finder](https://cyberatlas.ai/finder),
 plus its first-page results, pasted into the two blanks below. Subject must
 contain "HN Software Engineer" exactly.
 
