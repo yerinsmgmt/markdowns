@@ -22,10 +22,10 @@ about it — it's the same "no route, no draft" rule the whole system runs on.
 - [4. Carrot Fertility](#4-carrot-fertility)
 - [5. Zeta Global](#5-zeta-global)
 
-## Needs your own verification before sending
+## Needs your own verification before sending (all four have ready drafts now)
 
-- [IndexRide — low confidence](#indexride)
-- [Clera — name shared by 2-3 unrelated companies](#clera)
+- [IndexRide — CTO, low confidence](#indexride)
+- [Clera — Backend Engineer, name shared by 2-3 unrelated companies](#clera)
 - [MLabs — agency, undisclosed client](#mlabs)
 - [Open Select — company identity unconfirmed](#open-select)
 
@@ -209,81 +209,145 @@ github.com/yerinsabraham
 ---
 
 <a id="indexride"></a>
-## IndexRide — low confidence, verify before sending
+## IndexRide — CTO, low confidence, verify before sending
 
-Found via multiple X reposts (last ~4 days, so genuinely recent): "IndexRide
-is hiring — Mobile Developer (Flutter), Backend Developer (Node.js/Python),
-AI/ML Engineer, DevOps Engineer (part-time). 2+ years experience. Apply:
-careers@indexride.com."
+**Status: drafted, not sent — you chose CTO over the Backend Developer role**
 
-**Why this isn't a finished draft:** indexride.com is a real, live domain
-("IndexRide — AI-Powered Mobility"), so it's not fabricated, but I could not
-get past the homepage header to see an actual careers page, team information,
-funding, or any way to confirm the roles are genuinely open rather than a
-recruiter service reposting a stale listing. That's below the bar this repo
-holds everywhere else.
+Channel: email `careers@indexride.com` (from the original X-repost sourcing, not independently confirmed current). Full research in `companies/indexride.md`.
 
-**If you want to pursue it:** visit indexride.com yourself, check it looks
-like a real company you'd want to work for, and if so tell me and I'll draft
-it properly with the same research standard as everything else here.
+**Why the caution stands:** re-checked indexride.com twice this session (homepage, `/careers`, `/jobs`) — every fetch still returns only a bare header, nothing else. Likely a JS-rendered site my tooling can't get past rather than proof the listings aren't real (you saw them yourself), but company depth (team, funding, track record) is still unverified.
+
+**Years gap, stated honestly in the draft below:** the role asks for 8+ years; per `CANDIDATE.md` your professional engineering experience runs to about 6 years. The draft states this plainly rather than rounding up.
+
+```
+Subject: CTO, Yerins Abraham
+
+Hi there,
+
+Applying for the CTO role at IndexRide.
+
+I've spent six years owning production systems end to end, not just building
+them. I'm co-founder and principal engineer at Creovine, where I lead backend
+on a live core-banking platform, about 85 percent of the codebase across
+600-plus commits, two server errors across 65,942 requests over 30 days at
+p95 284ms. I also built an AI support product from research through
+production, with an open-source eval harness gating every release.
+
+I trained as a doctor before any of this, six years of general medicine,
+which is where a live health-tech platform I built, Oystar, comes from.
+
+Six years, not eight, but the ownership has been real the whole way. Is the
+CTO role still open, and what would a first conversation look like?
+
+CV attached.
+
+Yerins Abraham
+yerinsabraham.com
+github.com/yerinsabraham/evalgate
+```
 
 ---
 
 <a id="clera"></a>
-## Clera — name shared by 2-3 unrelated companies
+## Clera — Backend Engineer, name shared by 2-3 unrelated companies
 
-Two roles on Himalayas: Founding Product Engineer (€80-120k) and Backend
-Engineer (€116-146k), both via `jobs.ashbyhq.com/clera`.
+**Status: drafted, not sent — verify company identity before sending**
 
-**Why this isn't a finished draft:** "Clera" turns out to be at least two or
-three unrelated companies — a real SF "AI talent agent" startup
-(getclera.com, $3M pre-seed), a Vienna AI-phone-assistant product described in
-one listing, and a fintech compliance-infrastructure product described in the
-other. Could not confirm which one is actually behind either listing.
+Channel: **Ashby form** — jobs.ashbyhq.com/clera. No named contact; draft below is written for the form's cover-letter field. Full research in `companies/clera.md`.
 
-**Two hard disqualifiers regardless of identity:** Founding Product Engineer
-requires **native-level German**. Backend Engineer mandates **European
-timezone overlap** and states **no visa sponsorship**.
+**Why the caution stands:** "Clera" turns out to be at least two or three unrelated companies — a real SF "AI talent agent" startup (getclera.com, $3M pre-seed), a Vienna AI-phone-assistant product described in one listing, and a fintech compliance-infrastructure product described in the other. Could not confirm which one is actually behind either listing. Two hard disqualifiers regardless: Founding Product Engineer requires **native-level German**; Backend Engineer mandates **European timezone overlap** and states **no visa sponsorship**. The draft below (for the better-fitting Backend Engineer role) deliberately makes no claim about which "Clera" this is, only about the skills the listing itself asks for — open the live listing yourself first to confirm who you'd actually be joining.
 
-**If you want to pursue it:** the Backend Engineer role is the better
-technical fit on paper if the timezone/sponsorship terms work for you — open
-the live Ashby listing yourself first and confirm which company you'd
-actually be joining. Full detail in `companies/clera.md`.
+```
+Subject: Backend Engineer, Yerins Abraham
+
+Hi there,
+
+Applying for the Backend Engineer role on your Ashby board.
+
+I build backend systems for real production load, not just to pass a code
+review. I lead backend on a live core-banking platform, distributed systems
+and API design included, two server errors across 65,942 requests over 30
+days at p95 284ms. Go, Java, TypeScript, and MySQL are all in my daily stack.
+
+CV attached. Is the role still open, and is there a task or a call you'd want
+to start with?
+
+Yerins Abraham
+yerinsabraham.com
+github.com/yerinsabraham
+```
 
 ---
 
 <a id="mlabs"></a>
 ## MLabs — agency, undisclosed client
 
-"Staff Software Engineer - Backend & AI Infra", via Adzuna → Workable, ~$217k.
+**Status: drafted, not sent — this email asks who the real employer is**
 
-**Why this isn't a finished draft:** MLabs (mlabs.city, a real Haskell/Cardano
-consultancy) is recruiting for "our client," never named. The JD leaks a
-product name, "Senpi" (a real LA AI-trading-agent startup, $4M seed) — a
-plausible but unconfirmed match, not a confirmation. Same caution tier as
-IndexRide. Must be US-based; no sponsorship stated.
+Channel: email `human-resources@mlabs.city` (documented as an accommodations address, not confirmed as an application inbox — the Workable form at https://apply.workable.com/mlabs/j/53E07FF8A4/apply/ is the more reliable formal channel, but can't ask a question the way an email can). Full research in `companies/mlabs.md`.
 
-**If you want to pursue it:** apply cold at
-https://apply.workable.com/mlabs/j/53E07FF8A4/apply/ and ask who the client
-is during screening, or research Senpi directly first. Full detail in
-`companies/mlabs.md`.
+**Why the caution stands:** MLabs (mlabs.city, a real Haskell/Cardano consultancy) is recruiting for "our client," never named. The JD leaks a product name, "Senpi" (a real LA AI-trading-agent startup, $4M seed) — a plausible but unconfirmed match. Must be US-based; no sponsorship stated. The draft below asks directly who the client is rather than applying blind.
+
+```
+Subject: Staff Software Engineer, Backend & AI Infra, Yerins Abraham
+
+Hi there,
+
+I'm applying for the Staff Software Engineer, Backend & AI Infra role posted
+through MLabs on Workable, for an unnamed client.
+
+I build backend and agent infrastructure for production systems: I lead
+backend on a live core-banking platform, two server errors across 65,942
+requests over 30 days at p95 284ms, and I've built agent runtimes and an MCP
+layer for tool access with retries and circuit breakers on long-running LLM
+calls, close to what the posting describes for the agent runtime and
+model-hosting migration.
+
+Before going further: could you tell me which company this role is actually
+with? I'd rather know who I'm applying to than send a generic application
+into an anonymized listing.
+
+CV attached.
+
+Yerins Abraham
+yerinsabraham.com
+github.com/yerinsabraham
+```
 
 ---
 
 <a id="open-select"></a>
 ## Open Select — company identity unconfirmed
 
-"Member of Engineering, Backend - AI", via Adzuna, up to $290k + equity.
+**Status: drafted, not sent — this email asks who the real employer is**
 
-**Why this isn't a finished draft:** two different companies share this name
-and neither cleanly matches the listing. One is a real recruiting agency
-(osrecruit.com); the other is described only in unverifiable aggregator
-marketing copy (no company site, no Crunchbase, no press found anywhere for
-the "$21M raised" claim). Same caution tier as the earlier micro1 listing.
+Channel: email `info@osrecruit.com` — the only real, confirmed contact found for either "Open Select" entity. Full research in `companies/open-select.md`.
 
-**If you want to pursue it:** contact the recruiting agency directly at
-info@osrecruit.com and ask which client this is for, before anything gets
-drafted. Full detail in `companies/open-select.md`.
+**Why the caution stands:** two different companies share this name and neither cleanly matches the listing. One is a real recruiting agency (osrecruit.com); the other is described only in unverifiable aggregator marketing copy (no company site, no Crunchbase, no press found anywhere for the "$21M raised" claim). Same caution tier as the earlier micro1 listing.
+
+```
+Subject: Member of Engineering, Backend - AI, Yerins Abraham
+
+Hi there,
+
+I saw a "Member of Engineering, Backend - AI" listing on Adzuna, up to $290k,
+that named no employer. I'm not certain it's one of yours, but the
+description matched the kind of roles I understand osrecruit places.
+
+I build backend systems that connect LLMs to real product experiences: I
+lead backend on a live core-banking platform, two server errors across
+65,942 requests over 30 days at p95 284ms, and I've built an MCP gateway and
+eval harness for agent tooling in production.
+
+If this role is one you're working, I'd like to apply, and I'd want to know
+who the employer is before going further. If it isn't, is there something
+similar on your desk right now?
+
+CV attached.
+
+Yerins Abraham
+yerinsabraham.com
+```
 
 ---
 
