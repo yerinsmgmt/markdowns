@@ -1,174 +1,218 @@
-# Warm DMs: the two people who said "let's talk"
+# The orientation call: what to ask
 
-Written 16 September 2026. **Nothing here has been sent.** These are for
-Yerins to send by hand from his own Instagram, not for any automated sender.
+**The checklist to have open during the call.** Written 16 September 2026,
+and meant to be added to: if a better question comes up on a call, it goes in
+here afterwards so it is asked every time from then on.
 
-Two people commented "let's talk" on the launch post. Both are friends. One
-is in the US and is not at a large company, so he is a **route to other
-people**, not a buyer. The other is **Sandra Chukwudozie, founder and CEO of
-Salpha Energy**, who is a real buyer.
+This is the first of the two meetings every organisation tier books, and it is
+the standard rather than one customer's script.
 
----
-
-## First, why the last few attempts with friends went nowhere
-
-Yerins's own read: *"It was more of, like, hey, I see that you're doing great,
-and I will see what I can do."*
-
-That is not friends being unhelpful. **That is the correct answer to a vague
-question.** "Let me know if you need anything" and "we should do something
-together" cannot be answered with anything except "I'll see what I can do",
-because there is nothing in them to say yes or no to.
-
-So the rule for both messages below: **one specific thing, small enough to
-agree to in a single line.** A friend who can say "yes, Tuesday" will. A
-friend who has to work out what you want will say they will see what they can
-do, and mean it, and never do it.
-
-The second rule: **do not ask for a favour.** Both messages offer to do
-something, not to receive something. That is also what protects the
-friendship if the answer is no.
+The platform creates this call automatically the moment a tier is paid for,
+**on the date the buyer chose at checkout**, which is now the only date the
+checkout asks for. It runs 45 minutes and carries its own Google Meet link,
+which goes to whoever is teaching as well as to the customer.
 
 ---
 
-## Sandra Chukwudozie, Salpha Energy
+## Why this call decides everything
 
-**Why she is a real prospect and not just a friend being polite:**
+**Do not guess the department.** A draft of the Salpha message opened by
+asserting that customer support was where their problem was. Nobody knew that.
+Their support team may be excellent and their real bottleneck somewhere else
+entirely, and arriving certain about the wrong thing is worse than arriving
+without a theory.
 
-- Founded Salpha Energy in 2017. Solar home systems, assembly plant in Cross
-  River, capacity around 250,000 units a year
-- Over 1,050 jobs created, directly and indirectly
-- Raised about $1.3 million (₦2 billion) from All On, the Shell-backed
-  investor, in 2025. **She has budget**
-- **She already hires and trains women for technical roles.** She does not
-  need convincing that training is worth paying for, which is most of the
-  argument already won
-- Forbes Africa 30 Under 30, 2022
+**And saying so is a stronger pitch than pretending.** "I will find out what
+your team actually does and build the session around it" is more credible to a
+buyer than "I already know what you need", because the second one is
+obviously not true of a company you have never worked with.
 
-That last point is the opening. Somebody who already runs training programmes
-is not being sold a new idea, only a better way to do one she believes in.
+So this call does three jobs, and **the third one is now the only way it can
+happen at all**:
 
-### Message one: reopen, do not pitch
+1. **Decides what the teaching session covers**
+2. **Records the baseline**, which is the only thing that turns the work into
+   a case study later. See `PILOT-RIVERLY.md`
+3. **Sets the session dates.** Changed 16 September 2026: the checkout no
+   longer asks when teaching starts. It fixes this call and nothing else, and
+   every session after it is marked provisional until this call settles it.
 
-With a friend, "how are you" is correct. The advice against it applies to
-cold emails to strangers, not to somebody who already knows you.
-
-```
-Sandra! You commented on my post, sorry it took me a minute.
-
-How's Salpha? I saw the All On raise, that's serious. Congratulations.
-
-I've been building something and I think it might actually be useful to you,
-but I want to hear what you're dealing with first. Are you around this week?
-```
-
-**Stop there. Do not add the offer to this message.** The whole point is to
-get a reply, and a pitch in the first message is what stops one.
-
-### Message two: after she replies
-
-Only once she has answered. Keep it to one specific thing:
-
-```
-So here's what I've been building. Creovine Academy. We train a team to use AI
-on the actual work they do, not tool demos. Live sessions, their real tasks.
-
-The bit I thought of you for: you already train women for technical roles.
-That's the hard part and you've done it. This is the same idea pointed at
-whatever eats your team's week.
-
-Can I run one session with one team at Salpha? Pick the team that has the most
-repetitive work. I'll measure how long three of their regular tasks take
-before, run the session, then measure again a few weeks later, and you keep
-whatever we build in it.
-```
-
-### If she asks what it costs
-
-**Do not say free.** See `PILOT-RIVERLY.md` for the reasoning: a free pilot
-converts badly and reads as desperation, while a small paid one converts at
-60 to 90 percent because paying is what makes a team turn up.
-
-```
-One team, one session, $500. The full programme for a department is $5,000,
-but that's not what I'm asking you for. I want one team and a real result
-first, and if it works you'll know whether the bigger thing is worth it.
-```
-
-**$500 is not a discount on $5,000. It is a smaller thing.** Never present it
-as a markdown, because then $500 becomes the price of everything afterwards,
-including anything she refers you to.
-
-### If she says yes
-
-Go straight to `PILOT-RIVERLY.md` and follow the same list: the four
-permissions in writing first, then the baseline numbers from her team in
-their own words, before any teaching happens.
+**So the call does not end without dates.** A company that has paid and never
+booked is the most likely way this goes wrong, and it turns into a refund
+conversation weeks later. Everybody who will attend is in this room, which is
+the only moment ten people's availability can actually be agreed.
 
 ---
 
-## The friend in the US
+## The free intro call is a different meeting
 
-He is not the buyer. His company is small and that is fine. **He is a route.**
-Ask him for exactly one introduction, not for business.
+**Added 16 September 2026, after a prospect asked for one.** Some buyers want
+a conversation before they pay, which is normal for anything between five
+hundred and five thousand dollars, and it is a much easier ask than a
+purchase. For cold outreach it may be the better opening: "twenty minutes to
+show your team what this does" is a far lower bar than "buy this".
 
-### Message one
+**It is not this call, and the line between them is the product.**
 
-```
-Bro! Sorry, took me forever to come back to you.
+| | Intro call | This call, the orientation |
+| --- | --- | --- |
+| Purpose | Show them what it is | Find out how they work |
+| Length | 20 to 30 minutes | 45 minutes |
+| Cost | Free | Comes with the purchase |
 
-How's everything? What are you working on these days?
-```
-
-### Message two: after he replies
-
-```
-So I've been building Creovine Academy. We train teams to use AI on their real
-work, the actual stuff that eats their week, not tool demos.
-
-I'm not asking you to buy anything. I'm looking for one thing:
-
-Do you know one person who runs a team of about 15 to 200 people, anywhere in
-the US or UK, who's been complaining about AI or trying to work out what to do
-about it? Just one name. I'll take it from there and I won't make it weird for
-you.
-```
-
-**Why "just one name" and not "anyone you know":** the second one is the
-vague ask that produced "I'll see what I can do" last time. One name is
-answerable.
-
-### If he gives a name
-
-Ask for the introduction, do not ask for the contact details:
-
-```
-Amazing. Would you mind introducing us? Even one line in a group chat or an
-email with us both on it. That's worth more than me turning up cold.
-```
-
-An introduction from him converts far better than an address from him,
-because the whole value of the referral is that it is warm.
+**The intro call never includes the fact-finding below.** The questions in
+this document are the paid work: the moment somebody gets their tasks mapped
+and timed for free, there is nothing left for them to buy. When a detailed
+"how would you handle X" comes up on an intro call, the answer is "that is
+exactly what we work out on the kickoff", which is true.
 
 ---
 
-## What not to do in either conversation
+## Before the call
 
-- **Do not send a link in the first message.** A link turns a conversation
-  into a campaign.
-- **Do not ask for a meeting in the first message.** Ask a question they can
-  answer in one line.
-- **Do not chase more than once.** If there is no answer after one nudge a
-  week later, leave it. These are friends before they are pipeline, and that
-  order does not reverse.
-- **Do not claim the training makes anybody compliant with anything**, and do
-  not name any client we do not have. `CLAUDE.md` holds here too.
+**Not everybody. The people whose work we are going to rebuild.**
+
+This was written as "everyone who will be trained", and that is wrong, which
+Yerins caught. **The training is the call everybody attends. This one is for
+information**, and demanding ten diaries for a fact-finding call is a reason to
+put off booking it.
+
+What is needed is the decision maker, plus two or three of the people who
+actually do the work, because the buyer's account of their staff's week is
+always tidier than the truth and the baseline numbers have to come from the
+people holding the stopwatch.
+
+**And say out loud on the call that this is not the training.** Somebody who
+skimmed the checkout may still arrive expecting a class. Thirty seconds at the
+top costs nothing and stops a room full of people wondering when the teaching
+starts.
+
+Have the roster open. Names, so people can be addressed by name.
 
 ---
 
-## Record what happens
+## The rules for asking
 
-Both go in `INSTAGRAM-LOG.md` like any other DM, and **a real reply moves the
-person into a proper account file**, exactly as an email reply does. Sandra in
-particular should have one the moment she answers, because Salpha is a
-genuine account and not a favour.
+**Ask for the number. Never offer one.** "About how long does that take?" is a
+question. "So about four hours?" is you writing their answer for them, and a
+buyer reading the case study later can tell.
+
+**Do not ask whether something is a problem.** "Is reporting a pain point?"
+gets a polite yes from everybody. Ask what takes longest and let the answer
+rank itself.
+
+**Let silence run.** The second thing somebody says is usually the true one.
+
+**Write the exact words down.** "Chasing people for their numbers" is worth
+more in a case study than "reporting inefficiency", which is nobody's phrase.
+
+---
+
+## The questions
+
+### 1. Who is here (5 minutes)
+
+- What is your name and what do you actually do here day to day?
+
+Not job titles. A title tells you the box; the sentence tells you the work.
+
+### 2. What repeats (the core, 20 minutes)
+
+Ask the room, then go person by person:
+
+- **What do you do that repeats?** Something you do most weeks, more than
+  once.
+- **Walk me through it.** What are the steps, start to finish?
+- **How long does it take, once?**
+- **How often does it happen?** Per day, per week?
+- **Who else does this?** Is it one person or five?
+- **Where does it get stuck?** What is the annoying part?
+
+**Three of these, not one and not ten.** Three gives something to choose from
+and still fits in the time.
+
+### 3. What they already have
+
+- **What do you use now?** Tools, spreadsheets, a system, anything.
+- **Has anyone here used AI for work already?** What for, and did it help?
+
+This matters more than it sounds. A team already using ChatGPT informally
+needs a different session from one that has never opened it, and the answer
+changes what the two to three hours are spent on.
+
+### 4. The one that picks the session
+
+- **If one thing on this list disappeared tomorrow and you never had to do it
+  again, which one?**
+
+**This is the question that decides what gets built in the session.** It ranks
+the list by their own judgement rather than by ours, and people answer it
+honestly because it is a wish rather than a complaint.
+
+### 5. For the buyer, separately if possible
+
+- **What would make this worth it to you?**
+
+Write the sentence down exactly. It opens the case study, and it is the
+sentence to point back at when the result is measured.
+
+---
+
+## Set the dates, before anybody leaves
+
+**This is the part that cannot be left until afterwards.** Their sessions
+currently read "After your call" on their own dashboard, and they stay that way
+until somebody types a date.
+
+- **How many sessions they bought**, and over what period. `Team AI Session` is
+  one. `Department AI Intensive` is three over a week. Say the number out loud.
+- **Propose two options**, not an open question. "Tuesday the 30th or Thursday
+  the 2nd, both at ten your time?" An open "when suits you" from a room of ten
+  people produces silence and then an email that never arrives.
+- **Ask the room, not the buyer.** The manager will say yes to anything. The
+  person who has a standing Thursday meeting will only say so if asked.
+- **Write the dates into the admin session page while still on the call**, so
+  they see the confirmation land. Confirming a provisional date books the
+  calendar event and sends the invitation, so they get it before they hang up.
+
+If they genuinely cannot decide, set a date anyway and say it can be moved.
+**A date that might move beats no date**, because a provisional programme with
+nothing in a diary is how a paid engagement quietly dies.
+
+## Before ending the call
+
+Say what happens next, with the date just agreed:
+
+> Your session is on [date]. We will take [the thing they picked] and rebuild
+> it together, and you will leave with it working.
+>
+> I will send you what to look at beforehand.
+
+**Do not promise a format here.** Whether they get videos, a PDF or nothing at
+all before the session is decided by what was just said in this call, and
+saying "a few short videos" before deciding is a promise that gets broken
+quietly. "What to look at beforehand" commits to preparing them without
+committing to a shape.
+
+Then ask for the permissions, if that has not already been done in writing.
+`PILOT-RIVERLY.md`: name the company, use the logo, quote them, publish the
+numbers. **Before any teaching, not after.**
+
+---
+
+## What to write down afterwards
+
+Straight into the account file, the same day, while it is fresh:
+
+| | |
+| --- | --- |
+| Who attended | names and what each said they do |
+| The three repeating tasks | in their words |
+| Minutes each, times per week | **their numbers** |
+| What they picked in question 4 | this is the session |
+| What they already use | tools, and any AI already in play |
+| The buyer's sentence | from question 5 |
+
+**Without the minutes and the frequency there is no case study**, only a nice
+session nobody can prove anything about. That measurement is the whole reason
+a five hundred dollar engagement is worth more than five hundred dollars.
