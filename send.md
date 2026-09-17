@@ -28,28 +28,31 @@ The purpose is to help a team perform the work they already do with fewer steps,
 
 ## Contents
 
-1. [What belongs in training, and what does not](#s1)
-2. [Commercial model this creates](#s2)
-3. [Leadership / Founders / Management](#s3)
-4. [Administration / Reception / Office Operations](#s4)
-5. [Customer Support](#s5)
-6. [Sales / Business Development](#s6)
-7. [Marketing / Content](#s7)
-8. [Finance / Bookkeeping](#s8)
-9. [HR / Recruitment](#s9)
-10. [Operations / Project Management](#s10)
-11. [Product / Software Engineering](#s11)
-12. [Field Operations / Installation / Maintenance](#s12)
-13. [Inventory / Warehouse / Supply Chain](#s13)
-14. [Manufacturing / Production](#s14)
-15. [Procurement](#s15)
-16. [Data / Reporting](#s16)
-17. [Legal / Contracts / Compliance](#s17)
-18. [IT & Cybersecurity](#s18)
-19. [Discovery questions to use in the meeting](#s19)
-20. [Recommended department taxonomy for the platform](#s20)
-21. [Recommended boundary for a 2 to 3 hour session](#s21)
-22. [Lightweight tools worth teaching or demonstrating](#s22)
+Listed A to Z, so a topic can be found without reading the whole list.
+The number is where that section sits in the document.
+
+- **4** &nbsp; [Administration / Reception / Office Operations](#s4)
+- **2** &nbsp; [Commercial model this creates](#s2)
+- **5** &nbsp; [Customer Support](#s5)
+- **16** &nbsp; [Data / Reporting](#s16)
+- **19** &nbsp; [Discovery questions to use in the meeting](#s19)
+- **12** &nbsp; [Field Operations / Installation / Maintenance](#s12)
+- **8** &nbsp; [Finance / Bookkeeping](#s8)
+- **9** &nbsp; [HR / Recruitment](#s9)
+- **13** &nbsp; [Inventory / Warehouse / Supply Chain](#s13)
+- **18** &nbsp; [IT & Cybersecurity](#s18)
+- **3** &nbsp; [Leadership / Founders / Management](#s3)
+- **17** &nbsp; [Legal / Contracts / Compliance](#s17)
+- **22** &nbsp; [Lightweight tools worth teaching or demonstrating](#s22)
+- **14** &nbsp; [Manufacturing / Production](#s14)
+- **7** &nbsp; [Marketing / Content](#s7)
+- **10** &nbsp; [Operations / Project Management](#s10)
+- **15** &nbsp; [Procurement](#s15)
+- **11** &nbsp; [Product / Software Engineering](#s11)
+- **21** &nbsp; [Recommended boundary for a 2 to 3 hour session](#s21)
+- **20** &nbsp; [Recommended department taxonomy for the platform](#s20)
+- **6** &nbsp; [Sales / Business Development](#s6)
+- **1** &nbsp; [What belongs in training, and what does not](#s1)
 
 Every section opens with a plain summary, so you can tell from the top
 whether it is the one you want.
