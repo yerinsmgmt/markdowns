@@ -59,7 +59,7 @@ whether it is the one you want.
 
 # 1. What belongs in training, and what does not
 
-> **In plain words.** Some things a team can learn in one session and use the same afternoon. Other things somebody has to build for them. This says which is which, so we never sell one and deliver the other.
+> **In plain words.** There are two kinds of work in here. Some things a team can be taught in one session and start using the same afternoon. Other things somebody has to sit down and build for them, and that takes weeks. This section draws the line between the two, so we never sell one and then deliver the other.
 
 ## TRAINING
 
@@ -107,7 +107,7 @@ A training session can reveal the opportunity and demonstrate the idea. It shoul
 
 # 2. Commercial model this creates
 
-> **In plain words.** Three things we can sell, not one. Teaching them, building it for them, and keeping it running afterwards. The second one is worth the most and nobody has priced it yet.
+> **In plain words.** This gives us three separate things to sell instead of one. We can teach a team, we can build the thing for them, or we can look after it once it is running. Building it is worth the most money, and we have not put a price on it yet.
 
 There are really three potential products.
 
@@ -150,7 +150,7 @@ For companies that want help maintaining, improving, and adding automations over
 
 # 3. Leadership / Founders / Management
 
-> **In plain words.** Bosses lose their time to email, meetings and chasing people for updates. These turn a long thread into the actual decision, and a pile of numbers into one page.
+> **In plain words.** A founder or a manager spends the day reading long email chains, sitting in meetings, and asking people for updates that arrive late. This section turns a forty message thread into the one decision that actually matters, and turns a pile of spreadsheets into a single page they can read over breakfast.
 
 ## Where time usually disappears
 
@@ -224,7 +224,7 @@ That is no longer a basic training exercise.
 
 # 4. Administration / Reception / Office Operations
 
-> **In plain words.** The person who answers the phone and types the same email forty times a week. Huge repetitive workload, easy wins, and almost nobody thinks to train them.
+> **In plain words.** This is the person who answers the phone, books the meetings and types the same five emails over and over. In a small company they usually carry more repeated work than anybody else, and almost nobody thinks to train them. The easiest wins in this whole document are here.
 
 This should be a real training category. It is common in smaller companies and should not be hidden inside “custom”.
 
@@ -305,7 +305,7 @@ Build a company-wide admin intake, routing and reminder system.
 
 # 5. Customer Support
 
-> **In plain words.** The team answering the same questions all day. Give them one place to look up real answers, and let AI turn a messy WhatsApp complaint into a proper record.
+> **In plain words.** Support teams answer the same twenty questions all day and then have to write up what happened. This section gives them one place where the real answers live, so they stop hunting through PDFs, and shows how a messy WhatsApp complaint turns into a proper record without anybody retyping it.
 
 ## Where time usually disappears
 
@@ -395,7 +395,7 @@ WhatsApp/API support agent, automatic case logging, automatic classification, ro
 
 # 6. Sales / Business Development
 
-> **In plain words.** Selling time goes on research, follow-ups and rewriting the same message. These prepare a meeting in five minutes and turn the call itself into the follow-up.
+> **In plain words.** Sales people lose most of the day to things that are not selling: looking a company up before a call, writing the follow-up afterwards, and trying to remember who they promised to ring back. This section prepares a meeting in five minutes and turns the call itself into the follow-up email.
 
 ## Where time usually disappears
 
@@ -486,7 +486,7 @@ Lead capture, enrichment, personalized outreach, CRM update, reminders and pipel
 
 # 7. Marketing / Content
 
-> **In plain words.** One idea, rewritten by hand for every channel. Write it once and let AI make the other six versions, in a brand voice it already knows.
+> **In plain words.** Marketing writes something once, then rewrites it by hand for LinkedIn, then again for Instagram, then again for the newsletter. This section shows how to write it once and have the other versions made for you, in the company's own voice, instead of starting from an empty page every time.
 
 ## Where time usually disappears
 
@@ -572,7 +572,7 @@ Automated content pipelines, scheduled repurposing, lead routing from campaigns,
 
 # 8. Finance / Bookkeeping
 
-> **In plain words.** Spreadsheet cleanup, formulas and typing invoices into systems. AI does the boring middle, a person checks the numbers, and that rule never bends here.
+> **In plain words.** Bookkeepers spend hours tidying spreadsheets, fighting with formulas and typing invoice details into another system. AI can do that middle part in seconds. The one rule that never bends here is that a person still checks every number before it counts as real.
 
 ## Where time usually disappears
 
@@ -660,7 +660,7 @@ Automated invoice ingestion, approval routing, transaction matching, bookkeeping
 
 # 9. HR / Recruitment
 
-> **In plain words.** Job adverts, reading CVs, interview notes, and the same policy question every week. Everything except the hiring decision, which stays human.
+> **In plain words.** HR writes job adverts, reads through piles of CVs, takes interview notes, and answers the same question about leave every week. This section takes all of that off them. It does not touch the hiring decision itself, which stays with a person.
 
 ## Where time usually disappears
 
@@ -735,7 +735,7 @@ Applicant intake, ATS workflows, account provisioning, onboarding automation, HR
 
 # 10. Operations / Project Management
 
-> **In plain words.** Turning messages into tasks and tasks into status updates. The job is mostly translation, which is the thing AI is best at.
+> **In plain words.** Operations turns other people's messages into tasks, and then turns those tasks into status updates nobody enjoys writing. Nearly all of that is moving information from one shape into another, which is the single thing AI is best at.
 
 ## Where time usually disappears
 
@@ -800,7 +800,7 @@ Automatic task creation, reminders, project-system synchronization, cross-tool w
 
 # 11. Product / Software Engineering
 
-> **In plain words.** The one department where the tools are already very strong, so training can go deeper here without turning into a consulting project.
+> **In plain words.** This is the one department where the AI tools are already genuinely strong. You can teach developers much more here without it turning into a consulting job, because the tools do most of the heavy lifting themselves.
 
 This is one of the few departments where the available individual AI tools are already very powerful, so training can go deeper without becoming enterprise consulting.
 
@@ -884,7 +884,7 @@ MCP connections to internal systems, CI/CD agent workflows, fully configured cod
 
 # 12. Field Operations / Installation / Maintenance
 
-> **In plain words.** Technicians who install and fix things on site. A customer's message becomes a job brief, the manuals become something they can ask questions of, and a voice note becomes a service report.
+> **In plain words.** These are the technicians who drive out to install or repair something. This section turns a customer's WhatsApp message into a proper job brief before anybody leaves, lets a technician ask the manual a question instead of phoning the office, and turns the voice note they record at the end into a written service report.
 
 ## This should be a first-class department.
 
@@ -996,7 +996,7 @@ Automatic dispatch, job assignment, geolocation, WhatsApp API, inventory deducti
 
 # 13. Inventory / Warehouse / Supply Chain
 
-> **In plain words.** Stock, suppliers and counts. A company can have all of this on spreadsheets and still lose hours to it every week, with no big system anywhere.
+> **In plain words.** Stock counts, supplier quotes and deciding when to reorder. A company can run all of this on spreadsheets, with no big system anywhere, and still lose hours to it every week. This section is for them.
 
 ## This should also be a real department or track.
 
@@ -1080,7 +1080,7 @@ Inventory sync, barcode workflows, automatic reorder rules, purchase approvals, 
 
 # 14. Manufacturing / Production
 
-> **In plain words.** Companies that actually make or assemble things. Shift reports, quality problems and daily numbers turned into something a manager can read.
+> **In plain words.** For companies that actually make or assemble things. Shift reports, quality problems and daily production numbers become something a manager can read in two minutes, instead of ten pages nobody opens.
 
 For companies that actually manufacture or assemble products, this can be separate from inventory.
 
@@ -1104,7 +1104,7 @@ Machine/IoT integration, predictive maintenance, automated quality inspection, E
 
 # 15. Procurement
 
-> **In plain words.** Buying things. Comparing quotes properly, writing a request a supplier can answer, and checking what was actually promised.
+> **In plain words.** Buying things for the company. Comparing three quotes properly instead of guessing, writing a request a supplier can actually answer, and being able to check later what was really promised.
 
 ## Teachable shortcuts
 
@@ -1133,7 +1133,7 @@ Approval workflows, supplier portal integration, PO creation, three-way matching
 
 # 16. Data / Reporting
 
-> **In plain words.** The same report rebuilt every week by hand. Teach them to ask the spreadsheet questions instead of building the answer themselves.
+> **In plain words.** Somebody rebuilds the same report by hand every week. This section teaches them to ask the spreadsheet a question in ordinary English and get the answer back, instead of building it themselves every single time.
 
 ## Teachable shortcuts
 
@@ -1172,7 +1172,7 @@ If eligible Gemini in Sheets is available, the workflow can happen directly insi
 
 # 17. Legal / Contracts / Compliance
 
-> **In plain words.** Long documents, and finding the part that matters. AI summarises and drafts, a lawyer decides. We never say we make anybody compliant with anything.
+> **In plain words.** Contracts and policies are long, and the part that matters is usually three lines buried in the middle. AI finds it and writes the first draft. A lawyer still decides. We never tell anybody we make them compliant with anything.
 
 ## Teachable shortcuts
 
@@ -1195,7 +1195,7 @@ Contract lifecycle systems, automated review pipelines, approval routing, compli
 
 # 18. IT & Cybersecurity
 
-> **In plain words.** Small companies rarely have an IT department and all have devices, passwords and people clicking links. This is also where the rules for using AI safely with company information live.
+> **In plain words.** Most small companies have no IT department, but every one of them has laptops, passwords and staff clicking links they should not. This covers the everyday fixes, and it is also where we write down what staff may and may not put into a public AI tool.
 
 ## Where time usually disappears
 
@@ -1263,7 +1263,7 @@ monitoring, backup verification, security tooling.
 
 # 19. Discovery questions to use in the meeting
 
-> **In plain words.** What to ask in the meeting. Do not pick their department for them; ask where the time goes and let them tell you.
+> **In plain words.** The questions to ask in the meeting. The point is not to walk in and tell them which department needs help. Ask where their time actually goes, and let them tell you.
 
 You should not decide which department needs the training.
 
@@ -1303,7 +1303,7 @@ Then listen for these patterns:
 
 # 20. Recommended department taxonomy for the platform
 
-> **In plain words.** The list of departments the platform should offer, and the ones currently hidden under Custom that should not be.
+> **In plain words.** The list of departments a buyer chooses from when they sign up, including three real ones that are currently lumped under Custom when they should have a place of their own.
 
 Independent of the current platform structure, these are commercially understandable categories for an SMB-focused workflow-training business:
 
@@ -1363,7 +1363,7 @@ This exists in many product, retail, energy, manufacturing and distribution busi
 
 # 21. Recommended boundary for a 2 to 3 hour session
 
-> **In plain words.** What one session can honestly deliver, and what it must never promise. This is what stops training quietly becoming an unpaid software project.
+> **In plain words.** What one session can honestly deliver in two to three hours, and what it must never promise. This is the section that stops a training job quietly turning into a software project nobody is paying for.
 
 A realistic session should aim to produce:
 
@@ -1420,7 +1420,7 @@ arrives as a pitch gets read as one.
 
 # 22. Lightweight tools worth teaching or demonstrating
 
-> **In plain words.** Teach around whatever the company already has. Add a new tool only when the time it saves clearly pays for it.
+> **In plain words.** Teach people using the tools they already have open. Only suggest something new when the time it saves obviously pays for the trouble of learning it.
 
 The specific choice should depend on what the company already uses.
 
