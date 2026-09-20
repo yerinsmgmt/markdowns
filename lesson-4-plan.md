@@ -1,32 +1,17 @@
 # Lesson 4
 
-**Title:** Teaching your agent to check its own work
+**Title:** Core features: planning them, building one at a time, testing as you go
 
-**Description:** An agent that writes code and never runs it is guessing. In
-this lesson you set your project up so the agent proves things instead: it
-runs the checks, it opens your app and uses it like a person, and it reviews
-what it wrote. Works whether you are building for the web or for mobile.
+**Summary:** Your app can log people in and it does nothing yet. This lesson
+turns the idea into working features. How to break a product into pieces and
+pick the order, how to describe one piece well enough that the AI builds what
+you meant, and how to check each one before moving to the next.
 
-**Length:** 60 to 75 minutes.
+**Length:** 75 to 90 minutes.
 
-**At the end they can:** make any agent, on any project, check its own work
-before saying it is done.
-
----
-
-## The idea, said once at the start
-
-Your app works. You clicked it yourself. That is one person, on one machine,
-on the happy path.
-
-There are three ways to know something works, and you want all three:
-
-1. **The checks.** Does it compile, does it lint, does it build, do the tests pass.
-2. **Using it.** Open the app, click the buttons, like a person would.
-3. **Reading it.** Someone looks at the code and says what is wrong with it.
-
-You can do all three by hand. This lesson is about making your agent do them,
-so they happen every time instead of when you remember.
+**Note on the demo:** the app on screen is a file sharing tool. Every time you
+show a feature, say the general version out loud first, then show yours. People
+watching are building other things.
 
 ---
 
@@ -34,151 +19,107 @@ so they happen every time instead of when you remember.
 
 ### 1. New machine (0:00)
 
-Clone from GitHub on the MacBook, `npm install`, `npm run dev`. It runs.
+Clone from GitHub on the MacBook, install, run. The app comes up.
 
-Say the point out loud: this is why lesson 2 mattered. The code was never on
-the laptop, it was on GitHub, and a laptop is just somewhere to work.
+Point: the code was never on the laptop. This is why lesson 2 mattered.
 
-### 2. What this course is (0:05)
+### 2. What we are building today (0:05)
 
-> This course teaches you to build and ship your own product. It is not
-> interview preparation. If you want a job at a company you also need
-> algorithms and interview practice, and the free links are on the course page.
+Open the plan you wrote in lesson 1. Read it back.
 
-### 3. Level one: the checks your project already has (0:07)
+Say the general rule: **a product is not one thing, it is a list of features,
+and you build them one at a time.** Then show your list on screen.
 
-Every project has commands that tell you if it is broken. Most people never
-run them. Find yours and run them once, on camera.
+### 3. Picking the order (0:08)
 
-**Node / Next.js**
-```
-npx tsc --noEmit      # types
-npm run lint          # style and common mistakes
-npm run build         # does it actually build
-npm test              # tests, if you have any
-```
+Do not build in the order you thought of them. Build in the order that lets you
+use the app.
 
-**Flutter**
-```
-flutter analyze
-flutter test
-flutter build apk --debug
-```
+Ask the agent:
 
-**Python**
-```
-ruff check .
-mypy .
-pytest
-```
+> Here is my product plan. List the features in the order I should build them,
+> so that after each one I have something I can actually use. Say why.
 
-Then the part that makes it stick. Ask the agent:
+Show the answer. Disagree with part of it out loud if you do. The point is that
+you decide, not it.
 
-> What commands does this project have for checking the code, and what does
-> each one catch?
+### 4. Describing one feature so you get what you meant (0:15)
 
-### 4. Make the agent run them without being asked (0:14)
+This is the main skill of the lesson. Slow down here.
 
-This is the most useful five minutes in the lesson.
+A bad ask: *"add file uploads."*
 
-Your agent reads an instruction file at the top of the project every time it
-starts. Claude Code reads `CLAUDE.md`. Codex reads `AGENTS.md`. Put the
-commands in there and it stops being something you remember.
+A good ask says what it does, what it refuses, and what the person sees:
 
-> Add a section to CLAUDE.md listing the check commands for this project, and
-> say that you must run them after any change and fix what they report before
-> telling me you are done.
+> Add file upload. Any file up to 50MB. Reject bigger ones with a message that
+> says the limit. Show progress while it uploads. If it fails, keep the file
+> selected so they can retry without picking it again.
 
-Then make a change and watch it run them on its own.
+Say the general rule: **the AI fills in anything you leave out, and it fills it
+in with whatever is most common, not whatever you wanted.** Every sentence you
+add is a decision you are taking back off it.
 
-### 5. Level two: the agent uses the app (0:22)
+Then let it build. Watch it work.
 
-Reading code and believing it is not the same as opening the app. This is
-where you pick a tool, and the tool depends on what you are building.
+### 5. Test it before you move on (0:25)
 
-**Building for the web → Playwright**
+Two ways, and do both.
 
-You installed this in lesson 3. Restart your agent so it is live, then:
+Use it yourself, in the browser, right now. Upload something. Upload something
+too big. Cancel halfway.
 
-> Using Playwright, open the app, sign up a new account, log in, upload a
-> file, create a share link, open that link in a fresh browser, and tell me
-> what happened at each step.
+Then Playwright, which you installed last lesson:
 
-Let it run. Do not talk over it. Let people watch the browser move.
+> Using Playwright, upload a small file, then try a 60MB file, and tell me what
+> happened each time.
 
-**Building a mobile app → Maestro**
+Say why both: **you find the things that feel wrong, it finds the things you
+would not have bothered to try again.**
 
-Same idea, on a phone or simulator. Maestro works with Flutter, React Native
-and native iOS and Android, all with the same commands.
+### 6. Commit it (0:32)
 
-Install it. Needs Java 17 or newer.
+Small commit, clear message, push. Say the rule: **one working feature, one
+commit.** If the next one goes badly you can get back to here.
 
-```
-# macOS or Linux
-curl -fsSL "https://get.maestro.mobile.dev" | bash
+### 7. Now the same loop again, faster (0:35)
 
-# check it
-maestro --help
-```
+Second feature. Same four steps: describe it properly, build, test, commit.
+Narrate less this time. Let people see the rhythm.
 
-On Windows, download the release from GitHub, unzip to `C:\maestro`, and add
-`C:\maestro\bin` to your PATH.
+Third feature. Faster again.
 
-Then connect it to your agent. The MCP server is already inside the CLI, so
-there is nothing else to install:
+By now they should be able to say the loop back to you.
 
-```
-claude mcp add maestro -- maestro mcp
-```
+### 8. When it builds the wrong thing (0:55)
 
-Start your simulator or plug in a phone, restart your agent, and ask for the
-same thing you asked Playwright for. It writes the test, runs it on the
-device, and fixes it when it fails.
+This will happen naturally. Do not fake it, but when it does, stop and stay on
+it, because it is the most useful part of the video.
 
-**Neither of those?** The question to ask your agent is always the same shape:
+Read what it built. Work out which sentence you left out. Say that out loud.
+Then add the missing sentence and ask again.
 
-> I am building with [your stack]. What tool would let you open my app and use
-> it the way a person does, and is there an MCP server for it?
+Say the general rule: **when it builds the wrong thing, it is usually answering
+a question you did not know you were asking.**
 
-### 6. Level three: the agent reads the code (0:40)
+### 9. The full flow, end to end (1:05)
 
-Three prompts. Run them in this order, because each one finds a different kind
-of thing.
+Everything is built. Now walk the whole product as a new user, out loud, in the
+browser. Then have Playwright do the same run.
 
-**Review**
-> Review the code you wrote today. What would you change before anybody else
-> depends on it?
+Point: features that each work on their own can still fail together.
 
-**Audit**
-> Go through this project as a security reviewer. What would you not ship?
+### 10. Where we are (1:15)
 
-**Document**
-> Write down what you found, and what we decided to do about each one, in a
-> markdown file in the project.
+Look back at the plan from lesson 1 and tick off what is done.
 
-That last one matters more than it looks. A list of known problems that lives
-in the repository is worth more than a clean report, because it is the thing
-you pick up next week.
-
-### 7. Now you test it yourself (0:55)
-
-Close the laptop lid on the agent for a minute and use your own app. Sign up
-with a real email. Upload something. Send yourself the link. Open it on your
-phone.
-
-Anything that surprises you, hand back to the agent and watch it fixed.
-
-### 8. Recap (1:10)
-
-The three levels. The instruction file that makes level one automatic. The
-tool for your stack that makes level two possible.
+Next lesson: connecting other services to it.
 
 ---
 
 ## Before you press record
 
-- [ ] `git push` on the PC. Check the commit is on github.com/Creovine-Labs/simbai.
-- [ ] Clone and run it on the MacBook once, off camera, so you know it works.
-- [ ] Restart Claude Code so Playwright MCP is live.
-- [ ] Install Maestro and a simulator, off camera, so the demo is quick.
-- [ ] Have a small PDF on the desktop to upload.
+- [ ] Push from the PC, confirm the commit is on GitHub.
+- [ ] Clone and run on the MacBook once, off camera.
+- [ ] Restart the agent so Playwright is live.
+- [ ] Have your lesson 1 product plan open in a tab.
+- [ ] A small test file and a 60MB test file on the desktop.
