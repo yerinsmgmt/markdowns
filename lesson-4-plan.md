@@ -19,9 +19,13 @@ watching are building other things.
 
 ### 1. New machine (0:00)
 
-Clone from GitHub on the MacBook, install, run. The app comes up.
+Open the folder and run it. The app comes up.
 
-Point: the code was never on the laptop. This is why lesson 2 mattered.
+Say that you are on a different computer now, and that the only thing you did
+to get here was clone the repository from GitHub and install. Do not show it,
+just say it. The written steps are in the PDF for anyone who needs them.
+
+Point: the code was never on this laptop. This is why lesson 2 mattered.
 
 ### 2. What we are building today (0:05)
 
@@ -68,13 +72,35 @@ Two ways, and do both.
 Use it yourself, in the browser, right now. Upload something. Upload something
 too big. Cancel halfway.
 
-Then Playwright, which you installed last lesson:
+Then let the agent use it. On the web that is Playwright, which you installed
+last lesson:
 
 > Using Playwright, upload a small file, then try a 60MB file, and tell me what
 > happened each time.
 
 Say why both: **you find the things that feel wrong, it finds the things you
 would not have bothered to try again.**
+
+**Not everyone watching is building a web app**, so stop here and cover it.
+
+*Mobile.* The equivalent is Maestro. It drives a real phone or a simulator and
+it does not care what the app is built with, so Flutter, React Native and
+native iOS and Android all work the same way. Java 17 or newer is the only
+requirement. The MCP server ships inside the CLI, so it is two commands:
+
+```
+curl -fsSL "https://get.maestro.mobile.dev" | bash
+claude mcp add maestro -- maestro mcp
+```
+
+Start a simulator, restart the agent, and ask for the same walkthrough you just
+asked Playwright for.
+
+*Anything else.* Teach the question rather than the tool, because the tools keep
+changing:
+
+> I am building with [your stack]. What would let you open my app and use it the
+> way a person does, and is there an MCP server for it?
 
 ### 6. Commit it (0:32)
 
@@ -118,8 +144,27 @@ Next lesson: connecting other services to it.
 
 ## Before you press record
 
-- [ ] Push from the PC, confirm the commit is on GitHub.
-- [ ] Clone and run on the MacBook once, off camera.
+- [ ] Sign in once in the browser, to prove Firebase works before you record.
 - [ ] Restart the agent so Playwright is live.
+- [ ] Install Maestro and start a simulator off camera, so the mobile bit in
+      section 5 is a demo and not a live install. Java 21 is already on this
+      Mac, so only the two commands are needed.
 - [ ] Have your lesson 1 product plan open in a tab.
 - [ ] A small test file and a 60MB test file on the desktop.
+
+---
+
+## For the PDF, not the video
+
+The clone steps, for anyone moving to a new machine:
+
+```
+git clone https://github.com/Creovine-Labs/simbai.git
+cd simbai/web
+npm install
+cp .env.example .env.local     # then paste your own Firebase values in
+npm run dev
+```
+
+Say why `.env.local` is not in the repo and never will be, and that this is
+the same reason nobody can steal your keys off GitHub.
