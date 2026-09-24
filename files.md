@@ -1,129 +1,167 @@
-# Cryptography Policy — backend replies to Deejay's comments
+# trackline.dev: setup, step by step
 
-Skipped as not backend: USB Block (5.3), Microsoft Defender (5.3), Regulatory Compliance (8.1), Review Schedule (9.1).
+Bought 2026-09-24 at Namecheap. One step at a time; each ends with a check that
+it worked. **You** = the user, **me** = Claude.
 
----
+## The shape
 
-## 1. Scope — Information Assets (section 3)
+| Address | What | Where |
+|---|---|---|
+| `https://trackline.dev` | the site, docs, sign-in, dashboard | Vercel project `trackline` |
+| `https://www.trackline.dev` | redirects to `trackline.dev` | Vercel |
+| `https://api.creovine.com/trackline/v1` | the backend, for now | Creovine EC2 |
+| `https://api.trackline.dev` | the backend, later, optional | Creovine EC2 |
+| `hello@trackline.dev` | contact address, forwards to your Gmail | Namecheap forwarding |
 
-**Reply:**
-
-Confirmed. All apply: customer and financial data in Amazon RDS, files in Amazon S3, and the internet-facing application on Amazon ECS behind an Application Load Balancer.
-
----
-
-## 2. Mandatory Cryptographic Protection Scenarios (section 5.2)
-
-**Reply:**
-
-Confirmed. Additional data also protected: customer BVN (AES-256-GCM), transaction PINs and one-time codes (bcrypt), and application secrets (AWS Secrets Manager). Riverly does not store payment card data.
-
-**Optional line — your call:**
-
-Not yet encrypted: the Amazon ElastiCache (Redis) session cache. To be remediated.
+**Sign-in points at the site, never at the API.** GitHub returns people to
+`https://trackline.dev/auth/github/callback`; Google's button needs only the
+site's origin. So moving the API later never means touching the Google or GitHub
+settings again.
 
 ---
 
-## 3. Technique Selection Matrix — BitLocker row (section 5.3)
+## Step 1 · DNS at Namecheap (you)
 
-**Reply:**
+Namecheap → Domain List → trackline.dev → **Manage** → **Advanced DNS**.
 
-Confirmed, all in use. Added to the table. The BitLocker, USB and Microsoft 365 rows are for Femi to confirm.
+1. **Delete** the parking records Namecheap adds by default: a `CNAME` for `www`
+   pointing at `parkingpage.namecheap.com`, and a `URL Redirect` for `@`. Left in
+   place they override the records below.
+2. **Add** these two:
 
-**Edit — add these rows to the table:**
-
-| Use Case | Primary Technique | Specific Requirements | Key Management |
+| Type | Host | Value | TTL |
 |---|---|---|---|
-| Database (Amazon RDS PostgreSQL) | AES-256 encryption at rest | RDS storage encryption, including snapshots | AWS KMS |
-| Cloud storage (Amazon S3) | AES-256 encryption at rest | Default encryption on all buckets | AWS-managed keys |
-| Sensitive customer data (BVN) | AES-256-GCM | Encrypted in the application | AWS Secrets Manager |
-| Data in Transit | TLS 1.2 or higher | Application Load Balancer | AWS Certificate Manager |
-| Certificate Management | Digital certificates | AWS Certificate Manager, automatic renewal | Managed by ACM |
-| Passwords, PINs and one-time codes | bcrypt hashing | Within the application | Not applicable |
-| Secrets and credentials | Encryption at rest | AWS Secrets Manager | AWS KMS |
-| Session tokens and webhooks | HMAC-SHA256 / HMAC-SHA512 | Within the application | AWS Secrets Manager |
+| A Record | `@` | `76.76.21.21` | Automatic |
+| A Record | `www` | `76.76.21.21` | Automatic |
 
----
+Keep Namecheap's nameservers ("Namecheap BasicDNS"). Do not switch to Vercel's:
+email forwarding and verification records are simpler to manage here.
 
-## 4. Approved Algorithms (section 6.1)
+**Check (me):** `trackline.dev` resolves to Vercel and Vercel shows the domain as
+valid. Can take a few minutes, occasionally an hour.
 
-**Reply:**
+## Step 2 · HTTPS, and www to the bare domain (me)
 
-In use: AES-256, RSA-2048, SHA-256, SHA-512 and bcrypt. Not in use: ChaCha20, ECDSA, Ed25519, SHA-3 and Argon2id.
+- Vercel issues the certificate once DNS is right. `.dev` only works over HTTPS,
+  so nothing is reachable until then.
+- Set `www.trackline.dev` to redirect permanently to `trackline.dev`, so search
+  engines see one address.
 
----
+**Check:** both addresses load over HTTPS and `www` redirects.
 
-## 5. Argon2id (section 6.1)
+## Step 3 · Point everything at the new address (me)
 
-**Reply:**
+The checklist in `AGENTS.md`, "The site's address":
 
-Yes, bcrypt should be approved; it is what we use. Argon2id is not used.
+1. `SITE` in `site/lib/site.ts` becomes `https://trackline.dev`.
+2. `site/README.md` address line.
+3. `homepage` in the root `package.json` becomes `https://trackline.dev`.
+4. The GitHub repo's website field.
+5. Redeploy; `git grep` for anything missed.
 
-**Edit 1 — add to the end of the Argon2id line:**
+`trackline-iota.vercel.app` keeps working, so prompts already pasted still do.
 
-Not currently in use.
+**Check:** the copy-prompt and `/install.md` say `trackline.dev`.
 
-**Edit 2 — add a new bullet under Approved Hash Functions:**
+## Step 4 · SEO (me, then one thing for you)
 
-bcrypt: For password, PIN and one-time code hashing.
+Me, in the site:
 
-**Edit 3 — add a new bullet under Prohibited Algorithms, after the MD5, SHA-1 line:**
+- Titles and descriptions per page, and a **canonical URL** on every page, so the
+  vercel.app copy never competes with trackline.dev in search.
+- **Open Graph and Twitter images**: the card that appears when the link is
+  shared on LinkedIn, X, Slack or WhatsApp.
+- `sitemap.xml` and `robots.txt`.
+- Structured data (`SoftwareApplication`), so search engines know it is a
+  developer tool.
+- `/privacy` and `/terms` pages (needed for Google sign-in in step 7 anyway).
 
-Exception: HMAC-SHA1 is used only to verify Anchor webhook signatures, as required by Anchor.
+You:
 
----
+- **Google Search Console** → Add property → **Domain** → `trackline.dev`. It
+  gives a `TXT` record; add it in Namecheap Advanced DNS (Host `@`). Then submit
+  `https://trackline.dev/sitemap.xml`. Verifying the domain here also helps the
+  Google sign-in screen in step 7.
+- Optional: Bing Webmaster Tools, which can import from Search Console in one
+  click.
 
-## 6. Cryptographic Libraries / Random Number Generation (section 6.2)
+**Check:** Search Console shows the domain verified and the sitemap read.
 
-**Reply:**
+## Step 5 · An email address on the domain (you, optional but recommended)
 
-We rely on the .NET platform libraries and AWS-managed services (KMS). We do not manage our own cryptographic libraries or random number generation.
+Namecheap → trackline.dev → **Advanced DNS** → **Mail Settings** → **Email
+Forwarding** → forward `hello@trackline.dev` to your personal Gmail. Free. The
+privacy page names this address, so nobody has to see a personal one.
 
-**Edit — replace these two bullets under Random Number Generation:**
+**Check:** a test email to `hello@trackline.dev` arrives. (Sent by you, from your
+own account, to yourself.)
 
-Proper entropy seeding from hardware sources.
-Regular entropy pool monitoring and maintenance.
+## Step 6 · Privacy and terms (me drafting, you approving)
 
-**with:**
+Plain pages that say exactly what the cloud plan says: what is sent, what is
+never sent, how long it is kept, how to delete it. Required by Google for the
+sign-in screen, and honest to have before anyone signs in.
 
-Random numbers are generated by the platform's secure generator.
+They are drafts written from the product's actual behaviour, not legal advice.
 
----
+## Step 7 · Google sign-in (you, in Google Cloud)
 
-## 7. Penetration testing of cryptographic implementations (section 7.2)
+A **new project** just for trackline, not Lira's or Brydg's: the sign-in screen
+shows the project's app name, and it must say trackline.
 
-**Reply:**
+1. console.cloud.google.com → project picker → **New project** → `trackline`.
+2. **Google Auth Platform** (search "Google Auth Platform", or APIs & Services →
+   OAuth consent screen) → **Get started**:
+   - App name: `trackline`
+   - User support email: your Gmail
+   - Audience: **External**
+   - Contact email: your Gmail
+3. **Branding**:
+   - App home page: `https://trackline.dev`
+   - Privacy policy: `https://trackline.dev/privacy`
+   - Terms of service: `https://trackline.dev/terms`
+   - Authorised domain: `trackline.dev`
+   - Logo: skip for now. Adding one triggers a brand review that can take days,
+     and sign-in works without it.
+4. **Data access** → scopes: only `openid`, `email` and `profile`. These are
+   non-sensitive, so no Google review is needed.
+5. **Audience** → **Publish app** (moves it from Testing to In production).
+   Without this, only listed test users can sign in.
+6. **Clients** → **Create client** → **Web application**, name `trackline web`:
+   - Authorised JavaScript origins: `https://trackline.dev` and
+     `http://localhost:3000`
+   - Authorised redirect URIs: none (the button returns an ID token directly)
+7. Send me the **Client ID**. It is public by design; no secret is needed for
+   this kind of sign-in.
 
-TLS is enforced by the load balancer, encryption is enabled on RDS, S3 and Secrets Manager, and ACM renews certificates automatically. No penetration test has been done yet. Monitored by the Fluxus engineering team.
+**Check (me):** the Google button on the site signs you in against the local
+backend.
 
----
+## Step 8 · GitHub sign-in (you)
 
-## 8. Algorithm validation and compliance testing (section 7.2)
+GitHub → Settings → Developer settings → **OAuth Apps** → New OAuth App.
+GitHub allows one callback per app, so two apps:
 
-**Reply:**
+| | `trackline` | `trackline (local)` |
+|---|---|---|
+| Homepage URL | `https://trackline.dev` | `http://localhost:3000` |
+| Authorization callback URL | `https://trackline.dev/auth/github/callback` | `http://localhost:3000/auth/github/callback` |
 
-Algorithms are set by the platform libraries and AWS services. No separate testing is done.
+For each: **Generate a new client secret**. Put both client IDs and both secrets
+in a file in the evalgate folder and tell me; I move them where they belong and
+delete the file.
 
----
+**Check (me):** GitHub sign-in works locally end to end.
 
-## 9. Certificate and key expiration monitoring (section 7.2)
+## Step 9 · Secrets on the server (you and me)
 
-**Reply:**
+The backend reads a `/trackline` secret from AWS Secrets Manager in production,
+holding the GitHub secrets and trackline's own token signing key. Your laptop's
+AWS credentials reach a different AWS account from the server's, so this is
+created either in the AWS console (you) or from the server. Decided when we get
+there; nothing is deployed before it.
 
-ACM renews certificates automatically. AWS rotates the KMS keys.
+## Later · `api.trackline.dev` (optional)
 
----
-
-## 10. Trust Store Management (section 7.3)
-
-**Reply:**
-
-Confirmed. Certificates are managed and renewed automatically by ACM. We do not maintain a custom trust store.
-
----
-
-## 11. Roles and Responsibilities (section 8.3)
-
-**Reply:**
-
-Currently the Fluxus engineering team.
+A DNS record to the Creovine server, a certificate, and an nginx entry. Only if
+we want the API under the product's own name; nothing else depends on it.
