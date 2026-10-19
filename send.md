@@ -1,1527 +1,854 @@
-# Practical AI Workflow Training Playbook
-## SMB-first, outcome-focused, independent research version
-**Updated:** September 17, 2026
+<a id="top"></a>
 
-## Who this is designed for
+# External Audit — Backend Guide
 
-This playbook assumes the buyer is usually a small or mid-sized business, not a large enterprise.
+**ISO/IEC 27001:2022 certification audit by TNV**
+**Mon 19 – Thu 22 October 2026**
+Lead auditor: Adebayo Akinlabi
+Also: Oluwaseun Adekoya, Olumide Owolabi
 
-A realistic stack may look like:
+All facts checked live on 19 Oct 2026.
 
-- Gmail or Outlook
-- WhatsApp / WhatsApp Business
-- Google Sheets or Microsoft Excel
-- Google Docs / Word
-- Google Drive
-- Canva
-- Google Calendar
-- Zoom / Google Meet
-- Trello / Asana / ClickUp / Notion
-- HubSpot Free or another simple CRM
-- ChatGPT, Gemini, Claude, or another general AI assistant
+**Your sessions:**
+- **Tue 20 Oct**, 11:30–1:00 and 2:00–4:00: A.5 organisational controls (access, cloud, incidents, continuity). You may be called.
+- **Wed 21 Oct**, 10:00–11:00: A.8.1–A.8.15. **Your main day.**
+- **Wed 21 Oct**, 12:30–1:00 and 2:00–3:30: A.8.16–A.8.34
+- **Thu 22 Oct**, 2:00–2:30: close-out meeting
 
-The purpose of training is **not to teach AI as a subject**.
-
-The purpose is to help a team perform the work they already do with fewer steps, less repetition, faster turnaround, and better consistency.
+Every "Show" has two ways: **AWS console** (click), or **Terminal** (paste one command). Use Terminal if the console is slow or you can't find the page. All Terminal commands are read-only: they look, they never change anything.
 
 ---
 
 ## Contents
 
-Topics run A to Z, and so do the sections themselves, so the number in
-the list is also how far down the document it sits.
+**Setup**
+- [1. Before each session](#setup)
+- [2. Rules while sharing your screen](#rules)
+- [3. Numbers to know](#numbers)
+- [4. What the backend uses](#stack)
+- [5. What we fixed since the internal audit](#fixed)
 
-- **1** &nbsp; [Administration / Reception / Office Operations](#s1)
-- **2** &nbsp; [Commercial model this creates](#s2)
-- **3** &nbsp; [Customer Support](#s3)
-- **4** &nbsp; [Data / Reporting](#s4)
-- **5** &nbsp; [Field Operations / Installation / Maintenance](#s5)
-- **6** &nbsp; [Finance / Bookkeeping](#s6)
-- **7** &nbsp; [HR / Recruitment](#s7)
-- **8** &nbsp; [Inventory / Warehouse / Supply Chain](#s8)
-- **9** &nbsp; [IT & Cybersecurity](#s9)
-- **10** &nbsp; [Leadership / Founders / Management](#s10)
-- **11** &nbsp; [Legal / Contracts / Compliance](#s11)
-- **12** &nbsp; [Lightweight tools worth teaching or demonstrating](#s12)
-- **13** &nbsp; [Manufacturing / Production](#s13)
-- **14** &nbsp; [Marketing / Content](#s14)
-- **15** &nbsp; [Operations / Project Management](#s15)
-- **16** &nbsp; [Procurement](#s16)
-- **17** &nbsp; [Product / Software Engineering](#s17)
-- **18** &nbsp; [Recommended boundary for a 2 to 3 hour session](#s18)
-- **19** &nbsp; [Recommended department taxonomy for the platform](#s19)
-- **20** &nbsp; [Sales / Business Development](#s20)
-- **21** &nbsp; [What belongs in training, and what does not](#s21)
-- **22** &nbsp; [What their answers tell you](#s22)
+**Tuesday: A.5 organisational controls**
+- [5.15–5.18 Access control and identities](#a515)
+- [5.19–5.22 Suppliers](#a519)
+- [5.23 Cloud services](#a523)
+- [5.24–5.28 Incident management](#a524)
+- [5.29–5.30 Business continuity](#a529)
+- [5.33–5.34 Records and personal data](#a533)
+- [5.37 Written procedures](#a537)
 
-Every section opens with a plain summary, so you can tell from the top
-whether it is the one you want.
+**Wednesday morning: A.8.1–A.8.15**
+- [8.1 Staff laptops](#c81)
+- [8.2 Privileged access](#c82)
+- [8.3 Access to data](#c83)
+- [8.4 Access to source code](#c84)
+- [8.5 Login security](#c85)
+- [8.6 Capacity](#c86)
+- [8.7 Malware](#c87)
+- [8.8 Vulnerabilities](#c88)
+- [8.9 Configuration](#c89)
+- [8.10 Data deletion](#c810)
+- [8.11 Data masking](#c811)
+- [8.12 Data leakage](#c812)
+- [8.13 Backups](#c813)
+- [8.14 Redundancy](#c814)
+- [8.15 Logging](#c815)
 
----
-## The questions to ask in the meeting
+**Wednesday afternoon: A.8.16–A.8.34**
+- [8.16 Monitoring](#c816)
+- [8.17 Clock sync](#c817)
+- [8.18 / 8.19 Admin tools, software installs](#c818)
+- [8.20–8.22 Network security](#c820)
+- [8.23 Web filtering](#c823)
+- [8.24 Cryptography](#c824)
+- [8.25–8.27 Secure development](#c825)
+- [8.28 Secure coding](#c828)
+- [8.29 Security testing](#c829)
+- [8.30 Outsourced development](#c830)
+- [8.31 Separate environments](#c831)
+- [8.32 Change management](#c832)
+- [8.33 Test data](#c833)
+- [8.34 Audit testing](#c834)
 
-1. What do you actually do every day or every week?
-2. Which part takes the most time?
-3. Which task do you repeat constantly?
-4. Where do you copy information from one place into another?
-5. What do you regularly create from scratch even though something similar already exists?
-6. What information do you repeatedly search for?
-7. Which task gets delayed because someone has to remember to follow up?
-8. Which spreadsheet do you use the most?
-9. Which kinds of email or WhatsApp message happen repeatedly?
-10. What happens immediately before this task?
-11. What happens immediately after it?
-12. Which part requires genuine human judgment?
-13. If one process became twice as fast, which process would matter most?
-
-See **What their answers tell you** for what to do with the answers.
-
----
-<a id="s1"></a>
-
-# 1. Administration / Reception / Office Operations
-
-
-> **In plain words.** This is the person who answers the phone, books the meetings and types the same five emails over and over. In a small company they usually carry more repeated work than anybody else, and almost nobody thinks to train them. The easiest wins in this whole document are here.
-
-This should be a real training category. It is common in smaller companies and should not be hidden inside “custom”.
-
-## Where time usually disappears
-
-- scheduling
-- repetitive email replies
-- moving form responses into spreadsheets
-- reminders
-- visitor coordination
-- meeting notes
-- creating letters and routine documents
-- answering repeated internal questions
-
-## Teachable shortcuts
-
-### Shortcut: Gmail → Calendar without copying details
-
-All Gmail users can turn an email thread into a Calendar event, copying subject, body, and recipients into the event.
-
-Some Gmail plans can also offer times to meet from the calendar directly inside the email.
-
-### Shortcut: reusable email response library
-
-Build AI-assisted templates for the 10 messages the administrator sends repeatedly.
-
-Examples:
-
-- appointment confirmation
-- rescheduling
-- payment reminder
-- document request
-- visitor directions
-- internal follow-up
-- meeting recap
-
-The employee supplies the variable details, AI produces the final message.
-
-### Shortcut: voice note → formal office document
-
-Speak the rough content into an AI assistant.
-
-Convert it into:
-
-- memo
-- minutes
-- email
-- letter
-- checklist
-- action plan
-
-### Shortcut: Google Form → organised spreadsheet
-
-Instead of staff repeatedly typing the same information from messages into Excel, collect it through a simple form that already writes into Google Sheets.
-
-Use cases:
-
-- visitors
-- internal requests
-- customer enquiries
-- equipment requests
-- leave requests
-- event registration
-
-### Simple automation demo
-
-A labelled Gmail message can automatically create a Google Sheets row using Zapier or Make.
-
-This is teachable as a concept and, with a prepared template, can be demonstrated quickly.
-
-## Implementation opportunity
-
-Build a company-wide admin intake, routing and reminder system.
+**If things get hard**
+- [GuardDuty findings, explained](#guardduty)
+- [Known gaps, honest answers](#gaps)
+- [If you don't know an answer](#dontknow)
 
 ---
 
-<a id="s2"></a>
+<a id="setup"></a>
 
-# 2. Commercial model this creates
+## 1. Before each session
 
+[↑ Back to top](#top)
 
-> **In plain words.** This gives us three separate things to sell instead of one. We can teach a team, we can build the thing for them, or we can look after it once it is running. Building it is worth the most money, and we have not put a price on it yet.
+**30 minutes before:**
 
-There are really three potential products.
+1. Log in to AWS: `https://132597214585.signin.aws.amazon.com/console`, user **YERINS**, with your MFA code.
+2. Top right must say **Europe (Stockholm)**.
+3. Log in to GitHub as **Yerinsfluxus**.
+4. Log in to Cloudflare, and switch to **Info@riverly.ng's Account** (top left).
+5. Open VS Code on the `riverly-api` folder.
+6. Check that Terminal can reach AWS. Paste this:
 
-### Product A: AI Workflow Training
+```
+aws sts get-caller-identity --profile riverly-live --query Arn --output text
+```
 
-Teach the team practical shortcuts they can use immediately.
+It should print `arn:aws:iam::132597214585:user/YERINS`. If it errors, use the console only.
 
-Deliverables can include:
+7. Open all the pages as tabs at once. Paste into Terminal:
 
-- live session
-- workbook / playbook
-- reusable prompts
-- examples based on their own work
-- templates
-- short exercises
-- workflow recommendations
+```
+open "https://console.aws.amazon.com/iam/home#/users" "https://eu-north-1.console.aws.amazon.com/rds/home?region=eu-north-1#database:id=riverly-prod-db;is-cluster=false" "https://eu-north-1.console.aws.amazon.com/cloudwatch/home?region=eu-north-1#alarmsV2:" "https://eu-north-1.console.aws.amazon.com/cloudwatch/home?region=eu-north-1#logsV2:log-groups" "https://eu-north-1.console.aws.amazon.com/guardduty/home?region=eu-north-1#/summary" "https://eu-north-1.console.aws.amazon.com/cloudtrail/home?region=eu-north-1#/trails" "https://eu-north-1.console.aws.amazon.com/ec2/home?region=eu-north-1#SecurityGroups:" "https://eu-north-1.console.aws.amazon.com/acm/home?region=eu-north-1#/certificates/list" "https://dash.cloudflare.com/b8ef98d67e4641a5d6a4c45037153f5a/riverly.ng/dns/records" "https://github.com/DRPFL-RIVERLY/riverly_backend/pulls?q=is%3Apr+is%3Amerged"
+```
 
-### Product B: Workflow Implementation
-
-Creovine builds the workflow for the company.
-
-Examples:
-
-- Gmail → Google Sheets lead capture
-- invoice → extraction → approval routing
-- WhatsApp enquiry → CRM record
-- form → job sheet → technician assignment
-- sales lead → CRM → reminder
-- coding ticket → coding agent → PR
-
-This should be scoped and priced separately.
-
-### Product C: Ongoing Workflow Support
-
-For companies that want help maintaining, improving, and adding automations over time.
+8. Have these open in Finder:
+   - `Desktop/Riverly_OWASP_Assessment/` (OWASP report and screenshots)
+   - `Downloads/Backup_Restoration_Test_Report_2026-09-11.pdf`
+   - `Downloads/riverly-system-network.drawio.pdf` (system diagram)
+   - `Desktop/cloudflare-dns.png` and `Desktop/cloudflare-analytics.png`
+9. Close email, WhatsApp and unrelated tabs.
 
 ---
 
-<a id="s3"></a>
+<a id="rules"></a>
 
-# 3. Customer Support
+## 2. Rules while sharing your screen
 
+[↑ Back to top](#top)
 
-> **In plain words.** Support teams answer the same twenty questions all day and then have to write up what happened. This section gives them one place where the real answers live, so they stop hunting through PDFs, and shows how a messy WhatsApp complaint turns into a proper record without anybody retyping it.
-
-## Where time usually disappears
-
-- answering the same questions
-- asking for the same missing information
-- rewriting replies
-- reading old conversations
-- manually recording complaints
-- escalating without enough context
-- turning WhatsApp conversations into proper records
-
-## Teachable shortcuts
-
-### Shortcut: create a support “answer brain”
-
-Collect:
-
-- FAQ
-- product information
-- warranty policy
-- delivery policy
-- troubleshooting guides
-- escalation rules
-
-Upload them into a source-grounded notebook or AI project.
-
-Staff can ask questions against the approved material instead of searching through multiple PDFs.
-
-Google's notebook tools can use PDFs, documents, spreadsheets, websites, images and other sources as grounded context.
-
-### Shortcut: WhatsApp conversation → proper case summary
-
-Copy the relevant conversation into AI and ask for:
-
-- customer
-- product
-- problem
-- dates
-- what has been tried
-- missing information
-- recommended next step
-
-This turns an informal conversation into a structured record.
-
-### Shortcut: generate the missing-information checklist
-
-For every common support issue, define what information must be collected before escalation.
-
-Example, faulty solar unit:
-
-- customer name
-- location
-- device/model
-- serial number
-- purchase/install date
-- photo/video
-- symptoms
-- troubleshooting already attempted
-
-AI can transform a messy customer complaint into that structured checklist.
-
-### Shortcut: one problem, three response styles
-
-Generate:
-
-- short WhatsApp response
-- formal email
-- internal escalation note
-
-from the same case.
-
-### Shortcut: turn solved cases into FAQ
-
-At the end of a resolved case:
-
-“Turn this solution into a short internal troubleshooting article.”
-
-Over time, support gets faster because previous solutions become reusable knowledge.
-
-## Implementation opportunity
-
-WhatsApp/API support agent, automatic case logging, automatic classification, routing, CRM/ticket integration.
+- **You click, they watch.** Never hand over control.
+- **Never open a secret's value.** In Secrets Manager, show the list only.
+- **Never show customer data.** Show settings, not database rows.
+- **Never open IAM "Security credentials".** It shows access keys.
+- **Say it before you click it.**
+- **Answer what's asked.** Don't volunteer extra problems.
 
 ---
 
-<a id="s4"></a>
+<a id="numbers"></a>
 
-# 4. Data / Reporting
+## 3. Numbers to know
 
+[↑ Back to top](#top)
 
-> **In plain words.** Somebody rebuilds the same report by hand every week. This section teaches them to ask the spreadsheet a question in ordinary English and get the answer back, instead of building it themselves every single time.
-
-## Teachable shortcuts
-
-### Spreadsheet question answering
-
-Upload/paste data and ask business questions in ordinary language.
-
-Examples:
-
-- Which region changed most?
-- Which product fell this month?
-- What are the three strongest trends?
-- Which rows look unusual?
-- What would management want to know?
-
-### Formula generation
-Describe the desired calculation and have AI write/explain the formula.
-
-### Report-to-presentation
-Convert raw data into:
-
-- summary
-- charts to create
-- key findings
-- management questions
-- presentation outline
-
-### Data cleanup plan
-Ask AI to identify inconsistent naming, missing values, duplicates and formatting problems.
-
-If eligible Gemini in Sheets is available, the workflow can happen directly inside Sheets, including formulas, tables, charts, analysis, pivots, filtering and formatting.
+- **AWS account:** 132597214585, region eu-north-1 (Stockholm)
+- **AWS console users:** 2 (YERINS, Fatai), both with MFA. Root also has MFA.
+- **Service accounts:** 2, no console access
+- **Backups:** daily at 02:00 UTC, kept **14 days**, plus a snapshot before every production deploy
+- **Restore time (tested):** about **6.5 minutes**
+- **Production logs kept:** **365 days**
+- **Alarms:** **15**, all OK
+- **Customer login lockout:** 5 wrong tries, locked for up to **30 min**
+- **Admin login lockout:** 5 wrong tries, locked for **15 min**
+- **Session:** token **5 min**, logs out after **15 min** idle, **12 h** maximum
+- **TLS:** **1.2 and 1.3 only**
+- **Automated tests:** **225** (187 run every time, 38 need a database, 0 failing)
+- **Raw SQL sites:** 39, all parameterised, **0 unsafe**
 
 ---
 
-<a id="s5"></a>
+<a id="stack"></a>
 
-# 5. Field Operations / Installation / Maintenance
+## 4. What the backend uses
 
+[↑ Back to top](#top)
 
-> **In plain words.** These are the technicians who drive out to install or repair something. This section turns a customer's WhatsApp message into a proper job brief before anybody leaves, lets a technician ask the manual a question instead of phoning the office, and turns the voice note they record at the end into a written service report.
+**Application**
+- .NET 8 API, one application for Personal, SME and Corporate
+- PostgreSQL database (Amazon RDS), Redis cache (Amazon ElastiCache)
 
-## This should be a first-class department.
+**In front of everything**
+- **Cloudflare:** firewall, attack blocking and flood protection for the API, website and admin dashboard
 
-For solar, telecoms, construction, utilities, equipment companies, property maintenance, and many other businesses, field operations is a major function.
+**AWS**
+- ECS Fargate (runs the app), Application Load Balancer, RDS, ElastiCache, S3, ECR
+- Secrets Manager, KMS, Certificate Manager
+- CloudWatch, CloudTrail, GuardDuty, SNS, EventBridge
+- One EC2 bastion (database access only), reached through Systems Manager
+- IAM, VPC
 
-It should not be hidden under “Custom”.
+**Elsewhere**
+- **Vercel:** hosts the website, admin dashboard and corporate web app
+- **GitHub (DRPFL-RIVERLY):** code, gitleaks, Dependabot, deploys via GitHub Actions with OIDC
 
-## Where time usually disappears
-
-- turning customer complaints into job instructions
-- collecting job information
-- finding product manuals
-- technician reporting
-- writing site reports
-- repeat troubleshooting
-- handover between office and field worker
-- parts checklists
-- documenting completed work
-
-## Teachable shortcuts
-
-### Shortcut: customer complaint → technician job brief
-
-Take the customer's WhatsApp message or email and convert it into:
-
-- customer
-- location
-- equipment
-- reported problem
-- information still needed
-- technician checklist
-- safety questions
-- parts/tools to verify before departure
-
-Human staff checks the output before dispatch.
-
-### Shortcut: company manuals become a technician knowledge tool
-
-Upload approved:
-
-- installation manuals
-- troubleshooting guides
-- product specifications
-- warranty rules
-- internal procedures
-
-into a source-grounded notebook.
-
-A technician can ask:
-
-“What does the manual say about this error code?”
-
-or:
-
-“What checks must be completed before replacing this component?”
-
-Google's notebook product supports PDFs, documents, spreadsheets, websites, audio, images, Markdown and other source types, including a free-source allowance.
-
-### Shortcut: technician voice note → service report
-
-Technician finishes the job and records:
-
-“Arrived 10:20, inverter showed X, checked Y, replaced Z…”
-
-AI converts it into:
-
-- arrival time
-- diagnosis
-- work completed
-- part used
-- result
-- unresolved issue
-- follow-up required
-
-### Shortcut: before/after photos → documentation checklist
-
-AI can help describe what is visible and create structured notes from site photographs.
-
-It should support documentation, not replace technical or safety judgment.
-
-### Shortcut: solved fault → reusable troubleshooting note
-
-Every time an unusual problem is solved:
-
-“Convert this service report into a troubleshooting guide for future technicians.”
-
-### Shortcut: installation details → handover message
-
-Turn field notes into:
-
-- internal completion report
-- customer handover summary
-- maintenance instructions
-- follow-up reminder wording
-
-## Simple automation demo
-
-Google Form for technician completion → Google Sheet job register.
-
-This is extremely practical and does not require an enterprise field-service platform.
-
-## Implementation opportunity
-
-Automatic dispatch, job assignment, geolocation, WhatsApp API, inventory deduction, SLA monitoring, field-service app integration.
+**Third parties that handle data**
+- Providus / XpressWallet (wallets), Anchor (SME accounts), Dojah (identity checks), Sendchamp (SMS/WhatsApp OTP), Resend / SendGrid (email), Firebase (push), Flutterwave (bills, not live yet)
 
 ---
 
-<a id="s6"></a>
+<a id="fixed"></a>
 
-# 6. Finance / Bookkeeping
+## 5. What we fixed since the internal audit
 
+[↑ Back to top](#top)
 
-> **In plain words.** Bookkeepers spend hours tidying spreadsheets, fighting with formulas and typing invoice details into another system. AI can do that middle part in seconds. The one rule that never bends here is that a person still checks every number before it counts as real.
+The auditors check what was done about the internal audit's findings. These are done, and verified live:
 
-## Where time usually disappears
-
-- spreadsheet cleanup
-- formula writing
-- categorization
-- invoice data entry
-- checking reports
-- writing management summaries
-- reconciling exports
-- chasing missing information
-
-## Teachable shortcuts
-
-### Shortcut: Excel/Sheets formula assistant
-
-Instead of struggling with a formula, give AI:
-
-- column names
-- desired result
-- sample rows
-
-Ask it to write and explain the formula.
-
-### Shortcut: messy transaction export → clean categories
-
-Upload a transaction export and define the desired category rules.
-
-AI can help:
-
-- propose categories
-- identify duplicates
-- flag unclear items
-- create a cleanup plan
-
-The accountant verifies the result.
-
-### Shortcut: invoice PDF → structured fields
-
-Upload an invoice and extract:
-
-- supplier
-- invoice number
-- date
-- amount
-- tax
-- due date
-- description
-
-Then paste the structured result into the accounting process.
-
-### Shortcut: monthly numbers → management narrative
-
-Give AI the monthly figures and ask:
-
-- biggest changes
-- unusual costs
-- overdue receivables
-- cash concerns
-- questions management should ask
-
-### Shortcut: compare two exports
-
-Example:
-
-- bank transactions
-- internal payment register
-
-Ask AI to identify:
-
-- likely matches
-- missing entries
-- duplicates
-- amount differences
-
-For higher-risk finance work, the accountant must verify every output.
-
-## Implementation opportunity
-
-Automated invoice ingestion, approval routing, transaction matching, bookkeeping sync, accounting-system integrations.
+- **Web firewall (was "no WAF"):** Cloudflare now sits in front of the API, website and admin dashboard. It blocks hacking probes and floods, and forces HTTPS with TLS 1.2 minimum.
+- **Cloudflare can't be bypassed:** both AWS load balancers only accept Cloudflare's addresses.
+- **Staging can't be reached directly (was a gap):** the staging app only accepts its load balancer now.
+- **Real caller IP can't be faked:** an attacker could previously fake their IP to dodge login limits. Fixed and verified on production.
+- **New High-severity library advisories:** two crypto packages, patched and pinned (see 8.8).
+- **Antimalware confirmed:** GuardDuty malware scanning is on.
+- **Cryptography Policy:** updated to match what we actually use.
 
 ---
 
-<a id="s7"></a>
+<a id="a515"></a>
 
-# 7. HR / Recruitment
+## 5.15–5.18 Access control and identities
 
+[↑ Back to top](#top)
 
-> **In plain words.** HR writes job adverts, reads through piles of CVs, takes interview notes, and answers the same question about leave every week. This section takes all of that off them. It does not touch the hiring decision itself, which stays with a person.
+**Q:** How do you control who can access systems?
 
-## Where time usually disappears
+**Say:** Every person has their own named login; nothing is shared. AWS has two engineer logins, both with MFA, and the root account has MFA too. Service accounts only have the permissions their job needs, and can't log in to the console. The admin dashboard uses named logins with roles, so every approval traces to a person. Customers' passwords and PINs are stored as bcrypt hashes.
 
-- job descriptions
-- application review
-- interview scheduling
-- interview notes
-- candidate emails
-- onboarding checklists
-- repeated employee questions
-- policy lookup
-
-## Teachable shortcuts
-
-### Shortcut: CVs → structured comparison table
-
-Instead of asking AI “who is best?”, define objective job criteria first.
-
-Extract:
-
-- relevant experience
-- required skill evidence
-- location
-- availability
-- missing requirements
-- interview questions
-
-Humans make the hiring decision.
-
-### Shortcut: interview notes → consistent scorecard draft
-
-Give the transcript/notes and the pre-defined interview rubric.
-
-Ask AI to map evidence to each question and highlight where no evidence was provided.
-
-### Shortcut: HR policy notebook
-
-Upload approved policies and procedures.
-
-Employees or HR can ask:
-
-- leave process
-- reimbursement policy
-- onboarding steps
-- required documents
-
-instead of searching several files.
-
-### Shortcut: new hire → onboarding checklist
-
-Give role and start date.
-
-Generate:
-
-- before-day-one tasks
-- first-day tasks
-- first-week tasks
-- manager responsibilities
-- employee responsibilities
-
-## Simple automation demo
-
-Application form → Google Sheet → acknowledgment email.
-
-## Implementation opportunity
-
-Applicant intake, ATS workflows, account provisioning, onboarding automation, HRIS integration.
+**Show:** see [8.2](#c82) and [8.5](#c85).
 
 ---
 
-<a id="s8"></a>
+<a id="a519"></a>
 
-# 8. Inventory / Warehouse / Supply Chain
+## 5.19–5.22 Suppliers
 
+[↑ Back to top](#top)
 
-> **In plain words.** Stock counts, supplier quotes and deciding when to reorder. A company can run all of this on spreadsheets, with no big system anywhere, and still lose hours to it every week. This section is for them.
+**Q:** Which suppliers handle your data, and how is that secured?
 
-## This should also be a real department or track.
+**Say:** On the technical side, every supplier is reached only over HTTPS, and their keys are kept in AWS Secrets Manager, never in code. Incoming messages from payment and identity providers are checked for a valid signature before we accept them. Supplier contracts and evaluations are Femi's.
 
-A company can have inventory and warehouse operations without running SAP or an enterprise ERP.
-
-## Where time usually disappears
-
-- checking stock manually
-- stock-count reconciliation
-- reorder decisions
-- comparing supplier lists
-- purchase tracking
-- preparing inventory reports
-- logging received stock
-- matching parts used in the field
-
-## Teachable shortcuts
-
-### Shortcut: stock spreadsheet → decision list
-
-Upload/paste the stock table.
-
-Ask AI to identify:
-
-- below reorder point
-- fast-moving items
-- slow-moving items
-- possible stockouts
-- overstock
-- unusual changes
-
-### Shortcut: supplier quote comparison
-
-Upload several supplier quotes.
-
-Create a table comparing:
-
-- product
-- quantity
-- unit price
-- delivery time
-- payment terms
-- warranty
-- missing information
-
-A human chooses the supplier.
-
-### Shortcut: inventory count → variance analysis
-
-Compare:
-
-- system stock
-- physical count
-
-Ask AI to list discrepancies by value and urgency.
-
-### Shortcut: purchase requirement → clean RFQ
-
-Take an informal request and turn it into a proper quotation request with:
-
-- item
-- specification
-- quantity
-- delivery location
-- requested date
-- questions supplier must answer
-
-### Shortcut: field usage → stock update sheet
-
-Technician completion forms can feed a Google Sheet to record parts used.
-
-No ERP is required to teach the underlying workflow.
-
-## Implementation opportunity
-
-Inventory sync, barcode workflows, automatic reorder rules, purchase approvals, accounting integration, field-parts deduction.
+The list is in [section 4](#stack).
 
 ---
 
-<a id="s9"></a>
+<a id="a523"></a>
 
-# 9. IT & Cybersecurity
+## 5.23 Cloud services
 
+[↑ Back to top](#top)
 
-> **In plain words.** Most small companies have no IT department, but every one of them has laptops, passwords and staff clicking links they should not. This covers the everyday fixes, and it is also where we write down what staff may and may not put into a public AI tool.
+**Q:** How do you manage security of your cloud services?
 
-## Where time usually disappears
+**Say:** We run on AWS in Stockholm. Under AWS's shared responsibility model, AWS secures the data centres and hardware, and we secure our configuration: access, encryption, network rules and monitoring. AWS is itself ISO 27001 certified. Cloudflare protects our public addresses, and Vercel hosts the websites.
 
-- setting up devices and accounts for new staff
-- the same password and access requests
-- explaining error messages
-- chasing people about updates and backups
-- writing down how anything was fixed
-- answering "is it safe to put this into ChatGPT?"
-
-## Teachable shortcuts
-
-### Shortcut: error message → plain explanation and next step
-
-Paste the error, the software, and what the person was doing.
-
-Ask for what it means in ordinary words, the likely cause, and what to try
-first. Most small-company IT problems are solved by somebody who simply knew
-what the message meant.
-
-### Shortcut: the same request, written once
-
-The ten requests that come in every week: new starter setup, password reset,
-access to a shared folder, a device replaced, a printer that will not print.
-
-Write each one once as a checklist, and AI fills in the details each time.
-
-### Shortcut: fix → written procedure
-
-After solving something unusual:
-
-"Turn this into a short guide so the next person does not start from nothing."
-
-A small company's entire IT knowledge is usually in one person's head, and
-this is how it stops being.
-
-### Shortcut: a phishing example the team will actually remember
-
-Take a real suspicious message the company received and ask for what gives it
-away, in plain words, as something that can be shown to everybody.
-
-### Shortcut: the AI safety rules, written down
-
-**This one belongs to every department, not just IT.**
-
-Write and agree one short page:
-
-- what may never be pasted into a public AI tool: customer personal data,
-  payment details, staff records, contracts, source code, anything under an
-  agreement with a client
-- which tools are approved and which are not
-- what to do when somebody is unsure
-
-Then make it something people can ask questions of, rather than a document
-nobody opens.
-
-## Implementation opportunity
-
-Device management, single sign-on, automated account provisioning and removal,
-monitoring, backup verification, security tooling.
+**Show AWS's ISO certificate:**
+1. Search bar: **Artifact**, then click **AWS Artifact**
+2. **Reports**, then search **ISO 27001**
 
 ---
 
-<a id="s10"></a>
+<a id="a524"></a>
 
-# 10. Leadership / Founders / Management
+## 5.24–5.28 Incident management
 
+[↑ Back to top](#top)
 
-> **In plain words.** A founder or a manager spends the day reading long email chains, sitting in meetings, and asking people for updates that arrive late. This section turns a forty message thread into the one decision that actually matters, and turns a pile of spreadsheets into a single page they can read over breakfast.
+**Q:** How do you detect and handle incidents?
 
-## Where time usually disappears
+**Say:** We detect them through GuardDuty, 15 alarms and Cloudflare. Alerts email the engineering team. We contain first, then find the cause, fix it, verify the fix, and record what happened.
 
-- reading long email chains
-- preparing for meetings
-- writing meeting notes
-- asking different people for updates
-- reviewing spreadsheets
-- turning operational information into a management update
-- writing follow-up messages
+**Real examples, if asked:**
 
-## Teachable shortcuts
+**1. Duplicate bank-transfer payments, 6–8 Oct 2026**
+- A slow payment provider plus automatic retries in the Personal app caused some transfers to pay out more than once.
+- **Contained the same day:** we switched off only that one endpoint at the load balancer. Everything else kept working.
+- **Fixed:** payments are now reserved before sending, and a reconciliation job checks every one against the provider.
+- **Verified** on staging, released to production on 8 Oct, then the endpoint was switched back on.
+- Only if asked about impact: it affected staff test accounts. Details are with Fatai and Femi.
 
-### Shortcut: turn a long email thread into the actual decision
+**2. Attackers probing the staging database, August 2026**
+- GuardDuty detected known-malicious IPs probing the staging database. Every login attempt failed.
+- **Fixed:** the database was made private. No probes since.
 
-Use an AI assistant with the email content.
-
-Ask it to return:
-
-- what happened
-- decisions already made
-- questions still unanswered
-- what requires your response
-- recommended next action
-
-If the company already has eligible Gemini in Gmail, Gmail can summarize threads, draft, search, organize, and use Calendar context directly.
-
-### Shortcut: meeting recording → decisions and actions
-
-Record/transcribe a meeting with a lightweight meeting-note tool or the meeting platform already used.
-
-Then produce:
-
-- decisions
-- owner of each action
-- deadline
-- unresolved issues
-- follow-up email
-
-### Shortcut: spreadsheet → management briefing
-
-Upload or paste the relevant table into an AI assistant.
-
-Instead of manually explaining a spreadsheet, ask:
-
-- What changed?
-- What looks abnormal?
-- What needs attention?
-- What are the top 5 numbers a manager should know?
-
-### Shortcut: create a reusable “CEO briefing” prompt
-
-Instead of prompting from scratch every week, create one structure that always requests:
-
-1. important changes
-2. problems
-3. overdue actions
-4. money-related issues
-5. decisions required
-6. next-week priorities
-
-## Implementation opportunity
-
-Automatically combine several company data sources into a recurring management brief.
-
-That is no longer a basic training exercise.
+**3. Hacking probe blocked, 17 Oct 2026**
+- An outside IP probed our site for a secrets file (`/.env`). **Cloudflare blocked it.**
 
 ---
 
-<a id="s11"></a>
+<a id="a529"></a>
 
-# 11. Legal / Contracts / Compliance
+## 5.29–5.30 Business continuity
 
+[↑ Back to top](#top)
 
-> **In plain words.** Contracts and policies are long, and the part that matters is usually three lines buried in the middle. AI finds it and writes the first draft. A lawyer still decides. We never tell anybody we make them compliant with anything.
+**Q:** How would you recover from an outage?
 
-## Teachable shortcuts
+**Say:** The database is backed up daily, kept 14 days, and can be restored to any point within about 5 minutes. A snapshot is also taken before every production release. We've tested a full restore twice, in September: about 6.5 minutes, with all data intact. The app itself is rebuilt from code in minutes.
 
-- long contract → clause summary
-- compare two versions
-- extract renewal/termination/payment terms
-- create obligations checklist
-- convert policy into employee FAQ
-- turn meeting notes into term sheet draft
+**Show:** the backup restoration test report, then [8.13](#c813).
 
-AI should support review, not replace qualified legal judgment.
-
-## Implementation opportunity
-
-Contract lifecycle systems, automated review pipelines, approval routing, compliance monitoring.
+**Gap, only if asked:** the database is in one zone. See [8.14](#c814).
 
 ---
 
-<a id="s12"></a>
+<a id="a533"></a>
 
-# 12. Lightweight tools worth teaching or demonstrating
+## 5.33–5.34 Records and personal data
 
+[↑ Back to top](#top)
 
-> **In plain words.** Teach people using the tools they already have open. Only suggest something new when the time it saves obviously pays for the trouble of learning it.
+**Q:** How do you protect personal data?
 
-The specific choice should depend on what the company already uses.
+**Say:** It's encrypted at rest and in transit. BVN is encrypted again inside the app, NIN is stored only as a hash, and passwords are hashed. Admin screens and logs mask personal data. Records have audit trails, and every AWS change is logged in CloudTrail. The legal side (NDPA) is Femi's.
 
-### General AI
-- ChatGPT
-- Gemini
-- Claude
-
-### Documents / source-grounded knowledge
-- Google Gemini Notebook / NotebookLM-style notebooks
-- AI projects with uploaded files
-
-### Email / calendar
-- Gmail
-- Google Calendar
-- Outlook if already used
-
-### Spreadsheets
-- Google Sheets
-- Microsoft Excel
-- AI assistant + uploaded CSV/XLSX
-
-### Basic automation
-- Zapier
-- Make
-- n8n only when the audience is more technical or when demonstrating future implementation
-
-### Meetings
-- meeting platform transcript
-- lightweight AI meeting-note tools
-
-### Design / marketing
-- Canva
-- CapCut
-- existing social tools
-
-### CRM
-- HubSpot Free or whatever CRM the team already uses
-
-### Work management
-- Trello
-- Asana
-- ClickUp
-- Notion
-- Jira for technical teams
-
-The rule is:
-
-> **Teach around the company’s existing tools whenever possible. Add new software only when the time saved clearly justifies another tool.**
+**Show:** see [8.11](#c811) and [8.24](#c824).
 
 ---
 
-<a id="s13"></a>
+<a id="a537"></a>
 
-# 13. Manufacturing / Production
+## 5.37 Written procedures
 
+[↑ Back to top](#top)
 
-> **In plain words.** For companies that actually make or assemble things. Shift reports, quality problems and daily production numbers become something a manager can read in two minutes, instead of ten pages nobody opens.
+**Q:** Are your operating procedures written down?
 
-For companies that actually manufacture or assemble products, this can be separate from inventory.
+**Say:** Yes. Technical procedures are in the code repository, under version control:
+- `docs/database-access.md`: how engineers reach the database
+- `docs/production-rollout-plan.md`: how releases go to production
+- `docs/security-hardening-backlog.md`: open security work
 
-## Teachable shortcuts
-
-- production notes → structured shift report
-- quality issue → root-cause question set
-- production spreadsheet → anomaly summary
-- work instruction → simpler technician version
-- incident notes → formal corrective-action draft
-- daily production numbers → management update
-- repeated fault → troubleshooting knowledge article
-
-## Implementation opportunity
-
-Machine/IoT integration, predictive maintenance, automated quality inspection, ERP/MES integrations.
+The deploy steps themselves are written as code in GitHub Actions.
 
 ---
 
-<a id="s14"></a>
+<a id="c81"></a>
 
-# 14. Marketing / Content
+## 8.1 Staff laptops
 
+[↑ Back to top](#top)
 
-> **In plain words.** Marketing writes something once, then rewrites it by hand for LinkedIn, then again for Instagram, then again for the newsletter. This section shows how to write it once and have the other versions made for you, in the company's own voice, instead of starting from an empty page every time.
-
-## Where time usually disappears
-
-- rewriting the same idea for every channel
-- resizing designs
-- creating captions
-- content planning
-- turning reports into insights
-- recreating brand context
-- repurposing videos
-
-## Teachable shortcuts
-
-### Shortcut: one idea → content pack
-
-Give AI one source, such as:
-
-- webinar
-- founder voice note
-- blog post
-- product launch note
-- video transcript
-
-Turn it into:
-
-- LinkedIn post
-- Instagram caption
-- email
-- short-video script
-- FAQ
-- sales message
-
-### Shortcut: one design → several formats
-
-Use Canva to resize/reformat approved creative rather than rebuilding every version.
-
-### Shortcut: reusable brand context
-
-Create a saved brand instruction containing:
-
-- brand description
-- audience
-- tone
-- banned phrases
-- preferred vocabulary
-- CTA style
-- colours / visual rules where relevant
-
-Staff stop re-explaining the brand every time.
-
-### Shortcut: report → “what should we do next?”
-
-Upload/export campaign data.
-
-Ask:
-
-- what improved
-- what declined
-- strongest content
-- weakest content
-- likely explanations
-- next 3 experiments
-
-### Shortcut: content transcript → hook library
-
-Take the transcript of a successful video and ask AI to extract:
-
-- hook pattern
-- structure
-- pacing
-- CTA
-- reusable formula
-
-Then use the formula on future topics.
-
-## Implementation opportunity
-
-Automated content pipelines, scheduled repurposing, lead routing from campaigns, cross-platform publishing workflows.
+**Say:** Not a backend control. HR/IT or Femi.
 
 ---
 
-<a id="s15"></a>
+<a id="c82"></a>
 
-# 15. Operations / Project Management
+## 8.2 Privileged access
 
+[↑ Back to top](#top)
 
-> **In plain words.** Operations turns other people's messages into tasks, and then turns those tasks into status updates nobody enjoys writing. Nearly all of that is moving information from one shape into another, which is the single thing AI is best at.
+**Q:** Who has admin access to AWS?
 
-## Where time usually disappears
+**Say:** Two engineers, me and Fatai, both with MFA. The root account also has MFA. Service accounts only have the permissions their job needs, and can't log in to the console.
 
-- turning meetings into tasks
-- status reports
-- following up
-- repeated checklists
-- updating trackers
-- finding blockers
-- converting WhatsApp/email instructions into organized work
+**Show, AWS console:**
+1. Search bar: **IAM** → left menu **Users**
+2. Point at the **MFA** column
 
-## Teachable shortcuts
+**Show, Terminal:**
+```
+aws iam list-users --profile riverly-live --query 'Users[].UserName' --output text | tr '\t' '\n' | while read u; do echo "$u   MFA devices: $(aws iam list-mfa-devices --profile riverly-live --user-name $u --query 'length(MFADevices)' --output text)"; done; echo "Root account MFA on: $(aws iam get-account-summary --profile riverly-live --query 'SummaryMap.AccountMFAEnabled' --output text)"
+```
+You'll see both engineers with 1 MFA device, and "Root account MFA on: 1".
 
-### Shortcut: WhatsApp/email instruction → task card
-
-Take an unstructured message and turn it into:
-
-- task title
-- description
-- owner
-- deadline
-- checklist
-- dependencies
-
-Then paste it into Trello, Asana, ClickUp, Notion, or whichever tool the team already uses.
-
-### Shortcut: meeting notes → action register
-
-Convert the meeting transcript into a table:
-
-| Action | Owner | Deadline | Status |
-
-### Shortcut: project tracker → weekly update
-
-Upload/paste the current project tracker and produce:
-
-- completed
-- delayed
-- blocked
-- due next
-- decisions required
-
-### Shortcut: SOP creation from how somebody already works
-
-Instead of asking an employee to “write an SOP”, ask them to explain the task naturally or record themselves doing it.
-
-AI turns the explanation into:
-
-- purpose
-- prerequisites
-- step-by-step process
-- quality checks
-- escalation point
-
-## Implementation opportunity
-
-Automatic task creation, reminders, project-system synchronization, cross-tool workflows.
+**If asked "why do both engineers have full admin?":** small team, every action logged in CloudTrail. Narrowing it is on our improvement list.
 
 ---
 
-<a id="s16"></a>
+<a id="c83"></a>
 
-# 16. Procurement
+## 8.3 Access to data
 
+[↑ Back to top](#top)
 
-> **In plain words.** Buying things for the company. Comparing three quotes properly instead of guessing, writing a request a supplier can actually answer, and being able to check later what was really promised.
+**Q:** How do you stop one customer seeing another's data?
 
-## Teachable shortcuts
+**Say:** Every request is checked on the server, and the app denies by default: an endpoint is locked unless it's deliberately public. Every query filters by the logged-in customer's own ID.
 
-### Quote comparison
-Compare supplier quotes in a structured table.
+**Show (code):** VS Code → **Cmd+P** → `Program.cs` → search `FallbackPolicy`: "this locks every endpoint by default".
 
-### Purchase-request cleanup
-Turn an informal request into a complete requisition.
+**Q:** Can staff read customer data in the database?
 
-### Supplier research
-Create a supplier research checklist and summarize public information.
-
-### Contract / terms comparison
-Extract delivery, warranty, payment and cancellation terms.
-
-### Purchase tracker analysis
-Use Excel/Sheets + AI to find overdue orders, missing deliveries and pending actions.
-
-## Implementation opportunity
-
-Approval workflows, supplier portal integration, PO creation, three-way matching, procurement-system agents.
+**Say:** The database is private, with no internet access. The only way in is through the bastion, with AWS login and MFA. Admin screens mask personal data.
 
 ---
 
-<a id="s17"></a>
+<a id="c84"></a>
 
-# 17. Product / Software Engineering
+## 8.4 Access to source code
 
+[↑ Back to top](#top)
 
-> **In plain words.** This is the one department where the AI tools are already genuinely strong. You can teach developers much more here without it turning into a consulting job, because the tools do most of the heavy lifting themselves.
+**Say:** All repos are private, in Riverly's own GitHub organisation, with access per named person.
 
-This is one of the few departments where the available individual AI tools are already very powerful, so training can go deeper without becoming enterprise consulting.
+**Show, Terminal:**
+```
+gh api repos/DRPFL-RIVERLY/riverly_backend/collaborators --jq '.[] | "\(.login): \(.role_name)"'
+```
+Today: Femi-fluxx and Yerinsfluxus are admin, fatai-sanni maintain, oltoch and thesarahoba read-only.
 
-## Where time usually disappears
-
-- understanding code
-- debugging
-- repetitive code
-- tests
-- writing tickets
-- documentation
-- moving issue context into the IDE
-- reviewing changes
-
-## Teachable shortcuts
-
-### Shortcut: repository-aware coding assistant
-
-Teach developers to use an IDE/code agent that can understand the repository, not merely paste code into a chatbot.
-
-Examples include Cursor, GitHub Copilot and similar coding agents.
-
-### Shortcut: permanent project instructions
-
-Create repository-level instructions containing:
-
-- architecture
-- coding style
-- testing rules
-- forbidden approaches
-- commands
-- directory conventions
-
-This avoids repeating the same context every prompt.
-
-### Shortcut: bug → reproducible debugging prompt
-
-Instead of:
-“Fix this error.”
-
-Give the agent:
-
-- expected behavior
-- actual behavior
-- relevant logs
-- reproduction steps
-- relevant files
-- constraints
-
-Then ask it to investigate before editing.
-
-### Shortcut: code change → tests
-
-After implementation:
-
-“Identify the behavior affected by this change, generate the necessary tests, run them, and explain any failure.”
-
-### Shortcut: PR / diff → review briefing
-
-Ask the agent to summarize:
-
-- what changed
-- possible regressions
-- missing tests
-- security concerns
-- areas needing human review
-
-### Shortcut: issue → agent task
-
-More advanced coding agents can take a GitHub issue and return a pull request.
-
-This can be demonstrated in training, provided the developer still reviews the output.
-
-## Implementation opportunity
-
-MCP connections to internal systems, CI/CD agent workflows, fully configured coding-agent environments, custom engineering automations.
+**Gaps, only if asked:** no branch protection, and GitHub 2FA isn't enforced across the organisation. See [gaps](#gaps).
 
 ---
 
-<a id="s18"></a>
+<a id="c85"></a>
 
-# 18. Recommended boundary for a 2 to 3 hour session
+## 8.5 Login security
 
+[↑ Back to top](#top)
 
-> **In plain words.** What one session can honestly deliver in two to three hours, and what it must never promise. This is the section that stops a training job quietly turning into a software project nobody is paying for.
+**Q:** How is customer login protected?
 
-A realistic session should aim to produce:
+**Say:**
+- Passwords and PINs stored as bcrypt hashes
+- 5 wrong tries locks the account
+- Two layers of rate limiting: Cloudflare, plus the app's own limit per IP address. The IP can't be faked.
+- A new device must be verified with a one-time code
+- Sessions end after 15 minutes idle, and after 12 hours maximum
 
-- **one workflow of theirs, rebuilt properly, that still works when they get
-  back to their desk**
-- the prompts and templates behind it, written down and theirs to keep
-- one or two tool demonstrations
-- one department-specific workbook
-- one simple automation demonstration if appropriate
-- the Workflow Opportunities List below
-
-**One workflow, not three to five, and this was changed deliberately.** Ten
-people, two to three hours, and work nobody has seen before does not produce
-five finished workflows. It produces five half-finished ones, which is worse
-than one that runs. The live pricing page already promises one, and a playbook
-promising more than the page is a complaint waiting to happen.
-
-Nothing else raised in the room goes to waste. It goes on the list.
-
-It should **not** promise:
-
-- custom integrations
-- production automations
-- API work
-- MCP setup
-- custom agents
-- end-to-end business process implementation
-
-Those appear at the end as a named, written deliverable:
-
-## The Workflow Opportunities List
-
-**Every session ends with one, and it is handed over rather than mentioned.** A
-short written list of the things this company could have built, taken from what
-their own team said in the room, with a note of what each would save them.
-
-It does two jobs, and the second is why it matters:
-
-- **For them**, it is the honest answer to everything raised in the session
-  that a session cannot fix. Nothing is dismissed and nothing is quietly
-  promised.
-- **For us**, it is the only lead generation that happens inside paid work.
-  Every training engagement produces a specific written proposal for Product B,
-  built from the customer's own words, handed over at the moment they are most
-  convinced.
-
-**Do not sell from it in the room.** Hand it over, say these are the things
-that would need building rather than teaching, and leave it. A list that
-arrives as a pitch gets read as one.
+**Show, Terminal (staging, weekdays 6am–10pm):**
+```
+for i in $(seq 1 14); do printf "%s " $(curl -s -o /dev/null -w "%{http_code}" -X POST -H "Content-Type: application/json" -d '{}' https://api-staging.riverly.ng/api/v1/identity/login); done; echo
+```
+**Say:** "Ten requests go through, then 429: blocked."
 
 ---
 
-<a id="s19"></a>
+<a id="c86"></a>
 
-# 19. Recommended department taxonomy for the platform
+## 8.6 Capacity
 
+[↑ Back to top](#top)
 
-> **In plain words.** The list of departments a buyer chooses from when they sign up, including three real ones that are currently lumped under Custom when they should have a place of their own.
+**Say:** We have alarms for high CPU, high memory, database connections, low database storage and unhealthy servers.
 
-Independent of the current platform structure, these are commercially understandable categories for an SMB-focused workflow-training business:
+**Show:** see the alarm list in [8.16](#c816).
 
-1. Leadership & Management
-2. Administration & Office Operations
-3. Sales & Business Development
-4. Customer Support & Customer Success
-5. Marketing & Content
-6. Finance & Bookkeeping
-7. HR & Recruitment
-8. Operations & Project Management
-9. Product & Software Engineering
-10. Field Operations, Installation & Maintenance
-11. Inventory, Warehouse & Supply Chain
-12. Procurement
-13. Data & Reporting
-14. Legal & Compliance
-15. Manufacturing & Production
-16. IT & Cybersecurity
-17. Custom / Industry-Specific Teams
-
-### Two that an earlier draft of this list dropped, and should not have
-
-**IT & Cybersecurity.** Left out on the reasoning that small companies
-outsource IT. Many do, and they all still have devices, passwords and people
-clicking links, and this is also where the rules for using AI safely with
-company information belong. See [IT & Cybersecurity](#s9).
-
-**Custom / Industry-Specific Teams.** This is the escape hatch, and removing
-it breaks the checkout. A buyer has to choose a department before paying and
-frequently does not know which one until the orientation call has happened.
-Without "Custom" they are forced to guess, and the guess then sits on the
-record as the thing they bought.
-
-**Manufacturing & Production carries no condition now.** "[when relevant]"
-reads fine in a document and cannot be rendered in a dropdown. It is either on
-the list or it is not, and for a company that assembles things it is a real
-function.
-
-### The three gaps that should not remain hidden under “Custom”
-
-**Field Operations, Installation & Maintenance**
-
-This is a major operating function for solar, energy, construction, telecoms, utilities, maintenance, logistics, property and equipment businesses.
-
-**Administration & Office Operations**
-
-This is often where small businesses have enormous repetitive workload.
-
-**Inventory, Warehouse & Supply Chain**
-
-This exists in many product, retail, energy, manufacturing and distribution businesses even when they do not have an enterprise ERP.
+**Only if asked:** we run one app container, scaled up by hand. The alarms warn us first.
 
 ---
 
-<a id="s20"></a>
+<a id="c87"></a>
 
-# 20. Sales / Business Development
+## 8.7 Malware
 
+[↑ Back to top](#top)
 
-> **In plain words.** Sales people lose most of the day to things that are not selling: looking a company up before a call, writing the follow-up afterwards, and trying to remember who they promised to ring back. This section prepares a meeting in five minutes and turns the call itself into the follow-up email.
+**Say:** We use AWS GuardDuty, with malware protection on. It scans our server automatically if suspicious activity is detected, and watches the whole account. The app runs in short-lived containers rebuilt on every deploy, and nobody logs into them. Laptop antivirus is HR/IT.
 
-## Where time usually disappears
+**Show, AWS console:** **GuardDuty** → left menu **Protection plans** → **Malware Protection for EC2** → **Enabled**. (If there's no "Protection plans", click **Malware Protection**.)
 
-- researching prospects
-- writing outreach
-- preparing for meetings
-- remembering follow-ups
-- logging calls
-- turning conversations into proposals
-- updating spreadsheets or CRM
+**Show, Terminal:**
+```
+aws guardduty get-detector --profile riverly-live --region eu-north-1 --detector-id $(aws guardduty list-detectors --profile riverly-live --region eu-north-1 --query 'DetectorIds[0]' --output text) --query '{ThreatDetection:Status,MalwareScanning:Features[?Name==`EBS_MALWARE_PROTECTION`].Status|[0]}' --output table
+```
+Both say **ENABLED**.
 
-## Teachable shortcuts
-
-### Shortcut: 5-minute prospect brief
-
-Give AI:
-
-- prospect website
-- LinkedIn/company description
-- previous emails
-- meeting objective
-
-Ask for:
-
-- what they sell
-- likely need
-- relevant talking points
-- risks/questions
-- how your offer connects
-
-### Shortcut: meeting transcript → follow-up
-
-After the call, turn the transcript or notes into:
-
-- client needs
-- objections
-- commitments
-- next steps
-- follow-up email
-- CRM note
-
-### Shortcut: lead spreadsheet → prioritized list
-
-Use Excel/Sheets + AI to classify leads by:
-
-- industry
-- fit
-- urgency
-- last contact
-- next action
-
-If Gemini in Sheets is available, it can create formulas, tables, analysis, charts, pivot tables and summaries directly inside the sheet.
-
-### Shortcut: free booking link
-
-Instead of scheduling manually, use a booking link.
-
-HubSpot currently offers a free meeting scheduler that connects with Google or Microsoft calendars.
-
-### Shortcut: proposal first draft from call notes
-
-Take the call notes and a proposal template.
-
-Ask AI to fill:
-
-- problem
-- scope
-- deliverables
-- timeline
-- assumptions
-- next step
-
-A human checks price, promises, and terms.
-
-## Simple automation demo
-
-New enquiry email → automatically create a row in Google Sheets.
-
-Zapier and Make both support this type of Gmail/Sheets workflow, with free tiers.
-
-## Implementation opportunity
-
-Lead capture, enrichment, personalized outreach, CRM update, reminders and pipeline automation.
+**Not enabled, only if asked:** scanning of uploaded files, container monitoring, image scanning.
 
 ---
 
-<a id="s21"></a>
+<a id="c88"></a>
 
-# 21. What belongs in training, and what does not
+## 8.8 Vulnerabilities
 
+[↑ Back to top](#top)
 
-> **In plain words.** There are two kinds of work in here. Some things a team can be taught in one session and start using the same afternoon. Other things somebody has to sit down and build for them, and that takes weeks. This section draws the line between the two, so we never sell one and then deliver the other.
+**Say:**
+- Dependabot checks our libraries weekly against public vulnerability databases.
+- gitleaks scans every pull request for leaked secrets.
+- We tested the backend against the OWASP Top 10 (2025): 9 issues found, 8 fixed.
+- When two new High advisories appeared in crypto libraries, we patched them.
 
-## TRAINING
+**Show, Terminal (scans the code on this Mac):**
+```
+cd ~/Desktop/riverly-api && dotnet list riverly.sln package --vulnerable --include-transitive 2>&1 | grep -E "vulnerable packages"
+```
+Every line should say **"has no vulnerable packages"**.
 
-Training should focus on things a participant can learn, repeat, and use without needing an engineer or consultant to build a custom system for them.
+**Only true once the crypto fix is merged.** Until then, this shows two packages. If so, say: "Two new advisories came out this month. They're patched, and the patch is being released."
 
-Good training content includes:
-
-- using AI on documents they already work with
-- improving spreadsheet work
-- summarizing and responding to email
-- turning messy notes into structured reports
-- creating reusable prompt/workflow templates
-- analysing PDFs, manuals, spreadsheets, exports, or transcripts
-- using AI alongside Gmail, Sheets, Excel, Canva, calendars, and common tools
-- setting up very simple no-code automations from a prepared template
-- teaching staff how to identify work that should be automated
-- showing how a workflow could become more advanced later
-
-## IMPLEMENTATION
-
-Implementation begins when the company needs someone to actually build, connect, test, secure, and maintain the workflow.
-
-Examples:
-
-- n8n or Make workflows spanning several systems
-- connecting company APIs
-- MCP connections
-- custom agents
-- CRM automation requiring business logic
-- automated invoice approval pipelines
-- automatic ticket routing across systems
-- WhatsApp API workflows
-- database integrations
-- production coding agents
-- syncing multiple business systems
-- permission and security design
-
-These are valuable, but they are a **separate service**.
-
-A training session can reveal the opportunity and demonstrate the idea. It should not quietly promise a software implementation project.
+**Also show:** the OWASP report, `Desktop/Riverly_OWASP_Assessment/`.
 
 ---
 
-<a id="s22"></a>
+<a id="c89"></a>
 
-# 22. What their answers tell you
+## 8.9 Configuration
 
-> **In plain words.** Once they have answered the questions at the front of
-> this document, this is how to read what they said. The words on the left are
-> the ones people actually use, and the right hand column is what that kind of
-> answer usually means we should do about it.
+[↑ Back to top](#top)
 
-| What they say | Training opportunity |
-|---|---|
-| “I write this repeatedly” | reusable AI workflow/template |
-| “I search through documents” | source-grounded AI notebook |
-| “I spend time cleaning Excel” | spreadsheet + AI workflow |
-| “I rewrite WhatsApp messages into reports” | unstructured → structured AI workflow |
-| “I forget to follow up” | calendar/task/simple automation |
-| “I copy this into another system” | automation opportunity |
-| “Someone has to check and decide, then update 3 tools” | likely implementation project |
+**Say:** App settings are version-controlled with the code. Secrets are in AWS Secrets Manager, never in code. Every AWS change is recorded in CloudTrail, with who made it and when.
+
+**Show, Terminal (names only, never values):**
+```
+aws secretsmanager list-secrets --profile riverly-live --region eu-north-1 --query 'SecretList[].{Secret:Name}' --output table
+```
+
+**Gap, only if asked:** infrastructure isn't written as code yet (no Terraform). Changes are manual, but every one is logged.
 
 ---
 
-# Sources used for the SMB-focused revision
+<a id="c810"></a>
 
-- Gmail scheduling and Calendar integration:
-  https://support.google.com/mail/answer/16865706
+## 8.10 Data deletion
 
-- Gemini in Gmail:
-  https://support.google.com/mail/answer/14355636
+[↑ Back to top](#top)
 
-- Gemini in Google Sheets:
-  https://support.google.com/docs/answer/14356410
+**Say:** The app has admin tools to remove a customer's records. A formal retention and deletion schedule is a policy decision for Femi.
 
-- AI functions in Google Sheets:
-  https://support.google.com/docs/answer/15877199
+---
 
-- Zapier Gmail + Google Sheets workflows:
-  https://zapier.com/apps/gmail/integrations/google-sheets
+<a id="c811"></a>
 
-- Make Gmail + Google Sheets:
-  https://www.make.com/en/integrations/google-email/google-sheets
+## 8.11 Data masking
 
-- n8n Google Sheets integrations:
-  https://n8n.io/integrations/google-sheets/
+[↑ Back to top](#top)
 
-- HubSpot free meeting scheduler:
-  https://www.hubspot.com/products/sales/schedule-meeting
+**Say:** Personal data is masked in three places: admin screens, logs, and dedicated masked database views for analysis. NIN is stored only as a hash, and BVN is encrypted.
 
-- Google source-grounded notebook documentation:
-  https://support.google.com/gemininotebook/answer/16215270
+**Show (code):** **Cmd+P** → `PiiMask.cs`, `LogRedactor.cs`, `MaskedViewsSql.cs`
+
+---
+
+<a id="c812"></a>
+
+## 8.12 Data leakage
+
+[↑ Back to top](#top)
+
+**Say:** Storage can't be made public, the database isn't reachable from the internet, logs strip personal data, error messages reveal nothing internal, gitleaks catches secrets in code, and Cloudflare blocks attempts to grab secret files.
+
+**Show, Terminal:**
+```
+aws s3api get-public-access-block --profile riverly-live --bucket riverly-prod-assets --query 'PublicAccessBlockConfiguration' --output table
+```
+All four lines say **True**.
+
+---
+
+<a id="c813"></a>
+
+## 8.13 Backups
+
+[↑ Back to top](#top)
+
+**Say:** Daily automatic backups, kept 14 days, encrypted, plus a snapshot before every production release. Restore tested twice: about 6.5 minutes.
+
+**Show, AWS console:** **RDS** → **riverly-prod-db** → **Maintenance & backups**
+
+**Show, Terminal:**
+```
+aws rds describe-db-snapshots --profile riverly-live --region eu-north-1 --db-instance-identifier riverly-prod-db --query 'reverse(sort_by(DBSnapshots,&SnapshotCreateTime))[:6].{Snapshot:DBSnapshotIdentifier,Taken:SnapshotCreateTime,Encrypted:Encrypted}' --output table
+```
+Daily snapshots, plus `predeploy` ones, all **Encrypted: True**.
+
+Then open the backup restoration test report.
+
+---
+
+<a id="c814"></a>
+
+## 8.14 Redundancy
+
+[↑ Back to top](#top)
+
+**Say:** The load balancer runs across several zones. The database is in one zone today. If that zone failed, we'd restore from backup, which we've tested at about 6.5 minutes. Multi-AZ is on our improvement list.
+
+**Show, Terminal:**
+```
+aws rds describe-db-instances --profile riverly-live --region eu-north-1 --db-instance-identifier riverly-prod-db --query 'DBInstances[0].{Encrypted:StorageEncrypted,BackupDays:BackupRetentionPeriod,DeletionProtection:DeletionProtection,PublicAccess:PubliclyAccessible,MultiAZ:MultiAZ}' --output table
+```
+
+---
+
+<a id="c815"></a>
+
+## 8.15 Logging
+
+[↑ Back to top](#top)
+
+**Say:** The app logs logins, failed logins, lockouts, new devices and every refused request, with user, time, action and real IP address. Logs are kept 365 days. CloudTrail records every AWS action, in all regions, with tamper detection on. Passwords and personal data are never logged.
+
+**Show, Terminal:**
+```
+aws logs describe-log-groups --profile riverly-live --region eu-north-1 --log-group-name-prefix /ecs/riverly-api --query 'logGroups[].{LogGroup:logGroupName,KeptDays:retentionInDays}' --output table; aws cloudtrail describe-trails --profile riverly-live --region eu-north-1 --query 'trailList[].{Trail:Name,AllRegions:IsMultiRegionTrail,TamperCheck:LogFileValidationEnabled}' --output table
+```
+Production: **365** days. CloudTrail: **AllRegions True, TamperCheck True**.
+
+---
+
+<a id="c816"></a>
+
+## 8.16 Monitoring
+
+[↑ Back to top](#top)
+
+**Say:** GuardDuty watches for threats, 15 alarms cover security and operations, and Cloudflare shows every blocked attack. Alerts email the engineering team straight away.
+
+**Show, Terminal:**
+```
+aws cloudwatch describe-alarms --profile riverly-live --region eu-north-1 --query 'MetricAlarms[].{Alarm:AlarmName,State:StateValue}' --output table
+```
+15 alarms, all **OK**.
+
+**Also show:** `Desktop/cloudflare-analytics.png` (128 requests blocked by Cloudflare in 24 hours).
+
+**Before opening GuardDuty findings:** read [GuardDuty explained](#guardduty).
+
+---
+
+<a id="c817"></a>
+
+## 8.17 Clock sync
+
+[↑ Back to top](#top)
+
+**Say:** AWS syncs all our services to the Amazon Time Sync Service. Logs are in UTC.
+
+**Show, Terminal (logs into the bastion read-only and prints its clock status):**
+```
+aws ssm start-session --profile riverly-live --region eu-north-1 --target i-01b8d2a01568dec17 --document-name AWS-StartInteractiveCommand --parameters command="chronyc tracking"
+```
+Point at **Reference ID (169.254.169.123)**, which is Amazon's time source, and **System time**, which is off by less than a microsecond.
+
+---
+
+<a id="c818"></a>
+
+## 8.18 / 8.19 Admin tools and software installs
+
+[↑ Back to top](#top)
+
+**Say:** Nobody installs software on production by hand. Every deploy replaces the app container completely. The only server is the bastion, reached through AWS Systems Manager with MFA. It has no open ports.
+
+**Show:** see the firewall table in [8.20](#c820). The bastion shows no port.
+
+---
+
+<a id="c820"></a>
+
+## 8.20–8.22 Network security
+
+[↑ Back to top](#top)
+
+**Q:** How is the network secured and separated?
+
+**Say:**
+- All public traffic goes through Cloudflare first. It blocks attacks and forces HTTPS.
+- The AWS load balancer only accepts Cloudflare, so nobody can go around it.
+- The app only accepts the load balancer. The database only accepts the app and the bastion. Redis only accepts the app.
+- The bastion has no open ports.
+- Production and staging have separate network rules, databases and caches.
+
+**Show, Terminal (firewalls):**
+```
+aws ec2 describe-security-groups --profile riverly-live --region eu-north-1 --group-ids sg-02e1fd628fb3ee742 sg-052c62c4455a0cb5e sg-08f1271c75ea53b84 sg-0d40b9e41b06fca30 sg-020e6ba2051be6bdd --query 'SecurityGroups[].{Firewall:GroupName,Port:IpPermissions[0].FromPort,OpenToWholeInternet:length(IpPermissions[].IpRanges[?CidrIp==`0.0.0.0/0`][])}' --output table
+```
+**OpenToWholeInternet: 0** on every one.
+
+**Show, Terminal (live proof):**
+```
+for v in 1.0 1.1 1.2; do c=$(curl -s -o /dev/null -w "%{http_code}" --tlsv$v --tls-max $v https://api.riverly.ng/health); [ "$c" = "200" ] && echo "TLS $v: ACCEPTED" || echo "TLS $v: REFUSED"; done; echo "Hacking probe via Cloudflare: $(curl -s -o /dev/null -w '%{http_code}' https://api.riverly.ng/.env) (403 = blocked)"; echo "Direct to AWS, skipping Cloudflare: $(curl -s -o /dev/null -w '%{http_code}' --max-time 8 https://riverly-api-prod-alb-745790027.eu-north-1.elb.amazonaws.com/health) (000 = blocked)"
+```
+You'll see TLS 1.0 and 1.1 refused, 1.2 accepted, the probe blocked (403), and going around Cloudflare blocked (000).
+
+**Also show:** `Desktop/cloudflare-dns.png` (orange "Proxied" next to api, www, admin).
+
+---
+
+<a id="c823"></a>
+
+## 8.23 Web filtering
+
+[↑ Back to top](#top)
+
+**Say:** Filtering of staff web browsing sits with HR/IT. For our own websites and API, Cloudflare filters incoming traffic and blocks known attacks.
+
+---
+
+<a id="c824"></a>
+
+## 8.24 Cryptography
+
+[↑ Back to top](#top)
+
+**Say:**
+- **In transit:** TLS 1.2 and 1.3 only, at Cloudflare and AWS. Cloudflare checks AWS's certificate on every connection. The database forces encrypted connections.
+- **At rest:** the database, backups and files are AES-256, with AWS KMS.
+- **Inside the app:** BVN is encrypted again (AES-256-GCM), NIN is hashed, and passwords and PINs use bcrypt.
+- **Certificates:** AWS Certificate Manager renews automatically.
+
+This matches the updated Cryptography Policy.
+
+**Show, Terminal:**
+```
+aws acm list-certificates --profile riverly-live --region eu-north-1 --query 'CertificateSummaryList[?InUse].{Domain:DomainName,Status:Status,AutoRenew:RenewalEligibility,Expires:NotAfter}' --output table; aws rds describe-db-instances --profile riverly-live --region eu-north-1 --query 'DBInstances[].{Database:DBInstanceIdentifier,Encrypted:StorageEncrypted}' --output table
+```
+
+**Gaps, only if asked:** the Redis cache and the bastion's disk aren't encrypted. Neither holds customer records. See [gaps](#gaps).
+
+---
+
+<a id="c825"></a>
+
+## 8.25–8.27 Secure development
+
+[↑ Back to top](#top)
+
+**Say:** We follow the Riverly Secure Code Standard, based on the OWASP Top 10. Work goes in through pull requests, is tested on staging, then released to production. We tested the whole backend against OWASP Top 10 (2025) and fixed what we found.
+
+**Show:** GitHub → merged pull requests → **#295** (OWASP fixes), **#329** (real-IP fix). Then the OWASP report.
+
+---
+
+<a id="c828"></a>
+
+## 8.28 Secure coding
+
+[↑ Back to top](#top)
+
+**Say:** All database queries are parameterised, error messages are generic, security headers are on every response, and access is denied by default.
+
+**Show, Terminal:**
+```
+cd ~/Desktop/riverly-api && echo "Raw SQL sites (all parameterised): $(grep -rn --include='*.cs' -E 'FromSqlRaw|FromSqlInterpolated' src/ | wc -l | tr -d ' ')"; echo "String-built SQL: $(grep -rn --include='*.cs' -E 'FromSqlRaw\("[^"]*"\s*\+' src/ | wc -l | tr -d ' ')"; echo "Shell commands run by the app: $(grep -rn --include='*.cs' 'Process.Start' src/ | wc -l | tr -d ' ')"
+```
+**String-built SQL: 0**, **Shell commands: 0**.
+
+---
+
+<a id="c829"></a>
+
+## 8.29 Security testing
+
+[↑ Back to top](#top)
+
+**Say:** 225 automated tests, including security tests, such as tampered encrypted data being rejected and faked IPs being ignored. Plus the OWASP Top 10 assessment with live testing. No external penetration test yet.
+
+**Show, Terminal (takes about a minute):**
+```
+cd ~/Desktop/riverly-api && dotnet test riverly.sln --nologo 2>&1 | tail -3
+```
+Look for **Failed: 0**.
+
+---
+
+<a id="c830"></a>
+
+## 8.30 Outsourced development
+
+[↑ Back to top](#top)
+
+**Say:** Fluxus builds and runs the platform inside Riverly's own GitHub organisation and Riverly's own AWS account, so Riverly owns the code and the infrastructure. Access is per named person, with MFA on AWS. The contract is Femi's.
+
+---
+
+<a id="c831"></a>
+
+## 8.31 Separate environments
+
+[↑ Back to top](#top)
+
+**Say:** Staging and production have separate databases, caches, servers, load balancers, secrets and logs. Code reaches production only after it's been tested on staging. Staging switches itself off outside working hours.
+
+**Show, Terminal:**
+```
+aws rds describe-db-instances --profile riverly-live --region eu-north-1 --query 'DBInstances[].{Database:DBInstanceIdentifier,Size:DBInstanceClass,Encrypted:StorageEncrypted}' --output table; aws events list-rules --profile riverly-live --region eu-north-1 --name-prefix riverly-staging --query 'Rules[].{Rule:Name,Schedule:ScheduleExpression}' --output table
+```
+Two separate databases, and the staging on/off schedule.
+
+**Only if asked:** both environments are in the same AWS account, separated by resources and permissions. Don't say staging has no real customer data; confirm after the session.
+
+---
+
+<a id="c832"></a>
+
+## 8.32 Change management
+
+[↑ Back to top](#top)
+
+**Say:** Every change goes through a pull request and deploys to staging automatically. We test there. Production is a separate, manual release of that exact tested version, not rebuilt. A database snapshot is taken before every release, and we can roll back to the previous version quickly.
+
+**Show, Terminal:**
+```
+gh run list -R DRPFL-RIVERLY/riverly_backend --workflow deploy-production.yml --limit 5
+```
+
+**If they notice the 18 Oct release says "failure":** the release itself completed and production was healthy. Only the final check failed, because it tried to reach the server directly, which Cloudflare protection now blocks. We changed the check to go through Cloudflare (#330), and staging has passed with it since.
+
+**Gaps, only if asked:** pull requests aren't independently reviewed yet (I merge my own, with Femi's approval), and there's no branch protection.
+
+---
+
+<a id="c833"></a>
+
+## 8.33 Test data
+
+[↑ Back to top](#top)
+
+**Say:** Automated tests use made-up data, never customer data. Staging has its own separate database.
+
+---
+
+<a id="c834"></a>
+
+## 8.34 Audit testing
+
+[↑ Back to top](#top)
+
+**Say:** I'm only showing read-only screens and commands today. Nothing is being changed, and I control the screen.
+
+---
+
+<a id="guardduty"></a>
+
+## GuardDuty findings, explained
+
+[↑ Back to top](#top)
+
+There are **26 open findings**, none since September, and none is an active attack.
+
+**HIGH x1: "anomalous behaviour" by riverly-staging-scheduler-role (31 Aug)**
+**Say:** That's our own automation switching staging off at night. GuardDuty flags stopping services as an attack pattern. Reviewed: expected.
+
+**MEDIUM x24: malicious IPs probing the staging database (last seen 25 Aug)**
+**Say:** Staging's database was reachable from the internet then. GuardDuty caught bots probing it, and every login failed. We made it private, and there have been no probes since.
+
+**LOW x1: root account login (last seen 30 Sep)**
+**Say:** The root account is used rarely, always with MFA. See [gaps](#gaps) item 9.
+
+---
+
+<a id="gaps"></a>
+
+## Known gaps, honest answers
+
+[↑ Back to top](#top)
+
+Only raise these if asked. Honest answer, then the plan.
+
+1. **No independent pull request review.** I merge my own, with Femi's approval. Plan: a second reviewer.
+2. **No branch protection.** Needs the paid GitHub plan.
+3. **GitHub 2FA isn't enforced** across the organisation. It's free to switch on; an owner can do it.
+4. **Infrastructure changes are manual,** but every one is logged in CloudTrail. Plan: infrastructure as code.
+5. **Database in one zone.** Restore tested at about 6.5 min. Plan: Multi-AZ.
+6. **Redis cache not encrypted.** It's private, and only the app can reach it. Plan: encrypted cluster.
+7. **Bastion disk not encrypted.** It holds only the operating system, no customer data. Plan: replace with an encrypted one.
+8. **No external penetration test, and no automated code-scanning tools (SAST/DAST).** Plan: external pen test.
+9. **Root account used occasionally, always with MFA.** Last seen 30 Sep.
+10. **Both engineers have full AWS admin.** Small team, all logged. Plan: narrower roles.
+11. **An old supplier API key is still in git history** (from March). It's not the key we use now. We're confirming with the supplier that it's revoked.
+12. **The corporate web app isn't behind Cloudflare yet,** because it doesn't have a riverly.ng address.
+13. **Two staging secrets are plain settings** rather than in Secrets Manager. Production is correct.
+14. **26 old GuardDuty findings aren't archived yet.** All reviewed and explained above.
+15. **.NET 8 support ends in November 2026.** Upgrade planned.
+
+---
+
+<a id="dontknow"></a>
+
+## If you don't know an answer
+
+[↑ Back to top](#top)
+
+**Say:** "I don't want to guess. Let me confirm and send it to you after the session."
+
+Write it down, and follow up. Never guess in an audit.
+
+[↑ Back to top](#top)
