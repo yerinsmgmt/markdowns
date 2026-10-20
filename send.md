@@ -207,7 +207,18 @@ The auditors check what was done about the internal audit's findings. These are 
 
 **Say:** Every person has their own named login; nothing is shared. AWS has two engineer logins, both with MFA, and the root account has MFA too. Service accounts only have the permissions their job needs, and can't log in to the console. The admin dashboard uses named logins with roles, so every approval traces to a person. Customers' passwords and PINs are stored as bcrypt hashes.
 
-**Show:** see [8.2](#c82) and [8.5](#c85).
+**Show 1, Terminal (named logins and MFA):**
+```
+aws iam list-users --profile riverly-live --query 'Users[].UserName' --output text | tr '\t' '\n' | while read u; do echo "$u   MFA devices: $(aws iam list-mfa-devices --profile riverly-live --user-name $u --query 'length(MFADevices)' --output text)"; done; echo "Root account MFA on: $(aws iam get-account-summary --profile riverly-live --query 'SummaryMap.AccountMFAEnabled' --output text)"
+```
+
+**Show 2, Terminal (service accounts can only do their one job):**
+```
+for u in riverly-prod-s3 riverly-security-monitoring; do for p in $(aws iam list-user-policies --profile riverly-live --user-name $u --query 'PolicyNames' --output text); do echo "$u can only: $(aws iam get-user-policy --profile riverly-live --user-name $u --policy-name $p --query 'PolicyDocument.Statement[].Action' --output text | tr '\t\n' '  ')"; done; done
+```
+One can only handle files; the other can only read security logs.
+
+**Show 3, code (admin approvals need a named role):** VS Code → **Cmd+P** → `AdminRoleRequiredAttribute.cs`
 
 ---
 
@@ -223,6 +234,18 @@ The auditors check what was done about the internal audit's findings. These are 
 
 The list is in [section 4](#stack).
 
+**Show 1, Terminal (a fake payment message is rejected):**
+```
+echo "Fake payment webhook with no signature: HTTP $(curl -s -o /dev/null -w '%{http_code}' -X POST -H 'Content-Type: application/json' -d '{"event":"fake"}' https://api.riverly.ng/api/v1/webhooks/providus) (401 = rejected)"
+```
+
+**Show 2, code (the signature check):** VS Code → **Cmd+P** → `ProvidusWebhookController.cs` → search `CryptographicEquals`.
+
+**Show 3, Terminal (supplier keys live in Secrets Manager; names only, never values):**
+```
+aws secretsmanager list-secrets --profile riverly-live --region eu-north-1 --query 'SecretList[].{Secret:Name}' --output table
+```
+
 ---
 
 <a id="a523"></a>
@@ -235,9 +258,16 @@ The list is in [section 4](#stack).
 
 **Say:** We run on AWS in Stockholm. Under AWS's shared responsibility model, AWS secures the data centres and hardware, and we secure our configuration: access, encryption, network rules and monitoring. AWS is itself ISO 27001 certified. Cloudflare protects our public addresses, and Vercel hosts the websites.
 
-**Show AWS's ISO certificate:**
+**Show 1, AWS's ISO certificate (console):**
 1. Search bar: **Artifact**, then click **AWS Artifact**
 2. **Reports**, then search **ISO 27001**
+
+**Show 2, Terminal (the code and the cloud account belong to Riverly):**
+```
+gh api repos/DRPFL-RIVERLY/riverly_backend --jq '"Code owner: \(.owner.login)   Private: \(.private)"'; echo "AWS account in use: $(aws sts get-caller-identity --profile riverly-live --query Account --output text)"
+```
+
+**Show 3, Cloudflare in front:** open `Desktop/cloudflare-dns.png` (orange "Proxied").
 
 ---
 
@@ -251,21 +281,60 @@ The list is in [section 4](#stack).
 
 **Say:** We detect them through GuardDuty, 15 alarms and Cloudflare. Alerts email the engineering team. We contain first, then find the cause, fix it, verify the fix, and record what happened.
 
-**Real examples, if asked:**
+**Show the process works (alerts reach a person), Terminal:**
+```
+for t in riverly-security-alerts riverly-prod-alerts riverly-payout-alerts; do echo "$t -> $(aws sns list-subscriptions-by-topic --profile riverly-live --region eu-north-1 --topic-arn arn:aws:sns:eu-north-1:132597214585:$t --query 'Subscriptions[0].[Endpoint,SubscriptionArn]' --output text | awk '{print $1, ($2 ~ /Pending/ ? "PENDING" : "CONFIRMED")}')"; done
+```
+All three say **CONFIRMED**.
 
-**1. Duplicate bank-transfer payments, 6–8 Oct 2026**
-- A slow payment provider plus automatic retries in the Personal app caused some transfers to pay out more than once.
-- **Contained the same day:** we switched off only that one endpoint at the load balancer. Everything else kept working.
-- **Fixed:** payments are now reserved before sending, and a reconciliation job checks every one against the provider.
-- **Verified** on staging, released to production on 8 Oct, then the endpoint was switched back on.
-- Only if asked about impact: it affected staff test accounts. Details are with Fatai and Femi.
+### Incident 1: duplicate bank-transfer payments (6–8 Oct 2026)
 
-**2. Attackers probing the staging database, August 2026**
-- GuardDuty detected known-malicious IPs probing the staging database. Every login attempt failed.
-- **Fixed:** the database was made private. No probes since.
+**Say:** A slow payment provider plus automatic retries in the Personal app made some transfers pay out more than once. We switched off that one endpoint the same evening, fixed it, tested it, released it, and switched it back on two days later.
 
-**3. Hacking probe blocked, 17 Oct 2026**
-- An outside IP probed our site for a secrets file (`/.env`). **Cloudflare blocked it.**
+**Show 1, contained and restored (AWS's own record), Terminal:**
+```
+for ev in CreateRule DeleteRule; do aws cloudtrail lookup-events --profile riverly-live --region eu-north-1 --lookup-attributes AttributeKey=EventName,AttributeValue=$ev --start-time 2026-10-06T00:00:00Z --end-time 2026-10-09T00:00:00Z --query 'Events[].{When:EventTime,Action:EventName,By:Username}' --output table; done
+```
+**CreateRule** on 6 Oct, 18:44 (switched off) and **DeleteRule** on 8 Oct, 09:15 (switched back on), both by YERINS.
+
+**Show 2, only that one endpoint was switched off, Terminal:**
+```
+aws cloudtrail lookup-events --profile riverly-live --region eu-north-1 --lookup-attributes AttributeKey=EventName,AttributeValue=CreateRule --start-time 2026-10-06T00:00:00Z --end-time 2026-10-07T00:00:00Z --query 'Events[0].CloudTrailEvent' --output text | python3 -c "import json,sys;r=json.load(sys.stdin)['requestParameters'];print('Blocked only:',[c.get('pathPatternConfig',c.get('httpRequestMethodConfig'))['values'] for c in r['conditions']])"
+```
+Shows only `POST /api/v1/personal/transfers/external` was blocked.
+
+**Show 3, the fix and its release, Terminal:**
+```
+gh pr list -R DRPFL-RIVERLY/riverly_backend --state merged --search "318 OR 319 in:number" --json number,title,mergedAt --jq '.[] | select(.number==318 or .number==319) | "#\(.number)  merged \(.mergedAt[0:16])  \(.title[0:60])"'; gh run view 37741898017 -R DRPFL-RIVERLY/riverly_backend --json createdAt,conclusion --jq '"Production release: \(.createdAt[0:16]) \(.conclusion)"'
+```
+The fixes #318 (7 Oct) and #319 (8 Oct), then the production release on 8 Oct, 07:11.
+
+**Show 4, console alternative:** CloudTrail → **Event history** → filter **Event name** = `CreateRule`, then `DeleteRule`. GitHub → pull requests **#318** and **#319**.
+
+**Only if asked about impact:** it affected staff test accounts. Details are with Fatai and Femi.
+
+### Incident 2: attackers probing the staging database (August 2026)
+
+**Say:** GuardDuty caught known-malicious IPs probing the staging database. Every login failed. We made the database private the next day, and there have been no probes since.
+
+**Show 1, detected, console:** **GuardDuty** → **Findings** → the `RDS/MaliciousIPCaller` findings, last seen **25 Aug**.
+
+**Show 2, fixed, Terminal:**
+```
+aws cloudtrail lookup-events --profile riverly-live --region eu-north-1 --lookup-attributes AttributeKey=ResourceName,AttributeValue=riverly-staging-db --start-time 2026-08-25T00:00:00Z --end-time 2026-08-27T00:00:00Z --query 'Events[?EventName==`ModifyDBInstance`].CloudTrailEvent' --output text | python3 -c "import json,sys;j=json.load(sys.stdin);print(j['eventTime'],'by',j['userIdentity']['userName'],'-> publicly accessible:',j['requestParameters']['publiclyAccessible'])"
+```
+**26 Aug, by YERINS → publicly accessible: False.**
+
+### Incident 3: hacking probe blocked (17 Oct 2026)
+
+**Say:** An outside IP probed our site for a secrets file. Cloudflare blocked it.
+
+**Show 1:** open `Desktop/cloudflare-analytics.png` (128 requests blocked by Cloudflare).
+
+**Show 2, live, Terminal (the same attack, right now):**
+```
+echo "Hacking probe for our secrets file: HTTP $(curl -s -o /dev/null -w '%{http_code}' https://api.riverly.ng/.env) (403 = blocked by Cloudflare)"
+```
 
 ---
 
@@ -279,7 +348,12 @@ The list is in [section 4](#stack).
 
 **Say:** The database is backed up daily, kept 14 days, and can be restored to any point within about 5 minutes. A snapshot is also taken before every production release. We've tested a full restore twice, in September: about 6.5 minutes, with all data intact. The app itself is rebuilt from code in minutes.
 
-**Show:** the backup restoration test report, then [8.13](#c813).
+**Show 1:** open `Downloads/Backup_Restoration_Test_Report_2026-09-11.pdf`. Its screenshots are in `riverly-api/gitignore_docs/backup-test-evidence-2026-09-11/`.
+
+**Show 2, Terminal (backups exist right now, all encrypted):**
+```
+aws rds describe-db-snapshots --profile riverly-live --region eu-north-1 --db-instance-identifier riverly-prod-db --query 'reverse(sort_by(DBSnapshots,&SnapshotCreateTime))[:6].{Snapshot:DBSnapshotIdentifier,Taken:SnapshotCreateTime,Encrypted:Encrypted}' --output table
+```
 
 **Gap, only if asked:** the database is in one zone. See [8.14](#c814).
 
@@ -295,7 +369,12 @@ The list is in [section 4](#stack).
 
 **Say:** It's encrypted at rest and in transit. BVN is encrypted again inside the app, NIN is stored only as a hash, and passwords are hashed. Admin screens and logs mask personal data. Records have audit trails, and every AWS change is logged in CloudTrail. The legal side (NDPA) is Femi's.
 
-**Show:** see [8.11](#c811) and [8.24](#c824).
+**Show 1, Terminal (databases encrypted):**
+```
+aws rds describe-db-instances --profile riverly-live --region eu-north-1 --query 'DBInstances[].{Database:DBInstanceIdentifier,Encrypted:StorageEncrypted}' --output table
+```
+
+**Show 2, code (masking):** VS Code → **Cmd+P** → `PiiMask.cs`, then `LogRedactor.cs`.
 
 ---
 
@@ -314,6 +393,8 @@ The list is in [section 4](#stack).
 
 The deploy steps themselves are written as code in GitHub Actions.
 
+**Show:** VS Code → **Cmd+P** → `docs/database-access.md`, then `docs/production-rollout-plan.md`. Then GitHub → **riverly_backend** → `.github/workflows/deploy-production.yml`.
+
 ---
 
 <a id="c81"></a>
@@ -322,7 +403,7 @@ The deploy steps themselves are written as code in GitHub Actions.
 
 [↑ Back to top](#top)
 
-**Say:** Not a backend control. HR/IT or Femi.
+**Say:** Not a backend control. HR/IT or Femi. Nothing to show from the backend.
 
 ---
 
@@ -366,6 +447,12 @@ You'll see both engineers with 1 MFA device, and "Root account MFA on: 1".
 
 **Say:** The database is private, with no internet access. The only way in is through the bastion, with AWS login and MFA. Admin screens mask personal data.
 
+**Show, Terminal:**
+```
+aws rds describe-db-instances --profile riverly-live --region eu-north-1 --db-instance-identifier riverly-prod-db --query 'DBInstances[0].{Encrypted:StorageEncrypted,BackupDays:BackupRetentionPeriod,DeletionProtection:DeletionProtection,PublicAccess:PubliclyAccessible,MultiAZ:MultiAZ}' --output table
+```
+**PublicAccess: False.**
+
 ---
 
 <a id="c84"></a>
@@ -407,6 +494,17 @@ for i in $(seq 1 14); do printf "%s " $(curl -s -o /dev/null -w "%{http_code}" -
 ```
 **Say:** "Ten requests go through, then 429: blocked."
 
+**Show 2, Terminal (session and lockout settings in production):**
+```
+aws secretsmanager get-secret-value --profile riverly-live --region eu-north-1 --secret-id riverly/production/config --query SecretString --output text | python3 -c "import json,sys;d=json.load(sys.stdin);print('Login token lifetime (min):',d.get('Jwt__AccessTokenMinutes'));print('Idle logout (min):',d.get('Jwt__IdleTimeoutMinutes'));print('Maximum session (hours):',d.get('Jwt__AbsoluteSessionHours') or '12 (default)');print('Admin lockout after wrong tries:',d.get('Admin__LockoutThreshold'))"
+```
+Prints only these four settings, never any passwords.
+
+**Show 3, code:** VS Code → **Cmd+Shift+F** (search all files):
+- `BCrypt.Net.BCrypt.HashPassword`: passwords and PINs are hashed
+- `login locked after`: the 5-try lockout
+- `CF-Connecting-IP`: the real-IP check (`ClientIp.cs`)
+
 ---
 
 <a id="c86"></a>
@@ -417,7 +515,11 @@ for i in $(seq 1 14); do printf "%s " $(curl -s -o /dev/null -w "%{http_code}" -
 
 **Say:** We have alarms for high CPU, high memory, database connections, low database storage and unhealthy servers.
 
-**Show:** see the alarm list in [8.16](#c816).
+**Show, Terminal:**
+```
+aws cloudwatch describe-alarms --profile riverly-live --region eu-north-1 --query 'MetricAlarms[].{Alarm:AlarmName,State:StateValue}' --output table
+```
+Point at the `cpu-high`, `mem-high`, `rds-low-storage`, `rds-high-connections` and `no-healthy-hosts` alarms.
 
 **Only if asked:** we run one app container, scaled up by hand. The alarms warn us first.
 
@@ -465,6 +567,14 @@ Every line should say **"has no vulnerable packages"**.
 
 **Also show:** the OWASP report, `Desktop/Riverly_OWASP_Assessment/`.
 
+**Show, Terminal (secret scanning runs on every pull request):**
+```
+gh run list -R DRPFL-RIVERLY/riverly_backend --workflow gitleaks.yml --limit 6
+```
+Pull request scans say **success**. **If they spot a "failure" on the `schedule` line:** that's the weekly full-history scan. It flags an old supplier key from March that's still in git history; it isn't the key we use now. See [gaps](#gaps) item 11.
+
+**Show, GitHub:** riverly_backend → **Security** → **Dependabot**: 0 open alerts.
+
 ---
 
 <a id="c89"></a>
@@ -480,6 +590,11 @@ Every line should say **"has no vulnerable packages"**.
 aws secretsmanager list-secrets --profile riverly-live --region eu-north-1 --query 'SecretList[].{Secret:Name}' --output table
 ```
 
+**Show, Terminal (every change is recorded with who and when; example, the firewall lock on 17–18 Oct):**
+```
+for ev in AuthorizeSecurityGroupIngress RevokeSecurityGroupIngress; do aws cloudtrail lookup-events --profile riverly-live --region eu-north-1 --lookup-attributes AttributeKey=EventName,AttributeValue=$ev --start-time 2026-10-17T00:00:00Z --end-time 2026-10-19T00:00:00Z --query 'Events[].{When:EventTime,Change:EventName,By:Username}' --output table; done
+```
+
 **Gap, only if asked:** infrastructure isn't written as code yet (no Terraform). Changes are manual, but every one is logged.
 
 ---
@@ -491,6 +606,8 @@ aws secretsmanager list-secrets --profile riverly-live --region eu-north-1 --que
 [↑ Back to top](#top)
 
 **Say:** The app has admin tools to remove a customer's records. A formal retention and deletion schedule is a policy decision for Femi.
+
+**Show, code:** VS Code → **Cmd+P** → `AdminIdentityController.cs` → search `Wipe`. It previews what would be deleted before anything is removed.
 
 ---
 
@@ -519,6 +636,11 @@ aws secretsmanager list-secrets --profile riverly-live --region eu-north-1 --que
 aws s3api get-public-access-block --profile riverly-live --bucket riverly-prod-assets --query 'PublicAccessBlockConfiguration' --output table
 ```
 All four lines say **True**.
+
+**Show, Terminal (Cloudflare blocks a secrets-file grab):**
+```
+echo "Hacking probe for our secrets file: HTTP $(curl -s -o /dev/null -w '%{http_code}' https://api.riverly.ng/.env) (403 = blocked by Cloudflare)"
+```
 
 ---
 
@@ -571,6 +693,12 @@ aws logs describe-log-groups --profile riverly-live --region eu-north-1 --log-gr
 ```
 Production: **365** days. CloudTrail: **AllRegions True, TamperCheck True**.
 
+**Show, Terminal (live: a blocked request is logged with the real IP, even when faking one):**
+```
+curl -s -o /dev/null -H "X-Forwarded-For: 203.0.113.99" https://api.riverly.ng/api/v1/admin/sme/kyb/pending; echo "Sent a blocked request pretending to be 203.0.113.99. Waiting 20 seconds for the log..."; sleep 20; aws logs filter-log-events --profile riverly-live --region eu-north-1 --log-group-name /ecs/riverly-api-prod --start-time $(( ($(date +%s) - 120) * 1000 )) --filter-pattern '"SECURITY | ACCESS DENIED"' --query 'events[-1].message' --output text | grep -v '^None$'
+```
+The log line shows `ACCESS DENIED` with **your real IP**, not `203.0.113.99`.
+
 ---
 
 <a id="c816"></a>
@@ -588,6 +716,16 @@ aws cloudwatch describe-alarms --profile riverly-live --region eu-north-1 --quer
 15 alarms, all **OK**.
 
 **Also show:** `Desktop/cloudflare-analytics.png` (128 requests blocked by Cloudflare in 24 hours).
+
+**Show, Terminal (alerts reach a person):**
+```
+for t in riverly-security-alerts riverly-prod-alerts riverly-payout-alerts; do echo "$t -> $(aws sns list-subscriptions-by-topic --profile riverly-live --region eu-north-1 --topic-arn arn:aws:sns:eu-north-1:132597214585:$t --query 'Subscriptions[0].[Endpoint,SubscriptionArn]' --output text | awk '{print $1, ($2 ~ /Pending/ ? "PENDING" : "CONFIRMED")}')"; done
+```
+
+**Show, Terminal (GuardDuty is on):**
+```
+aws guardduty get-detector --profile riverly-live --region eu-north-1 --detector-id $(aws guardduty list-detectors --profile riverly-live --region eu-north-1 --query 'DetectorIds[0]' --output text) --query '{ThreatDetection:Status,MalwareScanning:Features[?Name==`EBS_MALWARE_PROTECTION`].Status|[0]}' --output table
+```
 
 **Before opening GuardDuty findings:** read [GuardDuty explained](#guardduty).
 
@@ -617,7 +755,16 @@ Point at **Reference ID (169.254.169.123)**, which is Amazon's time source, and 
 
 **Say:** Nobody installs software on production by hand. Every deploy replaces the app container completely. The only server is the bastion, reached through AWS Systems Manager with MFA. It has no open ports.
 
-**Show:** see the firewall table in [8.20](#c820). The bastion shows no port.
+**Show, Terminal (the bastion has no open port):**
+```
+aws ec2 describe-security-groups --profile riverly-live --region eu-north-1 --group-ids sg-020e6ba2051be6bdd --query 'SecurityGroups[].{Firewall:GroupName,OpenPorts:length(IpPermissions)}' --output table
+```
+**OpenPorts: 0.**
+
+**Show, Terminal (the app is a fresh container image, not a hand-maintained server):**
+```
+aws ecs describe-services --profile riverly-live --region eu-north-1 --cluster riverly-cluster-prod --services riverly-api-prod --query 'services[0].{Service:serviceName,RunsOn:launchType,Version:taskDefinition}' --output table
+```
 
 ---
 
@@ -660,6 +807,13 @@ You'll see TLS 1.0 and 1.1 refused, 1.2 accepted, the probe blocked (403), and g
 
 **Say:** Filtering of staff web browsing sits with HR/IT. For our own websites and API, Cloudflare filters incoming traffic and blocks known attacks.
 
+**Show, Cloudflare console:** riverly.ng → **Security** → **Security rules**: "Block common hacking probes" and "Login/signup/OTP flood protection". (On an older layout: **Security** → **WAF**.)
+
+**Show, Terminal (live):**
+```
+echo "Hacking probe for our secrets file: HTTP $(curl -s -o /dev/null -w '%{http_code}' https://api.riverly.ng/.env) (403 = blocked by Cloudflare)"
+```
+
 ---
 
 <a id="c824"></a>
@@ -681,6 +835,16 @@ This matches the updated Cryptography Policy.
 aws acm list-certificates --profile riverly-live --region eu-north-1 --query 'CertificateSummaryList[?InUse].{Domain:DomainName,Status:Status,AutoRenew:RenewalEligibility,Expires:NotAfter}' --output table; aws rds describe-db-instances --profile riverly-live --region eu-north-1 --query 'DBInstances[].{Database:DBInstanceIdentifier,Encrypted:StorageEncrypted}' --output table
 ```
 
+**Show, Terminal (the database refuses unencrypted connections):**
+```
+aws rds describe-db-parameters --profile riverly-live --region eu-north-1 --db-parameter-group-name default.postgres16 --query "Parameters[?ParameterName=='rds.force_ssl'].{Setting:ParameterName,Value:ParameterValue}" --output table
+```
+**Value 1** means encryption is forced.
+
+**Show, Cloudflare console:** riverly.ng → **SSL/TLS** → **Overview**: **Full (strict)**, meaning Cloudflare checks our certificate on every connection.
+
+**Show, code (BVN encryption):** VS Code → **Cmd+P** → `EncryptionService.cs` → search `AesGcm`.
+
 **Gaps, only if asked:** the Redis cache and the bastion's disk aren't encrypted. Neither holds customer records. See [gaps](#gaps).
 
 ---
@@ -693,7 +857,11 @@ aws acm list-certificates --profile riverly-live --region eu-north-1 --query 'Ce
 
 **Say:** We follow the Riverly Secure Code Standard, based on the OWASP Top 10. Work goes in through pull requests, is tested on staging, then released to production. We tested the whole backend against OWASP Top 10 (2025) and fixed what we found.
 
-**Show:** GitHub → merged pull requests → **#295** (OWASP fixes), **#329** (real-IP fix). Then the OWASP report.
+**Show 1:** open `Downloads/Riverly Secure Code Standard .pdf`.
+
+**Show 2:** GitHub → riverly_backend → **Pull requests** → **Closed** → **#295** (OWASP fixes), **#329** (real-IP fix). Each shows what changed and why.
+
+**Show 3:** the OWASP report, `Desktop/Riverly_OWASP_Assessment/`.
 
 ---
 
@@ -736,6 +904,12 @@ Look for **Failed: 0**.
 [↑ Back to top](#top)
 
 **Say:** Fluxus builds and runs the platform inside Riverly's own GitHub organisation and Riverly's own AWS account, so Riverly owns the code and the infrastructure. Access is per named person, with MFA on AWS. The contract is Femi's.
+
+**Show, Terminal:**
+```
+gh api repos/DRPFL-RIVERLY/riverly_backend --jq '"Code owner: \(.owner.login)   Private: \(.private)"'; echo "AWS account in use: $(aws sts get-caller-identity --profile riverly-live --query Account --output text)"
+```
+The code belongs to **DRPFL-RIVERLY**, and the AWS account is Riverly's (**132597214585**).
 
 ---
 
@@ -784,6 +958,10 @@ gh run list -R DRPFL-RIVERLY/riverly_backend --workflow deploy-production.yml --
 
 **Say:** Automated tests use made-up data, never customer data. Staging has its own separate database.
 
+**Show, code:** VS Code → **Cmd+P** → `EncryptionServiceTests.cs`: the BVN used is a made-up number (`22345678901`).
+
+**Show, Terminal (separate staging database):** see [8.31](#c831).
+
 ---
 
 <a id="c834"></a>
@@ -794,6 +972,8 @@ gh run list -R DRPFL-RIVERLY/riverly_backend --workflow deploy-production.yml --
 
 **Say:** I'm only showing read-only screens and commands today. Nothing is being changed, and I control the screen.
 
+**Show:** the session itself. Every command in this guide only reads.
+
 ---
 
 <a id="guardduty"></a>
@@ -803,6 +983,13 @@ gh run list -R DRPFL-RIVERLY/riverly_backend --workflow deploy-production.yml --
 [↑ Back to top](#top)
 
 There are **26 open findings**, none since September, and none is an active attack.
+
+**Show, console:** **GuardDuty** → **Findings**.
+
+**Show, Terminal (the count):**
+```
+aws guardduty list-findings --profile riverly-live --region eu-north-1 --detector-id $(aws guardduty list-detectors --profile riverly-live --region eu-north-1 --query 'DetectorIds[0]' --output text) --finding-criteria '{"Criterion":{"service.archived":{"Eq":["false"]}}}' --query 'length(FindingIds)' --output text | sed 's/^/Open GuardDuty findings: /'
+```
 
 **HIGH x1: "anomalous behaviour" by riverly-staging-scheduler-role (31 Aug)**
 **Say:** That's our own automation switching staging off at night. GuardDuty flags stopping services as an attack pattern. Reviewed: expected.
