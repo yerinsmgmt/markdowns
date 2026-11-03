@@ -1,386 +1,314 @@
 # Monkey Post: 30 voiceovers
 
-Voiceover scripts for Adna's posts, one per video. Each video shows a different part of the game and ends with a call to action. Every feature named here is live in the game as of 3 Nov 2026. Nothing is "coming soon".
+Voiceovers for Adna's posts. Every video is about the whole game, told from a different angle, and the features repeat in different words from video to video. Every feature mentioned is live in the game as of 3 Nov 2026.
 
-**How to use them**
-- Each script runs about 20 to 30 seconds at a relaxed talking pace.
-- Open every video on action already happening, such as a goal or a skill. Never open on the title screen or on you standing.
-- Keep **PART X** and **monkeypost.xyz** on screen from the first frame.
-- The "Show" line under each script is the footage to put under the voice.
-- For Parts 1 to 6, alternate the two openings in Parts 1 and 2, then keep whichever one brings more players (the tracking shows it).
+- About 20 to 30 seconds each, spoken like you're telling a friend.
+- Open on gameplay already moving, with **monkeypost.xyz** on screen from the first second.
 
 ---
 
-## Part 1: The game
+### Part 1
 
-> The best street football game you can play right in your browser. Part one.
+> This is the best street football game you can play right in your browser, and most people still don't know about it.
 >
-> Go to monkeypost.xyz. No download, no app, it works on your phone.
+> Just go to monkeypost.xyz. No download, no app, and it works on your phone.
 >
-> Five a side. Small goals. No keeper. Proper street football.
+> It's five a side, small goals, no keeper, just like the street. You can pick your country, your city, even your area, and play your friends online or plug in a controller and play it on your TV.
 >
-> Pick your country, your city, even your area. Nigeria, Ghana, South Africa, Kenya, Brazil, Indonesia, the UK.
->
-> Plug in a controller and play it on your TV, or play your friends online.
->
-> Send this to the friend who still thinks he's the best on your street. Monkeypost.xyz.
+> Send this to the friend who still thinks he's the best on your street.
 
-**Show:** a goal, then the URL typed in, the game on a phone, the Select Teams screen, then a controller and the TV.
+### Part 2
 
-## Part 2: Did you know
-
-> Did you know you can play street football right in your browser? Part two.
+> Did you know you can play street football right in your browser? No download, nothing to install.
 >
-> It's called Monkey Post. Type monkeypost.xyz and you're playing in seconds. Free, no download, works on your phone.
+> It's called Monkey Post. Type monkeypost.xyz and you're in a match in seconds.
 >
-> No keeper, small goals, so every shot is a chance and every mistake costs you.
+> There's no keeper, so every shot counts. Play the computer, play your friends online, or climb the rankings.
 >
-> Send this to the friend who always blames the keeper. Monkeypost.xyz.
+> Send this to the friend who's always bored at work.
 
-**Show:** a fast attack ending in a goal, the URL typed in, then a match on a phone.
+### Part 3
 
-## Part 3: Pick your country
-
-> Part three. In this browser football game, you can play for your own city.
+> If you grew up playing football on the street, you need to try this.
 >
-> Seven countries. Nigeria, Ghana, South Africa, Kenya, Brazil, Indonesia, the UK. Two cities each, and real areas inside them. Soweto, Rocinha, Brixton, Nima, Kibera.
+> Monkey Post is a street football game you play in your browser. Five a side, small goals, no keeper, exactly how we used to play it.
 >
-> Pick your area and go and represent.
+> You can even pick your own city and play for your area.
 >
-> Send this to the friend from your area. Monkeypost.xyz.
+> Tag the friends you used to play with every evening. Monkeypost.xyz.
 
-**Show:** the flags screen, then cities on the left and teams on the right, the kits on the match-up, then kick-off.
+### Part 4
 
-## Part 4: Controller
-
-> Part four. You can play this football game in your browser with a real controller.
+> Did you know you can connect a controller to your laptop and play a proper football game, without a console?
 >
-> Plug it into your laptop, put it on the TV, and it plays like a console game. Pass, shoot, sprint, skills.
+> Go to monkeypost.xyz, plug in your pad, put it on the TV, and it plays just like a console game. Passing, shooting, skills, everything.
 >
-> No console needed. Just monkeypost.xyz.
+> And if your friend has a second controller, you can play each other on the same screen.
 >
-> Send this to the guy who never gives you the second pad. Monkeypost.xyz.
+> Send this to the guy who never gives you the second pad.
 
-**Show:** hands on the controller, the TV with a match on it, then a goal.
+### Part 5
 
-## Part 5: Two players, one screen
-
-> Part five. Two players, one screen, in your browser.
+> Me and my friends found a football game we can play together without anyone buying anything.
 >
-> One on the keyboard, one on a controller, or two controllers. Same sofa, same TV, no excuses.
+> It's Monkey Post. It runs in your browser, so everybody just opens monkeypost.xyz, someone creates a match, shares the code, and you're playing each other online.
 >
-> Monkey Post. Free at monkeypost.xyz.
+> Phone, laptop, it doesn't matter.
 >
-> Send this to your brother who says he lets you win. Monkeypost.xyz.
+> Send this to your group chat and see who's actually good.
 
-**Show:** two people side by side with the game on the TV, then a goal and one of them reacting.
+### Part 6
 
-## Part 6: Play friends online
-
-> Part six. Your friend lives in another city? Play him anyway.
+> Do you know there's a football game where you can play for your own city?
 >
-> Create a match, send him the code, and you're playing each other online in your browser.
+> Monkey Post has teams from Nigeria, Ghana, South Africa, Kenya, Brazil, Indonesia and the UK. Two cities in each country, and real areas inside them. Soweto, Rocinha, Brixton, Kibera, Nima.
 >
-> No download. Works on phones.
+> Pick your area and represent it. It's free at monkeypost.xyz.
 >
-> Send this to the friend who moved away and thinks you forgot how to play. Monkeypost.xyz.
+> Send this to someone from your city.
 
-**Show:** the online screen, the code being shared, two phones in a match.
+### Part 7
 
-## Part 7: Roadside
-
-> Part seven. This is how football is really played: on the road.
+> You know those games that take forever to download? This one doesn't need a download at all.
 >
-> Roadside mode. Stones for goalposts, the road as your pitch. Three on three, or one on one.
+> Monkey Post is a football game that runs in your browser. Open monkeypost.xyz on your phone and you're playing.
 >
-> And the winner stays on.
+> Full matches, street football, five a side, against the computer or against real people.
 >
-> Send this to the friend who never lets anyone else play. Monkeypost.xyz.
+> Send this to the friend whose phone is always full.
 
-**Show:** the road, the stone goalposts, a 1v1, a goal, "winner stays on".
+### Part 8
 
-## Part 8: Skills
-
-> Part eight. Yes, you can do the roulette in this browser game.
+> I've been playing this football game in my browser and there's an actual ranking table.
 >
-> Roulette. Knock-on. Stop and turn. Flick it over a slide tackle. Then finish with a volley or a scissor kick.
+> You sign in, play ranked matches, and every win moves you up. Right now, people are fighting for the top spot.
 >
-> Roadside mode. Free at monkeypost.xyz.
+> It's called Monkey Post, and it's free at monkeypost.xyz.
 >
-> Send this to the friend who only knows how to sprint. Monkeypost.xyz.
+> Send this to the guy who says he's number one in everything. Let's see.
 
-**Show:** the skills one after another, each beating a defender, ending on a scissor kick goal.
+### Part 9
 
-## Part 9: Scissor kick
-
-> Part nine. A scissor kick. In a browser game.
+> Do you know you can win a full tournament in a browser game?
 >
-> On the road, in Monkey Post, you can actually pull it off.
+> In Monkey Post there's the Street Cup. Eight teams, knockout, quarter-final, semi-final, final. Win three matches and the cup is yours.
 >
-> Play it free at monkeypost.xyz, on your phone or your laptop.
+> Pick your city's team and go and win it. Monkeypost.xyz.
 >
-> Send this to the friend who has never scored a nice goal in his life. Monkeypost.xyz.
+> Send this to the friend who has never won anything in his life.
 
-**Show:** the scissor kick goal, then again in slow motion.
+### Part 10
 
-## Part 10: Penalties
-
-> Part ten. Just penalties.
+> Did you know you can play a penalty shootout with your friend right in your browser?
 >
-> Five kicks each, then sudden death. Against the computer, against a friend on the same screen, or online.
+> In Monkey Post, you can do five kicks each, then sudden death. Against the computer, against your friend on the same screen, or online.
 >
-> Monkey Post, in your browser, free.
+> And when you're done, play a full match. It's all free at monkeypost.xyz.
 >
-> Send this to the friend who missed the penalty that time. You know which one. Monkeypost.xyz.
+> Send this to the friend who missed that penalty. He knows which one.
 
-**Show:** a penalty run-up, a save or miss, then the winning kick.
+### Part 11
 
-## Part 11: Rankings
-
-> Part eleven. This browser football game has a real ranking table.
+> If you think you're good at football games, try beating the computer on Hard in this one.
 >
-> Sign in, play ranked, and climb. Every win counts.
+> Monkey Post is street football in your browser. On Hard, the computer presses you, reads your passes and punishes every mistake.
 >
-> Can you get your name to the top?
+> Free at monkeypost.xyz. Phone or laptop.
 >
-> Send this to the guy who says he's top one in everything. Monkeypost.xyz.
+> Send this to the friend who says every game is too easy.
 
-**Show:** a ranked win, the rating going up, then the rankings table.
+### Part 12
 
-## Part 12: Street Cup
-
-> Part twelve. Win a cup with your city's team.
+> This football game lets you challenge your friend even when they're not online.
 >
-> The Street Cup. Eight sides, knockout. Quarter-final, semi-final, final. Win three and you lift it.
+> Beat the computer in Monkey Post, and at full time you can send your score as a link. Your friend opens it, plays the same match, and has to beat what you did.
 >
-> Free, in your browser, at monkeypost.xyz.
+> It's free at monkeypost.xyz.
 >
-> Send this to the friend who has never won anything. Monkeypost.xyz.
+> Send this to whoever you want to humble today.
 
-**Show:** the cup draw, a final, the trophy moment.
+### Part 13
 
-## Part 13: The Cage
-
-> Part thirteen. Night football in the cage.
+> Five a side, no keeper, small goals. If you know, you know.
 >
-> Fenced five a side, turf, floodlights on.
+> This is Monkey Post, street football you play in your browser. You can play on the street, in the mud, on sand, in a cage at night, or on the roadside.
 >
-> One of five places you can play in Monkey Post. Free at monkeypost.xyz.
+> No download. Just go to monkeypost.xyz.
 >
-> Send this to the friend you used to play late nights with. Monkeypost.xyz.
+> Send this to the friend you grew up playing with.
 
-**Show:** the cage at night, the floodlights, a goal.
+### Part 14
 
-## Part 14: Mud
-
-> Part fourteen. Football after the rain.
+> Did you know there's a football game where the winner stays on, just like on the street?
 >
-> Puddles, splashes, footprints in the mud. Wooden posts. Just like the field after a downpour.
+> In Monkey Post, there's Roadside. One on one or three on three, on the road, and the winner stays on. You can also play full five a side matches, cups and ranked games.
 >
-> Monkey Post. Free in your browser.
+> It's free in your browser at monkeypost.xyz.
 >
-> Send this to the friend who still plays in the rain. Monkeypost.xyz.
+> Send this to the friend who never wants to come off.
 
-**Show:** the mud ground, a splash, a goal.
+### Part 15
 
-## Part 15: Sand
-
-> Part fifteen. A dusty lot, late afternoon, sand everywhere.
+> Nigeria or Ghana, who plays better football? You can settle it in this game.
 >
-> Every ground in Monkey Post plays a little different. The street, mud, sand, the cage and the road.
+> Monkey Post has teams from Lagos, Abuja, Accra and Kumasi. Pick your side and play your friend online, or on the same screen.
 >
-> Pick yours at monkeypost.xyz.
+> It's free at monkeypost.xyz.
 >
-> Send this to the friend you grew up playing with. Monkeypost.xyz.
+> Send this to your friend from the other side.
 
-**Show:** the sand ground, then quick cuts of all five grounds.
+### Part 16
 
-## Part 16: Street rules
-
-> Part sixteen. Street rules.
+> Brazil or the UK? In this browser game, you can find out.
 >
-> Turn them on and there are no throw-ins. The ball comes off the wall and stays in play, like it does on the street.
+> Monkey Post has teams from Rio, São Paulo, London and Manchester, plus Africa and Indonesia. Pick your team and play.
 >
-> Monkey Post. Free in your browser.
+> No download, works on your phone. Monkeypost.xyz.
 >
-> Send this to the friend who always argued the ball was out. Monkeypost.xyz.
+> Send this to the guy who always picked Brazil.
 
-**Show:** the Rules setting switched to Street, then the ball bouncing off a wall and play carrying on.
+### Part 17
 
-## Part 17: Hard mode
-
-> Part seventeen. You think you're good? Try Hard.
+> You can actually watch other people play this football game live.
 >
-> On Hard, the computer presses you, reads your passes and punishes every mistake.
+> In Monkey Post, open Watch and you'll see real matches happening right now. Then jump in and play your own.
 >
-> Monkey Post. Free at monkeypost.xyz.
+> It's free in your browser at monkeypost.xyz.
 >
-> Send this to the friend who says the game is too easy. Monkeypost.xyz.
+> Send this to the friend who watches more football than he plays.
 
-**Show:** the difficulty set to Hard, a tough match, a last-minute winner.
+### Part 18
 
-## Part 18: Watch live
-
-> Part eighteen. You can watch other people's matches live.
+> If you have five minutes right now, you can play a full football match.
 >
-> Open Watch, pick a match, and see how other players do it.
+> Monkey Post runs in your browser. Matches can be one, three or five minutes, or first to five goals. Perfect on the bus, on break, anywhere.
 >
-> Then go and play your own. Free at monkeypost.xyz.
+> Just open monkeypost.xyz.
 >
-> Send this to the friend who watches more football than he plays. Monkeypost.xyz.
+> Send this to the friend who's always on his phone.
 
-**Show:** the Watch matches screen, a live match, then the "Play" button.
+### Part 19
 
-## Part 19: Challenge a friend
-
-> Part nineteen. Beat the computer, then send your score to a friend.
+> Do you know there's a football game that gives you a new challenge every day?
 >
-> They open the link, play the same match on the same level, and see if they can beat you.
->
-> Monkey Post. Free in your browser.
->
-> Send this to whoever you want to humble today. Monkeypost.xyz.
-
-**Show:** a win, the full-time card, the challenge being shared, a friend opening it.
-
-## Part 20: Today's Job
-
-> Part twenty. A new job every day.
->
-> Come from behind. Score a certain kind of goal. Every day, Monkey Post gives you something to do.
->
-> Can you do today's?
->
-> Send this to the friend who needs a reason to play. Monkeypost.xyz.
-
-**Show:** the Today's Job strip on the main menu, then the job being completed.
-
-## Part 21: Kits
-
-> Part twenty-one. Every team has its own kits. Home, away and a street kit.
->
-> Pick your team, pick your kit, and step onto the pitch looking right.
+> In Monkey Post, there's Today's Job. Come from behind, score a certain kind of goal. Something new every day, plus full matches, cups and ranked games.
 >
 > Free at monkeypost.xyz.
 >
-> Send this to the friend who cares more about the kit than the game. Monkeypost.xyz.
+> Send this to the friend who needs a reason to play today.
 
-**Show:** the match-up screen flicking through kits, the 3D players turning.
+### Part 20
 
-## Part 22: Formations
-
-> Part twenty-two. Five a side, but you still pick your shape.
+> My brother says he lets me win. So we found a game where he can't hide.
 >
-> Two-two. One-two-one. One-three. Choose your formation and move your players before kick-off.
+> Monkey Post lets two people play on one screen. Keyboard and controller, or two controllers. It's free in your browser.
 >
-> Monkey Post. Free in your browser.
+> Go to monkeypost.xyz and settle it.
 >
-> Send this to the friend who thinks he's a coach. Monkeypost.xyz.
+> Send this to your brother. You know the one.
 
-**Show:** the Game Plan screen, players being swapped, then kick-off.
+### Part 21
 
-## Part 23: On your phone
-
-> Part twenty-three. Proper football on your phone, and nothing to download.
+> Did you know you can pull off skills in a browser football game? Roulettes, flicks, scissor kicks.
 >
-> Open your browser, type monkeypost.xyz, and play. Buttons on the screen, full matches.
->
-> Free.
->
-> Send this to the friend who's bored right now. Monkeypost.xyz.
-
-**Show:** a phone held sideways, the URL typed in, a full attack on the touch buttons.
-
-## Part 24: Five-minute match
-
-> Part twenty-four. Got five minutes? Play a full match.
->
-> One minute, three minutes, five minutes, or first to five goals. Quick game on the bus or a proper match at home.
->
-> Monkey Post. Free in your browser.
->
-> Send this to the friend who's always "on the way". Monkeypost.xyz.
-
-**Show:** the Game length setting, a fast match, full time.
-
-## Part 25: Nigeria v Ghana
-
-> Part twenty-five. Nigeria or Ghana?
->
-> In Monkey Post you can settle it. Lagos, Abuja, Accra, Kumasi. Pick your side and play.
+> In Monkey Post, you beat your man, you score, and it feels like the street. Play the computer, play your friends, or climb the rankings.
 >
 > Free at monkeypost.xyz.
 >
-> Send this to your friend from the other side. Monkeypost.xyz.
+> Send this to the friend who only knows how to run fast.
 
-**Show:** a Nigerian team against a Ghanaian team, the match-up screen, a goal.
+### Part 22
 
-## Part 26: Brazil v the UK
-
-> Part twenty-six. Rio against London.
+> Every team in this game has its own kit. Home, away and street.
 >
-> Rocinha, Maré, Brixton, Hackney. Street football from everywhere, in one browser game.
->
-> Pick your side at monkeypost.xyz.
->
-> Send this to the guy who always picked Brazil. Monkeypost.xyz.
-
-**Show:** the Rio v London match-up, a skill, a goal.
-
-## Part 27: Kenya v South Africa
-
-> Part twenty-seven. Nairobi or Johannesburg?
->
-> Kibera, Eastleigh, Soweto, Alexandra. Pick your area and represent it.
+> Monkey Post has teams from seven countries, each with their own colours and their own players. Pick yours, and go and play.
 >
 > Free in your browser at monkeypost.xyz.
 >
-> Send this to the friend who thinks his country plays the best football. Monkeypost.xyz.
+> Send this to the friend who cares more about the kit than the match.
 
-**Show:** the Kenya v South Africa match-up, a goal, a celebration.
+### Part 23
 
-## Part 28: Indonesia
-
-> Part twenty-eight. Jakarta and Surabaya are in the game.
+> Do you want to know the football game I play when I'm bored?
 >
-> Tanah Abang, Senen and more. Street football from Indonesia, five a side, small goals.
+> It's Monkey Post. Street football, right in your browser. No download, works on your phone. Quick matches, online games with friends, even a cup to win.
 >
-> Play free at monkeypost.xyz.
+> Just go to monkeypost.xyz.
 >
-> Send this to your friend in Indonesia. Monkeypost.xyz.
+> Send this to the friend who's bored right now.
 
-**Show:** the Indonesia flag, the cities and teams, a match.
+### Part 24
 
-## Part 29: Training
+> If your friend moved to another city, you can still play him in football tonight.
+>
+> Monkey Post runs in your browser. Create a match, send him the code, and you're playing each other online. Wherever you are.
+>
+> It's free at monkeypost.xyz.
+>
+> Send this to the friend who moved away and thinks you forgot how to play.
 
-> Part twenty-nine. Want to get better first? Train.
->
-> Free play on your own, or penalty practice. Learn the touch, then go and beat your friends.
->
-> Monkey Post. Free in your browser.
->
-> Send this to the friend who needs the practice. Monkeypost.xyz.
+### Part 25
 
-**Show:** training free play, then penalty practice, then a real match goal.
-
-## Part 30: Everything
-
-> Part thirty. One browser game, all of this.
+> Kenya or South Africa? Nairobi or Johannesburg?
 >
-> Seven countries. Five places to play. Skills on the road. A cup, a ranking table, penalties, two players on one screen, and your friends online.
+> In Monkey Post, you can play as Kibera, Eastleigh, Soweto or Alexandra, and take on anyone.
 >
-> Free. No download. Works on your phone.
+> Free street football in your browser at monkeypost.xyz.
 >
-> Send this to the friend who hasn't played it yet. Monkeypost.xyz.
+> Send this to the friend who thinks his country plays the best football.
 
-**Show:** fast cuts of the best clip from each earlier part, ending on monkeypost.xyz.
+### Part 26
+
+> This football game even has teams from Indonesia. Jakarta, Surabaya.
+>
+> Monkey Post is street football from all over the world. Seven countries, fourteen cities, and you can play any of them.
+>
+> No download. Just go to monkeypost.xyz.
+>
+> Send this to a friend in another country.
+
+### Part 27
+
+> Did you know you can play football with your friends online without anyone downloading anything?
+>
+> Monkey Post runs in the browser. One person creates the match, sends the code, and you're playing. On phone or laptop.
+>
+> You can also play penalties against each other, or two of you on one screen.
+>
+> Send this to your football group chat. Monkeypost.xyz.
+
+### Part 28
+
+> If you've never played a football game on your TV through your laptop, try this.
+>
+> Open monkeypost.xyz, put it on the big screen, connect a controller, and you've got a console football game for free.
+>
+> Five a side, street rules, play the computer or your friends.
+>
+> Send this to the friend whose house has the biggest TV.
+
+### Part 29
+
+> Do you want to get better before you face your friends? This game lets you practise first.
+>
+> In Monkey Post there's training. Free play on your own, penalty practice, then go and play real matches, cups and ranked games.
+>
+> It's free at monkeypost.xyz.
+>
+> Send this to the friend who keeps losing to you.
+
+### Part 30
+
+> One browser game, and it has all of this.
+>
+> Seven countries. Five places to play. Online with friends, two players on one screen, penalties, a cup and a ranking table. Free, no download, and it works on your phone.
+>
+> It's called Monkey Post. Monkeypost.xyz.
+>
+> Send this to the friend who hasn't played it yet.
 
 ---
 
-## Captions for the posts
+## Caption for every post
 
-Use the same pattern every time, changed to match the part:
-
-> Part X: [the feature in a few words] ⚽ Free street football in your browser, no download, works on your phone. monkeypost.xyz
-
-Example: *Part 8: skills on the road ⚽ Free street football in your browser, no download, works on your phone. monkeypost.xyz*
+> [The first line of that part's voiceover] ⚽ Free street football in your browser, no download, works on your phone. monkeypost.xyz
